@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6 common-ie" lang="fr-FR" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 common-ie" lang="fr-FR" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 common-ie" lang="fr-FR" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]> <html class="no-js ie9 common-ie" lang="fr-FR" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if !(IE)]><!-->
+<html class="no-js" lang="fr-FR" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+	<script type="text/javascript">
+		//<![CDATA[
+		(function(){
+			var c = document.documentElement.className;
+			c = c.replace(/no-js/, 'js');
+			document.documentElement.className = c;
+		})();
+		//]]>
+	</script>
+	<title>Famille</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://www.eglise.catholique.fr/xmlrpc.php" />
+
+	<!-- Html5 js Fallback less than ie9 -->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="http://www.eglise.catholique.fr/wp-content/themes/cef-master/assets/js/vendor/html5.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<style type="text/css" media="screen">
+		.css3-fix {
+			behavior: url("http://www.eglise.catholique.fr/wp-content/themes/cef-master/assets/htc/PIE.htc");
+		}
+	</style>
+	<![endif]-->
+	<!-- Icomoon fallback down to ie7 -->
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" href="http://www.eglise.catholique.fr/wp-content/themes/cef-master/assets/css/vendor/ie7.css">
+	<link rel="stylesheet" href="http://www.eglise.catholique.fr/wp-content/themes/cef-master/assets/js/vendor/ie7.js">
+	<![endif]-->
+
+	
+<!-- This site is optimized with the Yoast SEO plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="L&#039;Eglise est attentive à la famille, elle en rappelle avec réalisme et confiance l’importance pour la vie en société comme pour chacun d&#039;entre nous."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Famille" />
+<meta property="og:description" content="L&#039;Eglise est attentive à la famille, elle en rappelle avec réalisme et confiance l’importance pour la vie en société comme pour chacun d&#039;entre nous." />
+<meta property="og:url" content="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/" />
+<meta property="og:site_name" content="Église catholique en France" />
+<meta property="article:tag" content="famille" />
+<meta property="og:image" content="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/2014/05/capture_denier_lyon_2012.jpg" />
+<meta property="og:image:width" content="569" />
+<meta property="og:image:height" content="334" />
+<!-- / Yoast SEO plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"wpemoji":"http:\/\/www.eglise.catholique.fr\/wp-includes\/js\/wp-emoji.js?ver=4.2.10","twemoji":"http:\/\/www.eglise.catholique.fr\/wp-includes\/js\/twemoji.js?ver=4.2.10"}};
+			( function( window, document, settings ) {
+	var src, ready;
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "simple" or "flag" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var canvas = document.createElement( 'canvas' ),
+			context = canvas.getContext && canvas.getContext( '2d' );
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		if ( type === 'flag' ) {
+			/*
+			 * This works because the image will be one of three things:
+			 * - Two empty squares, if the browser doesn't render emoji
+			 * - Two squares with 'G' and 'B' in them, if the browser doesn't render flag emoji
+			 * - The British flag
+			 *
+			 * The first two will encode to small images (1-2KB data URLs), the third will encode
+			 * to a larger image (4-5KB data URL).
+			 */
+			context.fillText( String.fromCharCode( 55356, 56812, 55356, 56807 ), 0, 0 );
+			return canvas.toDataURL().length > 3000;
+		} else {
+			/*
+			 * This creates a smiling emoji, and checks to see if there is any image data in the
+			 * center pixel. In browsers that don't support emoji, the character will be rendered
+			 * as an empty square, so the center pixel will be blank.
+			 */
+			context.fillText( String.fromCharCode( 55357, 56835 ), 0, 0 );
+			return context.getImageData( 16, 16, 1, 1 ).data[0] !== 0;
+		}
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	settings.supports = {
+		simple: browserSupportsEmoji( 'simple' ),
+		flag:   browserSupportsEmoji( 'flag' )
+	};
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.simple || ! settings.supports.flag ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='sccss_style-css'  href='http://www.eglise.catholique.fr/wp-content/cache/scss/2-scss.css?ver=4.2.10' type='text/css' media='all' />
+<link rel='stylesheet' id='jreject-css'  href='http://www.eglise.catholique.fr/wp-content/plugins/browser-rejector/jquery.reject.css?ver=4.2.10' type='text/css' media='all' />
+<link rel='stylesheet' id='app-banners-styles-css'  href='http://www.eglise.catholique.fr/wp-content/plugins/appbanners/lib/smartbanner/jquery.smartbanner.min.css?ver=4.2.10' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://www.eglise.catholique.fr/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='http://www.eglise.catholique.fr/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.8.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='gfont-css'  href='https://fonts.googleapis.com/css?family=Dosis%3A400%2C600%2C700%7CGudea%3A400%2C700%7CRoboto+Slab%3A400%2C700&#038;ver=4.2.10' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-ec-style-css'  href='http://www.eglise.catholique.fr/wp-content/themes/cef/assets/css/style.min.css?ver=1.0.3' type='text/css' media='all' />
+<style id='theme-ec-style-inline-css' type='text/css'>
+body{background-color: ! important;
+}#header{background-color: ! important;
+}.entry-content{background-color: ! important;
+color: !important;
+}#footer-partner{background-color: ! important;
+}#footer-menu{background-color: ! important;
+}#footer-content{background-color: ! important;
+}.entry-content h1, .page-title{color: !important;
+}.entry-content h2{color: !important;
+}.entry-content h3{color: !important;
+}.entry-content a{color: !important;
+}/** Dynamic CSS Generated at 29/01/2017 16:43:22**/
+
+</style>
+<link rel='stylesheet' id='prettyphoto-css'  href='http://www.eglise.catholique.fr/wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.css?ver=4.8.0.1' type='text/css' media='screen' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-4887788-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.min.js?ver=1.11.0'></script>
+<script type='text/javascript' src='https://code.jquery.com/jquery-migrate-1.2.1.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/themes/cef-master/assets/js/vendor/modernizr.custom.min.js?ver=2.6.2'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/plugins/browser-rejector/jquery.reject.js?ver=4.2.10'></script>
+<script type='text/javascript' src='https://www.google.com/jsapi?ver=4.2.10'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.eglise.catholique.fr/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.eglise.catholique.fr/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.2.10" />
+<link rel='shortlink' href='http://www.eglise.catholique.fr/?p=358408' />
+<!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="chrome=1" /><![endif]--><meta name="apple-itunes-app" content="app-id=1048620405">
+<meta name="google-play-app" content="app-id=com.goodbarber.catholiquefr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="http://www.eglise.catholique.fr/wp-content/themes/cef/assets/img/favicon.ico" />
+		<link rel="apple-touch-icon" href="http://www.eglise.catholique.fr/wp-content/themes/cef/assets/img/apple-touch-icon.png" />
+		
+
+<!-- Wip MegaMenu Version -->
+<meta name="generator" content="WIPMM 1.0" />
+
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://www.eglise.catholique.fr/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://www.eglise.catholique.fr/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="page page-id-358408 page-parent page-child parent-pageid-358394 page-template-default topbar wpb-js-composer js-comp-ver-4.8.0.1 vc_responsive">
+	<!-- CEF API --> 
+<div id='cef-root'></div> 
+<script type="text/javascript" charset="utf-8">  
+window.cefAsyncInit = function() { 
+    CEF.initNavigationBar({site_search: true, share_links: true, add_top_margin: false, with_animation: true, scrolling_bar: true}); 
+}; 
+(function() { 
+var e = document.createElement('script'); e.async = true; 
+e.src = 'http://recherche.catholique.fr/api/cef.js'; 
+document.getElementById('cef-root').appendChild(e); 
+}()); 
+</script>	<ul id="fast-access">
+		<li><a href="#main-content">Acces direct au contenu</a></li>
+		<li><a href="#site_search">Acces direct à la recherche</a></li>
+		<li><a href="#main-menu">Acces direct au menu</a></li>
+	</ul>
+	<header id="header">
+		<div class="wrapper">
+			<h1 id="header-logo">
+				<a id="header-logo-link" href="http://www.eglise.catholique.fr/">
+				<img width="500" height="80" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/2014/05/logo_site-ec.jpg" class="attachment-full" alt="Logo site Eglise catholique en France" />				</a>
+			</h1>
+			<div id="header-aside-relocate"></div>
+		</div>
+	</header>
+
+	<div id="content">
+		<div id="content-wrapper" class="wrapper"><!-- Content wrapper -->
+			<div id="mobile-access">
+				<button id="main-menu-btn">Menu</button>
+					<form action="http://www.eglise.catholique.fr/" method="get" id="search_form">
+						<input type="text" name="s" placeholder="Indiquez ici votre recherche" title="Indiquez ici votre requête" id="site_search_bis" />
+						<input type="submit" value="Rechercher" title="Lancer la recherche" />
+					</form>
+					<script type="text/javascript" charset="utf-8">
+						jQuery("#search_form").submit(function(){
+							var query = jQuery("#site_search_bis").attr("value");
+							CEF.search(query);
+							return false;
+						});
+					</script>
+			</div>
+			<div id="content-page"><!-- Content page -->
+
+			<div id="main-menu"><!-- Main menu -->
+				<div class="menu-overlay"></div>
+				<nav id="menu" >
+					<div class="main-menu-header">
+						<div class="main-menu-title">Menu</div>
+						<button class="main-menu-close-btn">Close</button>
+					</div>
+					<ul id="megamenu-parent" class="sf-menu"><li id="menu-item-375142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent-mega-menu li-standard-menu"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/">Conférence des évêques de France</a>
+<ul class="wip-mega-menu">
+	<li id="menu-item-374593" class="menu-item menu-item-type-post_type menu-item-object-mega-menu li-mega-menu"><div class="row-fluid">
+<div class="span4">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_1_cef_col-1" class="mega-lists"><li id="menu-item-374602" class="title menu-item menu-item-type-post_type menu-item-object-page menu-item-374602"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/cef/">Mieux connaître la CEF</a></li>
+<li id="menu-item-374596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374596"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/cef/presidence-et-conseil-permanent/">Présidence et Conseil permanent</a></li>
+<li id="menu-item-374603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374603"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/cef/secretariat-general/">Secrétariat général</a></li>
+<li id="menu-item-374604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374604"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/cef/conseils-et-commissions/">Conseils et commissions</a></li>
+<li id="menu-item-377847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377847"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/cef/services-nationaux/">Services nationaux</a></li>
+<li id="menu-item-379777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-379777"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/cef/autres-services-et-instances/">Autres services et instances</a></li>
+<li id="menu-item-374606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374606"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/cef/assemblees-plenieres/">Les assemblées plénières</a></li>
+<li id="menu-item-389424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389424"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/soutenir-leglise/">Soutenir l&rsquo;Eglise</a></li>
+</ul>
+</section></div>
+<div class="span4">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_1_cef_col-2" class="mega-lists"><li id="menu-item-374934" class="title menu-item menu-item-type-post_type menu-item-object-page menu-item-374934"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/guide-de-leglise/">Guide de l&rsquo;Eglise</a></li>
+<li id="menu-item-374928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374928"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/guide-de-leglise/dioceses/">Liste des diocèses</a></li>
+<li id="menu-item-374926" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374926"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/guide-de-leglise/carte-des-dioceses/">Carte des diocèses</a></li>
+<li id="menu-item-374930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374930"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/guide-de-leglise/provinces/">Liste des provinces</a></li>
+<li id="menu-item-374932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374932"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/guide-de-leglise/eveques/">Liste des évêques de France</a></li>
+</ul>
+</section></div>
+<div class="span4">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_1_cef_col-3b" class="mega-lists"><li id="menu-item-374609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374609"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/textes-et-declarations/">Textes et déclarations</a></li>
+<li id="menu-item-374610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374610"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/nominations/">Nominations</a></li>
+<li id="menu-item-374621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374621"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/sommaire-des-publications/">Publications</a></li>
+<li id="menu-item-419427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419427"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/lutter-contre-la-pedophilie/">Lutter contre la pédophilie</a></li>
+<li id="menu-item-374608" class="fake_link title menu-item menu-item-type-custom menu-item-object-custom menu-item-374608"><a>Publications officielles</a></li>
+</ul>
+</section></div>
+</div>
+</li>
+</ul>
+</li>
+<li id="menu-item-374837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent-mega-menu li-standard-menu"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/">Approfondir sa foi</a>
+<ul class="wip-mega-menu">
+	<li id="menu-item-374592" class="menu-item menu-item-type-post_type menu-item-object-mega-menu li-mega-menu"><div class="row-fluid">
+<div class="span3">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_2_foi_col-1" class="mega-lists"><li id="menu-item-374627" class="title menu-item menu-item-type-post_type menu-item-object-page menu-item-374627"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/connaitre-et-aimer-dieu/">Connaître et aimer Dieu</a></li>
+<li id="menu-item-374628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374628"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/connaitre-et-aimer-dieu/dieu-createur/">Dieu créateur</a></li>
+<li id="menu-item-374630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374630"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/connaitre-et-aimer-dieu/jesus-le-dieu-vivant/">Jésus, le Dieu vivant</a></li>
+<li id="menu-item-375663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375663"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/connaitre-et-aimer-dieu/leglise/">L&rsquo;Eglise</a></li>
+<li id="menu-item-374638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374638"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-bible/">Lire la Bible</a></li>
+<li id="menu-item-378904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-378904"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/prier/">Prier</a></li>
+</ul>
+</section></div>
+<div class="span3">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_2_foi_col-2" class="mega-lists"><li id="menu-item-374640" class="title menu-item menu-item-type-post_type menu-item-object-page menu-item-374640"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/vivre-sa-foi-a-tous-les-ages/">Vivre sa foi à tous les âges</a></li>
+<li id="menu-item-374641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374641"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/vivre-sa-foi-a-tous-les-ages/devenir-chretien/">Devenir chrétien</a></li>
+<li id="menu-item-374642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374642"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/vivre-sa-foi-a-tous-les-ages/transmettre-la-foi/">Transmettre la foi</a></li>
+<li id="menu-item-378886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-378886"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/vivre-sa-foi-a-tous-les-ages/etre-appele-chacun-sa-vocation/">Etre appelé, chacun sa vocation</a></li>
+<li id="menu-item-378888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-378888"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/temoigner/">Témoigner</a></li>
+<li id="menu-item-379811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-379811"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/vivre-sa-foi-a-tous-les-ages/lunite-des-chretiens/">L&rsquo;unité des chrétiens</a></li>
+<li id="menu-item-378889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-378889"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/vivre-sa-foi-a-tous-les-ages/dialoguer-les-autres-croyants/">Dialoguer avec les autres croyants</a></li>
+</ul>
+</section></div>
+<div class="span3">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_2_foi_col-3" class="mega-lists"><li id="menu-item-375664" class="title menu-item menu-item-type-post_type menu-item-object-page menu-item-375664"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/">Célébrer</a></li>
+<li id="menu-item-375665" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375665"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/les-sacrements/">Les sacrements</a></li>
+<li id="menu-item-375667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375667"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/les-grandes-fetes-chretiennes/">Les grandes fêtes chrétiennes</a></li>
+<li id="menu-item-375668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375668"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/le-dimanche-jour-du-seigneur/">Dimanche</a></li>
+<li id="menu-item-375669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375669"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/les-pelerinages/">Les pèlerinages</a></li>
+<li id="menu-item-375671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375671"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/musique-et-art-sacre/">Musique et art sacré</a></li>
+</ul>
+</section></div>
+<div class="span3">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_2_foi_col-4" class="mega-lists"><li id="menu-item-374976" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374976"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/le-dimanche-jour-du-seigneur/homelies-du-pere-jacques-fournier/">Pistes d&rsquo;homélie du P. J. Fournier</a></li>
+<li id="menu-item-374977" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374977"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/le-dimanche-jour-du-seigneur/commentaires-de-marie-noelle-thabut/">Commentaires de MN. Thabut</a></li>
+<li id="menu-item-374652" class="title menu-item menu-item-type-custom menu-item-object-custom menu-item-374652"><a>Voir aussi :</a></li>
+<li id="menu-item-374979" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374979"><a href="http://www.eglise.catholique.fr/textes-du-jour/">Textes de la messe du jour</a></li>
+<li id="menu-item-374978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-374978"><a href="http://egliseinfo.catholique.fr" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://egliseinfo.catholique.fr', 'Horaires des messes'); __gaTracker('send', 'event', 'outbound-widget', 'http://egliseinfo.catholique.fr', 'Horaires des messes');">Horaires des messes</a></li>
+</ul>
+</section></div>
+</div>
+</li>
+</ul>
+</li>
+<li id="menu-item-375013" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children parent-mega-menu li-standard-menu"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/">S&rsquo;engager dans la société</a>
+<ul class="wip-mega-menu">
+	<li id="menu-item-374591" class="menu-item menu-item-type-post_type menu-item-object-mega-menu li-mega-menu"><div class="row-fluid">
+<div class="span3">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_3_societe_col-1" class="mega-lists"><li id="menu-item-387700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387700"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/culture/">Culture</a></li>
+<li id="menu-item-378890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-378890"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/developpement-durable/">Développement durable</a></li>
+<li id="menu-item-387701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387701"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/vivre-sa-foi-a-tous-les-ages/dialoguer-les-autres-croyants/">Dialoguer avec les autres croyants</a></li>
+<li id="menu-item-374980" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374980"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/droits-de-lhomme/">Droits de l&rsquo;Homme</a></li>
+<li id="menu-item-374981" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374981"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/economie/">Economie</a></li>
+</ul>
+</section></div>
+<div class="span3">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_3_societe_col-2" class="mega-lists"><li id="menu-item-391042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-391042"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/eglise-aux-peripheries/">Église en périphérie</a></li>
+<li id="menu-item-377138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377138"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/eglise-medias/">Église et médias</a></li>
+<li id="menu-item-387704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387704"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/leurope/">Europe</a></li>
+<li id="menu-item-387705" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-358408 current_page_item menu-item-387705"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/">Famille</a></li>
+<li id="menu-item-374985" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374985"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/jeunes-en-eglise/">Jeunes en Eglise</a></li>
+<li id="menu-item-374986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374986"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/aumonerie-catholique-des-prisons/">Justice et prisons</a></li>
+</ul>
+</section></div>
+<div class="span3">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_3_societe_col-3" class="mega-lists"><li id="menu-item-387706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387706"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/laicite/">Laïcité</a></li>
+<li id="menu-item-387707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387707"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/lutter-contre-la-pedophilie/">Lutter contre la pédophilie</a></li>
+<li id="menu-item-387708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387708"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/migrants/">Migrants</a></li>
+<li id="menu-item-387709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387709"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/monde-rural/">Monde rural</a></li>
+<li id="menu-item-374990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374990"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/eglise-et-politique/">Politique</a></li>
+</ul>
+</section></div>
+<div class="span3">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_3_societe_col-4" class="mega-lists"><li id="menu-item-387710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387710"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/sante/">Santé</a></li>
+<li id="menu-item-387711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387711"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/science-et-ethique/">Science et Ethique</a></li>
+<li id="menu-item-387712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387712"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/solidarite/">Solidarité</a></li>
+<li id="menu-item-387713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387713"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/vie-internationale-et-missionnaire/">Vie internationale et missionnaire</a></li>
+</ul>
+</section></div>
+</div>
+</li>
+</ul>
+</li>
+<li id="menu-item-375012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent-mega-menu li-standard-menu"><a href="http://www.eglise.catholique.fr/actualites/">Actualité de l&rsquo;Église</a>
+<ul class="wip-mega-menu">
+	<li id="menu-item-374590" class="menu-item menu-item-type-post_type menu-item-object-mega-menu li-mega-menu"><div class="row-fluid">
+<div class="span8">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_4_actu_col-1" class="mega-lists"><li id="menu-item-374999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374999"><a href="http://www.eglise.catholique.fr/actualites/dossiers/">Dossiers</a></li>
+<li id="menu-item-374998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374998"><a href="http://www.eglise.catholique.fr/actualites/">Actualités</a></li>
+</ul>
+</section></div>
+<div class="span4">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_4_actu_col-2" class="mega-lists"><li id="menu-item-375002" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375002"><a href="http://www.eglise.catholique.fr/actualites/agenda/">Agenda</a></li>
+<li id="menu-item-375004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375004"><a href="http://www.eglise.catholique.fr/actualites/lettre-dinformation/">Lettre d&rsquo;information</a></li>
+<li id="menu-item-375001" class="title fake_link menu-item menu-item-type-custom menu-item-object-custom menu-item-375001"><a>Voir aussi :</a></li>
+<li id="menu-item-375544" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375544"><a href="http://www.eglise.catholique.fr/flux-rss/">Flux RSS du site</a></li>
+</ul>
+</section></div>
+</div>
+</li>
+</ul>
+</li>
+<li id="menu-item-375028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent-mega-menu li-standard-menu"><a href="http://www.eglise.catholique.fr/vatican/">Vatican</a>
+<ul class="wip-mega-menu">
+	<li id="menu-item-374589" class="menu-item menu-item-type-post_type menu-item-object-mega-menu li-mega-menu"><div class="row-fluid">
+<div class="span4">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_5_vatican_col-1" class="mega-lists"><li id="menu-item-375025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375025"><a href="http://www.eglise.catholique.fr/vatican/actualites/">Actualités</a></li>
+<li id="menu-item-375023" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375023"><a href="http://www.eglise.catholique.fr/vatican/les-papes-recents/">Les papes récents</a></li>
+<li id="menu-item-377734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377734"><a href="http://www.eglise.catholique.fr/vatican/">Saint-Siège et Vatican</a></li>
+</ul>
+</section></div>
+<div class="span4">
+
+<section class="mega-section">
+
+	
+	<ul id="menu-sousmenu_5_vatican_col-2" class="mega-lists"><li id="menu-item-375027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375027"><a href="http://www.eglise.catholique.fr/vatican/les-ecrits/">Les écrits</a></li>
+<li id="menu-item-375026" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375026"><a href="http://www.eglise.catholique.fr/vatican/statistiques-de-leglise-dans-le-monde/">Statistiques de l&rsquo;Eglise dans le monde</a></li>
+<li id="menu-item-378008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-378008"><a href="http://www.eglise.catholique.fr/vatican/messages-du-saint-pere/">Messages du Saint-Père</a></li>
+</ul>
+</section></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>					<div id="header-aside">
+							<div id="header-fastaccess">
+					<a class="header-fastaccess-link" href="http://www.eglise.catholique.fr/glossaire/">
+				<div class="header-fastaccess-icon"><span class="icon-cef-book"></span></div>
+				<div class="header-fastaccess-text">Glossaire</div>
+			</a>
+					<a class="header-fastaccess-link" href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/guide-de-leglise/carte-des-dioceses/">
+				<div class="header-fastaccess-icon"><span class="icon-cef-mapfr-2"></span></div>
+				<div class="header-fastaccess-text">Diocèses</div>
+			</a>
+					<a class="header-fastaccess-link" href="http://www.eglise.catholique.fr/espace-presse/">
+				<div class="header-fastaccess-icon"><span class="icon-cef-mic"></span></div>
+				<div class="header-fastaccess-text">Presse</div>
+			</a>
+			</div>
+						<div id="header-infos" class="valign">
+							<div class="valign-holder">
+								<time class="header-infos-date" id="day_date" datetime="2017-01-29"></time>
+								<p class="header-infos-text"><a href="http://www.eglise.catholique.fr/saint-du-jour/29/01/" title="Vers le saint du jour">Saint Gildas</a></p>
+																	<a title="Vers le texte du jour" href="http://www.eglise.catholique.fr/textes-du-jour/"><p class="header-mass-text">Les textes de la messe</p></a>
+															</div>
+						</div>
+						<div id="header-alert">
+	<div id="header-alert-holder">Alerte : <strong><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/les-sacrements/le-bapteme/">Baptême de Jésus le 9/01</a></strong></div>
+</div>					</div>
+				</nav>
+			</div><!-- End Main menu -->
+			<div id="main-content"><!-- Main content -->
+				<div class="wrapper"><!-- Main content wrapper -->	<div id="breadcrumb"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="http://www.eglise.catholique.fr" rel="v:url" property="v:title">Accueil</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/" rel="v:url" property="v:title">S&rsquo;engager dans la société</a> » <span class="breadcrumb_last">Famille</span></span></span></span></div>										<h1 class="page-title">Famille</h1>
+						<article class="entry">
+				<section class="entry-content">
+					<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: justify;">Au service des hommes et des femmes de ce temps, l’Église est particulièrement attentive à la famille. Elle en rappelle sans relâche l’importance pour la vie en société comme pour chacun d’entre nous. Elle le fait avec réalisme et confiance.</p>
+<p style="text-align: justify;"><strong>L’Église écoute</strong> <strong>les familles</strong> et regarde comment on y prend soin les uns des autres. Elle reconnaît et valorise la famille dans sa vocation sociale, car elle est une « école d’enrichissement humain » (<em>Gaudium et spes</em> 52). <a title="Pourquoi l’Eglise s’intéresse aux familles" href="http://www.eglise.catholique.fr/eglise-et-societe/la-famille/376741-leglise-sinteresse-aux-familles/">Lire la suite</a></p>
+
+		</div>
+	</div>
+
+	<div class="wpb_tabs wpb_content_element" data-interval="0">
+		<div class="wpb_wrapper wpb_tour_tabs_wrapper ui-tabs vc_clearfix">
+			<ul class="wpb_tabs_nav ui-tabs-nav vc_clearfix"><li><a href="#tab-1402587046-1-75">Rubriques</a></li></ul>
+	<div id="tab-1402587046-1-75" class="wpb_tab ui-tabs-panel wpb_ui-tabs-hide vc_clearfix">
+		<!-- Markup for Sommaire Rubrique-->
+<div class="wpb_content_element wpb_summary bloc-summary">
+	<div class="bloc-summary-item bloc-summary-item--new">
+		<div class="bloc-summary-row">
+			<div class="bloc-summary-img">
+                                    <a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/le-couple/">
+                <img width="460" height="261" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2014/05/ciric_243876/2800506821.jpg" class="attachment-460x261x1" alt="couple_jmj_rio" />                    </a>
+                			</div>
+						<div class="bloc-summary-text">
+									<a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/le-couple/">
+						<h3 class="bloc-summary-title">Couples et Parents</h3>
+					</a>
+								<p></p>
+			</div>
+					</div>
+			</div>
+</div><!-- Markup for Sommaire Rubrique-->
+<div class="wpb_content_element wpb_summary bloc-summary">
+	<div class="bloc-summary-item bloc-summary-item--new">
+		<div class="bloc-summary-row">
+			<div class="bloc-summary-img">
+                                    <a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/vie-de-famille/">
+                <img width="460" height="261" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2014/05/ciric_188317/2052944685.jpg" class="attachment-460x261x1" alt="anniversaire_enfants_parents_grands-parents" />                    </a>
+                			</div>
+						<div class="bloc-summary-text">
+									<a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/vie-de-famille/">
+						<h3 class="bloc-summary-title">Vie de Famille</h3>
+					</a>
+								<p></p>
+			</div>
+					</div>
+			</div>
+</div><!-- Markup for Sommaire Rubrique-->
+<div class="wpb_content_element wpb_summary bloc-summary">
+	<div class="bloc-summary-item bloc-summary-item--new">
+		<div class="bloc-summary-row">
+			<div class="bloc-summary-img">
+                                    <a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/familles-et-societe/">
+                <img width="460" height="261" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2014/05/ciric_19451/2134071541.jpg" class="attachment-460x261x1" alt="autoroute_echangeur_paris" />                    </a>
+                			</div>
+						<div class="bloc-summary-text">
+									<a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/familles-et-societe/">
+						<h3 class="bloc-summary-title">Familles et Société</h3>
+					</a>
+								<p></p>
+			</div>
+					</div>
+			</div>
+</div>
+	</div>
+
+		</div>
+	</div>
+
+	<div class="wpb_tabs wpb_content_element" data-interval="0">
+		<div class="wpb_wrapper wpb_tour_tabs_wrapper ui-tabs vc_clearfix">
+			<ul class="wpb_tabs_nav ui-tabs-nav vc_clearfix"><li><a href="#tab-1402662045-1-2">Experts</a></li><li><a href="#tab-1402662045-2-1">Partenaires</a></li><li><a href="#tab-1402662160699-2-2">Autres liens</a></li></ul>
+	<div id="tab-1402662045-1-2" class="wpb_tab ui-tabs-panel wpb_ui-tabs-hide vc_clearfix">
+		<!-- Markup for list link Bloc Visual composer -->
+<div class="wpb_content_element wpb_links_list bloc-links">
+	
+	<ul class="bloc-links-list">
+					<li class="links-list-item">
+				<a href="http://www.familia.va/" class="links-list-link">Site du Conseil Pontifical pour la Famille</a>
+			</li>
+			</ul>
+	</div>
+	</div>
+
+	<div id="tab-1402662045-2-1" class="wpb_tab ui-tabs-panel wpb_ui-tabs-hide vc_clearfix">
+		<!-- Markup for list link Bloc Visual composer -->
+<div class="wpb_content_element wpb_links_list bloc-links">
+	
+	<ul class="bloc-links-list">
+					<li class="links-list-item">
+				<a href="http://www.afc-france.org/" class="links-list-link">Associations familiales catholiques</a>
+			</li>
+					<li class="links-list-item">
+				<a href="http://justice-paix.cef.fr/" class="links-list-link">Site de Justice et Paix - France</a>
+			</li>
+					<li class="links-list-item">
+				<a href="http://www.cn-da.org/" class="links-list-link">Communion Notre-Dame de l&#039;Alliance</a>
+			</li>
+					<li class="links-list-item">
+				<a href="http://www.preparation-mariage.info/" class="links-list-link">Fédération nationale des Centres de préparation au mariage (CPM)</a>
+			</li>
+					<li class="links-list-item">
+				<a href="http://www.equipes-notre-dame.fr/" class="links-list-link">Equipes Notre-Dame</a>
+			</li>
+					<li class="links-list-item">
+				<a href="http://www.esperanceetvie.com/" class="links-list-link">Espérance et Vie</a>
+			</li>
+					<li class="links-list-item">
+				<a href="http://www.renaissance-femmes.asso.fr/wordpress/" class="links-list-link">Renaissance, mouvement chrétien de femmes en rupture de couple</a>
+			</li>
+					<li class="links-list-item">
+				<a href="http://www.ssf-fr.org/ssf" class="links-list-link">Semaines Sociales de France</a>
+			</li>
+					<li class="links-list-item">
+				<a href="http://www.vivre-et-aimer.org/" class="links-list-link">Vivre et Aimer</a>
+			</li>
+					<li class="links-list-item">
+				<a href="http://www.cler.net/" class="links-list-link">CLER Amour et Famille</a>
+			</li>
+			</ul>
+	</div>
+	</div>
+
+	<div id="tab-1402662160699-2-2" class="wpb_tab ui-tabs-panel wpb_ui-tabs-hide vc_clearfix">
+		<!-- Markup for list link Bloc Visual composer -->
+<div class="wpb_content_element wpb_links_list bloc-links">
+	
+	<ul class="bloc-links-list">
+					<li class="links-list-item">
+				<a href="http://www.vatican.va/roman_curia/pontifical_councils/justpeace/documents/rc_pc_justpeace_doc_20060526_compendio-dott-soc_fr.html" class="links-list-link">Compendium de la Doctrine sociale de l&#039;Eglise</a>
+			</li>
+			</ul>
+	</div>
+	</div>
+
+		</div>
+	</div>
+
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		<h2 class="wpb_heading wpb_singleimage_heading">Famille et catéchèse</h2>
+		<figure class="wpb_wrapper vc_figure">
+			<a href="http://www.enfamilleavecdieu.catholique.fr/" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey"><img width="241" height="300" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/2014/05/couverturefamille_dieu-241x300.jpg" class="vc_single_image-img attachment-medium" alt="Couverture du livre En famille avec Dieu" /></a>
+		</figure>
+	</div>
+</div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="wpb_wrapper"><div class="templatera_shortcode"><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="wpb_wrapper"><!-- Markup for Manual/AUto/RSS content feed Bloc Visual composer -->
+<!-- Multiple elements selected marckup -->
+<div class="wpb_content_element wpb_archive_content bloc-archive-content bloc-archive-content-list bloc-archive-content-list-simple stacked">
+			<h2 class="wpb_heading">Actualités</h2>
+		<!-- Flexslider markup for mobile only -->
+	<div class="flexslider">
+		<ul class="slides">
+						<li>
+				<div class="entry-summary">
+					<div class="entry-date">18/01/17</div>
+					<h3 class="entry-title"><a class="entry-title-link" href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/433430-les-premiers-fruits-damoris-laetitia-dans-les-dioceses/">Les premiers fruits d’Amoris laetitia dans les diocèses </a></h3>
+				</div>
+			</li>
+						<li>
+				<div class="entry-summary">
+					<div class="entry-date">18/01/17</div>
+					<h3 class="entry-title"><a class="entry-title-link" href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/433415-la-reception-damoris-laetitia-par-mgr-brunin/">&laquo;&nbsp;La réception d’Amoris laetitia&nbsp;&raquo; par Mgr Brunin </a></h3>
+				</div>
+			</li>
+						<li>
+				<div class="entry-summary">
+					<div class="entry-date">20/12/16</div>
+					<h3 class="entry-title"><a class="entry-title-link" href="http://www.eglise.catholique.fr/actualites/432179-petits-chanteurs-missionnaires-de-lepiphanie/">Petits chanteurs et missionnaires de l’Epiphanie </a></h3>
+				</div>
+			</li>
+						<li>
+				<div class="entry-summary">
+					<div class="entry-date">02/12/16</div>
+					<h3 class="entry-title"><a class="entry-title-link" href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/les-grandes-fetes-chretiennes/noel/eclairages-sur-noel-et-lavent/430932-dieu-sait-si-nous-avons-besoin-de-sagesse-par-mgr-dornellas/">&laquo;&nbsp;Dieu sait si nous avons besoin de sagesse&nbsp;&raquo; par Mgr d&rsquo;Ornellas </a></h3>
+				</div>
+			</li>
+						<li>
+				<div class="entry-summary">
+					<div class="entry-date">01/12/16</div>
+					<h3 class="entry-title"><a class="entry-title-link" href="http://www.eglise.catholique.fr/approfondir-sa-foi/prier/intentions-de-priere-du-pape/430860-intentions-de-priere-du-pape-francois-pour-decembre-2016/">Intentions de prière du pape François pour décembre 2016 </a></h3>
+				</div>
+			</li>
+						<li>
+				<div class="entry-summary">
+					<div class="entry-date">16/11/16</div>
+					<h3 class="entry-title"><a class="entry-title-link" href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/vie-de-famille/430217-digitalisation-vie-de-famille-impact/">Digitalisation et vie de famille : quel impact ? </a></h3>
+				</div>
+			</li>
+					</ul>
+	</div>
+	</div><!-- Markup for Manual/AUto/RSS content feed Bloc Visual composer -->
+<!-- Multiple elements selected marckup -->
+<div class="wpb_content_element wpb_archive_content bloc-archive-content bloc-archive-content-list stacked">
+			<h2 class="wpb_heading">Dossiers</h2>
+		<!-- Flexslider markup for mobile only -->
+	<div class="flexslider">
+		<ul class="slides">
+							<li>
+					<div class="entry-summary">
+												<h3 class="entry-title"><a class="entry-title-link" href="http://www.eglise.catholique.fr/actualites/dossiers/synode-des-eveques-sur-la-famille/">Synode des évêques sur la famille </a></h3>
+						
+											</div>
+				</li>
+							<li>
+					<div class="entry-summary">
+												<h3 class="entry-title"><a class="entry-title-link" href="http://www.eglise.catholique.fr/actualites/dossiers/dossiers-de-2011/familles-2011/">Familles 2011 </a></h3>
+						
+											</div>
+				</li>
+					</ul>
+	</div>
+	</div><!-- Markup for Manual/AUto/RSS content feed Bloc Visual composer -->
+<!-- Only one element selected marckup -->
+<div class="wpb_content_element wpb_archive_content bloc-archive-content bloc-archive-content-single stacked">
+			<h2 class="wpb_heading">Textes et documents de référence</h2>
+	
+			<div class="entry-summary">
+			
+			<div class="entry-txt">
+				<h3 class="entry-title"><a class="entry-title-link" href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/370308-textes-et-documents-de-reference-sur-la-famille/">Textes et documents de référence sur la famille</a></h3>
+											</div>
+		</div>
+		</div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey"><span
+	class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><span
+	class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div><!-- Markup for Texte de la messe du jour-->
+<div class="wpb_content_element wpb_calendar bloc-calendar">
+			<h2 class="wpb_heading">Agenda famille</h2>
+	
+	<div class="bloc-calendar-holder">
+
+		<!-- Calendar hide in mobile -->
+		<div class="bloc-calendar-grid">
+								<div class="item-day empty"></div>
+									<div class="item-day empty"></div>
+									<div class="item-day empty"></div>
+									<div class="item-day empty"></div>
+									<div class="item-day empty"></div>
+									<div class="item-day empty"></div>
+									<div class="item-day" >
+													01											</div>
+									<div class="item-day" >
+													02											</div>
+									<div class="item-day" >
+													03											</div>
+									<div class="item-day" >
+													04											</div>
+									<div class="item-day" >
+													05											</div>
+									<div class="item-day" >
+													06											</div>
+									<div class="item-day" >
+													07											</div>
+									<div class="item-day" >
+													08											</div>
+									<div class="item-day" >
+													09											</div>
+									<div class="item-day" >
+													10											</div>
+									<div class="item-day" >
+													11											</div>
+									<div class="item-day" >
+													12											</div>
+									<div class="item-day" >
+													13											</div>
+									<div class="item-day" >
+													14											</div>
+									<div class="item-day" >
+													15											</div>
+									<div class="item-day" >
+													16											</div>
+									<div class="item-day" >
+													17											</div>
+									<div class="item-day" >
+													<a data-id="433042" >18</a>
+											</div>
+									<div class="item-day" >
+													19											</div>
+									<div class="item-day" >
+													20											</div>
+									<div class="item-day" >
+													21											</div>
+									<div class="item-day" >
+													22											</div>
+									<div class="item-day" >
+													23											</div>
+									<div class="item-day" >
+													24											</div>
+									<div class="item-day" >
+													25											</div>
+									<div class="item-day" >
+													26											</div>
+									<div class="item-day" >
+													27											</div>
+									<div class="item-day" >
+													28											</div>
+									<div class="item-day" >
+													29											</div>
+									<div class="item-day" >
+													30											</div>
+									<div class="item-day" >
+													31											</div>
+									<div class="item-day empty"></div>
+									<div class="item-day empty"></div>
+									<div class="item-day empty"></div>
+									<div class="item-day empty"></div>
+									<div class="item-day empty"></div>
+						</div>
+
+				<!-- Zoom item -->
+		<div class="item-preview-calendar other_event">
+			<div class="flexslider item-preview-calendar-slider">
+				<ul class="slides">
+										<li data-id="433042">
+						<a href="http://www.eglise.catholique.fr/actualites/agenda/433042-conference-sur-lexhortation-apostolique-amoris-laetitia-par-mgr-de-germay/" class="item-preview-link">
+							<div class="item-preview-date"><time  datetime="2017-01-18">Le 18 janvier 2017</time></div>
+							<p class="item-preview-excerpt">Conférence sur l’Exhortation apostolique “Amoris Laetitia” par Mgr de Germay</p>
+							<p class="item-preview-excerpt"><strong>Voir l'évènement</strong>&nbsp;<span class="icon-arrow-right3"></span></p>
+						</a>
+					</li>
+									</ul>
+			</div>
+			<a href="#" class="item-preview-calendar-close"><span aria-hidden="true" class="icon-close"></span>Fermer</a>
+		</div>
+			</div>
+			<div class="bloc-more">
+		<a href="http://www.eglise.catholique.fr/actualites/agenda/" class="bloc-more-btn">Voir tout l&#039;agenda<span class="bloc-more-btn_icon icon-arrow-right3"></span></a>
+	</div>
+	</div></div></div></div>
+</div>
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<script type="text/javascript" src="http://www.familiam.org/pcpf/s2magazine/moduli/WIDGET_PAGINE/index.jsp?res=240x300&id_lingua=4"></script>
+		</div>
+	</div>
+</div></div></div>
+				</section>
+			</article>
+				<!-- Related content tabs -->
+							</div><!-- End Main content wrapper -->
+					</div><!-- End Main content -->
+				</div><!-- End Content Page -->
+			</div><!-- End Content wrapper -->
+		</div><!-- End Content -->
+		<footer id="footer">
+			<div id="footer-partner">
+	<div class="wrapper">
+		<div id="footer-partner-slider">
+			<div class="flexslider">
+				<ul class="slides">
+									<li class="footer-partner-item">
+						<a class="footer-partner-link" href="http://www.comece.eu">
+							<img width="68" height="68" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2014/06/logo_COMECE/2481670583.jpg" class="attachment-68x68x1" alt="logo_COMECE" />							<h4 class="footer-partner-title">COMECE</h4>
+						</a>
+					</li>
+									<li class="footer-partner-item">
+						<a class="footer-partner-link" href="http://www.corref.fr">
+							<img width="68" height="68" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2014/06/logo_CORREF/2516753730.jpg" class="attachment-68x68x1" alt="logo_CORREF" />							<h4 class="footer-partner-title">Conférence des religieux et religieuses de France</h4>
+						</a>
+					</li>
+									<li class="footer-partner-item">
+						<a class="footer-partner-link" href="http://www.vatican.va">
+							<img width="68" height="68" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2014/06/logo_Vatican/174332220.jpg" class="attachment-68x68x1" alt="logo_Vatican" />							<h4 class="footer-partner-title">Vatican</h4>
+						</a>
+					</li>
+									<li class="footer-partner-item">
+						<a class="footer-partner-link" href="http://www.ktotv.com">
+							<img width="68" height="68" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2014/06/logo_KTO/1858302701.jpg" class="attachment-68x68x1" alt="logo_KTO" />							<h4 class="footer-partner-title">KTO, télévision catholique</h4>
+						</a>
+					</li>
+									<li class="footer-partner-item">
+						<a class="footer-partner-link" href="http://aelf.org/">
+							<img width="68" height="68" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2016/01/logo_aelf3/246365489.jpg" class="attachment-68x68x1" alt="logo_aelf3" />							<h4 class="footer-partner-title">Association épiscopale liturgique pour les pays francophones</h4>
+						</a>
+					</li>
+									<li class="footer-partner-item">
+						<a class="footer-partner-link" href="http://www.ccee.eu">
+							<img width="68" height="68" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2014/07/logo_CCEE/2926353317.jpg" class="attachment-68x68x1" alt="logo CCEE" />							<h4 class="footer-partner-title">Consilium Conferentiarium Episcoporum Europae</h4>
+						</a>
+					</li>
+									<li class="footer-partner-item">
+						<a class="footer-partner-link" href="http://www.msc-assurance.fr/">
+							<img width="68" height="68" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2015/04/Logo_MSC_2014_68/3759497148.jpg" class="attachment-68x68x1" alt="Logo_MSC_2014_68" />							<h4 class="footer-partner-title">Mutuelle Saint-Christophe</h4>
+						</a>
+					</li>
+									<li class="footer-partner-item">
+						<a class="footer-partner-link" href="http://www.instituts-seculiers.cef.fr">
+							<img width="68" height="68" src="http://www.eglise.catholique.fr/wp-content/uploads/sites/2/cache/2014/06/logo_CNISF/303358195.jpg" class="attachment-68x68x1" alt="logo_CNISF" />							<h4 class="footer-partner-title">Conférence nationale des instituts séculiers de France</h4>
+						</a>
+					</li>
+								</ul>
+			</div>
+		</div>
+	</div>
+</div>
+			<div id="footer-menu">
+				<div class="wrapper">
+										<h3 id="footer-menu-title"><span>Église catholique en France</span></h3>
+					<nav class="menu-menu-bas-de-page-container"><ul id="footer-menu-list" class="menu"><li id="menu-item-375574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-375574"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/">Conférence des évêques de France</a>
+<ul class="sub-menu">
+	<li id="menu-item-375583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375583"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/cef/">Mieux connaître la CEF</a></li>
+	<li id="menu-item-375582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375582"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/guide-de-leglise/">Guide de l&rsquo;Eglise</a></li>
+	<li id="menu-item-375584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375584"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/textes-et-declarations/">Textes et déclarations</a></li>
+	<li id="menu-item-377127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377127"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/nominations/">Nominations</a></li>
+	<li id="menu-item-375585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375585"><a href="http://www.eglise.catholique.fr/conference-des-eveques-de-france/sommaire-des-publications/">Publications</a></li>
+	<li id="menu-item-419421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419421"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/lutter-contre-la-pedophilie/">Lutter contre la pédophilie</a></li>
+</ul>
+</li>
+<li id="menu-item-375575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-375575"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/">Approfondir sa foi</a>
+<ul class="sub-menu">
+	<li id="menu-item-375589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375589"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/connaitre-et-aimer-dieu/">Connaître et aimer Dieu</a></li>
+	<li id="menu-item-375590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375590"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/vivre-sa-foi-a-tous-les-ages/">Vivre sa foi</a></li>
+	<li id="menu-item-377129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377129"><a href="http://www.eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/">Célébrer</a></li>
+</ul>
+</li>
+<li id="menu-item-375576" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-375576"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/">S&rsquo;engager dans la société</a>
+<ul class="sub-menu">
+	<li id="menu-item-377134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377134"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/economie/">Economie</a></li>
+	<li id="menu-item-377135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377135"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/leurope/">Europe</a></li>
+	<li id="menu-item-377130" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-358408 current_page_item menu-item-377130"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/">Famille</a></li>
+	<li id="menu-item-377132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377132"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/laicite/">Laïcité</a></li>
+	<li id="menu-item-377137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377137"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/eglise-medias/">Eglise et medias</a></li>
+	<li id="menu-item-377133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377133"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/patrimoine-et-art-sacre/">Patrimoine</a></li>
+	<li id="menu-item-377136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377136"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/sante/">Santé</a></li>
+	<li id="menu-item-377131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377131"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/science-et-ethique/">Science et Ethique</a></li>
+</ul>
+</li>
+<li id="menu-item-375577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-375577"><a href="http://www.eglise.catholique.fr/actualites/">Actualité de l’Église</a>
+<ul class="sub-menu">
+	<li id="menu-item-375586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375586"><a href="http://www.eglise.catholique.fr/sengager-dans-la-societe/la-famille/dossiers/">Dossiers</a></li>
+	<li id="menu-item-375588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375588"><a href="http://www.eglise.catholique.fr/actualites/lettre-dinformation/">Lettre d&rsquo;information</a></li>
+</ul>
+</li>
+<li id="menu-item-375591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-375591"><a href="http://www.eglise.catholique.fr/flux-rss/">Flux RSS</a>
+<ul class="sub-menu">
+	<li id="menu-item-375579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375579"><a href="http://www.eglise.catholique.fr/espace-presse/">Espace Presse</a></li>
+	<li id="menu-item-375580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375580"><a href="http://www.eglise.catholique.fr/contact/">Contactez-nous</a></li>
+	<li id="menu-item-375581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375581"><a href="http://www.eglise.catholique.fr/mentions-legales/">Mentions légales</a></li>
+	<li id="menu-item-379803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-379803"><a href="http://www.eglise.catholique.fr/propos/">À propos</a></li>
+</ul>
+</li>
+</ul></nav>				</div>
+			</div>
+
+			<div id="footer-content">
+	<div class="wrapper">
+							<div class="footer-content-box" >
+				<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=169837426382293&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like-box" data-href="https://www.facebook.com/eglise.catholique.fr" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>			</div>
+					<div class="footer-content-box" >
+				<p style="text-align: center">© Église catholique en France<br />
+Édité par la Conférence des évêques de France</p>			</div>
+					<div class="footer-content-box" >
+				<a class="twitter-follow-button"
+  href="https://twitter.com/Eglisecatho"
+  data-show-count="true"
+  data-lang="fr"
+  data-width="400px"
+  data-align="left">
+Suivre @Eglisecatho
+</a>
+<script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>			</div>
+			</div>
+</div>		</footer>
+		<!-- Browser Rejector Reject Hook -->
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$.reject({
+		reject: {
+			safari2: true, // Apple Safari 
+			safari3: true, 
+			safari4: false, 
+			safari: false,
+			chrome1: true, // Google Chrome (very old)
+			chrome2: true,
+			chrome3: true,
+			chrome: false,
+			firefox1: true, // Mozilla Firefox
+			firefox2: true,
+			firefox3: true,
+			firefox: false,
+			msie5: true, // Microsoft Internet Explorer
+			msie6: true,
+			msie7: true,
+			msie8: true,
+			msie: false,
+			opera7: true, // Opera
+			opera8: true,
+			opera9: true,
+			opera10: true,
+			opera: false,
+			konqueror1: true, // Konqueror (Linux) - not included in plugin options for simplicity
+			konqueror2: true,
+			konqueror3: true,
+						unknown: false // Everything else
+		},
+		header: "Savez-vous que votre navigateur Internet n'est plus à jour ?", // header
+		paragraph1: "Votre navigateur n'est pas à jour et ne peut être en mesure d'afficher correctement le site de <b>l'Eglise catholique en France</b>", // Paragraph 1
+		paragraph2: "<br />", // Paragraph 2
+		close: true,
+		closeLink: "<br /><b>Fermer</b>", // Close link text
+		closeMessage: "En fermant cette fenêtre, vous reconnaissez que votre expérience et la navigation sur ce site ne sera pas optimale.", // Message below close window link
+		closeCookie: false, // Set cookie to remmember close for this session
+		display: ['chrome','gcf','msie','firefox','opera','safari'], //turns out ie9+ beats firefox in capabilities and overall features, so suggest it first; safari after Opera because of it's highly minimal OS support (latest OSX only)
+		browserInfo: { // Settings for which browsers to display
+			firefox: {
+				text: 'Firefox ' + '19', // Text below the icon  
+				url: 'http://www.mozilla.org/firefox/new' // URL For icon/text link  
+			},
+			safari: {
+				text: 'Safari ' + '6',  
+				url: 'http://www.apple.com/safari/'
+			},
+			opera: {
+				text: 'Opera ' + '12',  
+				url: 'http://www.opera.com/download/'  
+			},
+			chrome: {
+				text: 'Chrome ' + '25',  
+				url: 'http://www.google.com/chrome/'
+			},  
+			msie: {
+				text: 'Internet Explorer <b style="color: #00f; background-color: #fff;">' + '10' + '</b>',  
+				url: 'http://www.microsoft.com/windows/internet-explorer/'
+			},
+			gcf: {
+				text: "Google Chrome Frame <i>(doesn't require admin)</i>",
+				url: 'http://google.com/chromeframe/',
+				// This browser option will only be displayed for MSIE
+				allow: { all: false, msie: true }
+			}
+		},
+		imagePath: 'http://www.eglise.catholique.fr/wp-content/plugins/browser-rejector/browsers/'
+	});	
+});
+</script>
+<script type="text/html" id="tpl-watermark" >
+    <div class="img-watermark-holder">
+        <div class="img-watermark"><div class="img-watermark-txt"><%- watermark %></div><span class="img-watermark-icon">i</span></div>
+    </div>
+</script>	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<link rel='stylesheet' id='templatera_inline-css'  href='http://www.eglise.catholique.fr/wp-content/plugins/templatera/assets/css/front_style.css?ver=2.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-includes/js/hoverIntent.js?ver=1.8.1'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/plugins/wip-mega-menu/assets/js/idangerous.swiper.js?ver=2.0'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/plugins/wip-mega-menu/assets/js/idangerous.swiper.3dflow-2.0.js?ver=2.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var megamenu_var = {"nav_id":"megamenu-parent"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/plugins/wip-mega-menu/assets/js/wip-megamenu.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/themes/cef-master/assets/js/fix-rotate.js?ver=1'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-includes/js/underscore.min.js?ver=1.6.0'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/themes/cef-master/assets/js/vendor.min.js?ver=1'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/themes/cef-master/assets/js/scripts-domready.js?ver=1'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/plugins/appbanners/lib/smartbanner/jquery.smartbanner.min.js?ver=4.2.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var appBannersConfig = {"title":"eglise.catholique.fr","author":"","price":"","appStoreLanguage":"US","inAppStore":"On the App Store","inGooglePlay":"In Google Play","inAmazonAppStore":"In the Amazon Appstore","inWindowsStore":"In the Windows Store","GooglePlayParams":null,"icon":"","iconGloss":"false","url":"","button":"","scale":"auto","speedIn":"300","speedOut":"400","daysHidden":"0","daysReminder":"0","force":null,"hideOnInstall":"1","layer":"","iOSUniversalApp":"1","appendToSelector":"body","printViewPort":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/plugins/appbanners/js/config.min.js?ver=4.2.10'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/plugins/bea-watermark/assets/js/front.js?ver=0.1'></script>
+<script type='text/javascript' src='http://www.eglise.catholique.fr/wp-content/plugins/js_composer/assets/js/js_composer_front.js?ver=4.8.0.1'></script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8bea33e131","applicationID":"15528132","transactionName":"YAQBZ0pWDEVXVBBdXVlOIlBMXg1YGUcFU1c=","queueTime":0,"applicationTime":1958,"atts":"TEMCEQJMH0s=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

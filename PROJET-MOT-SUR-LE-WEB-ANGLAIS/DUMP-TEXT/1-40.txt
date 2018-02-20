@@ -1,0 +1,603 @@
+   Quantcast "), a = o + r; try { var i = n.contentDocument ||
+   n.contentWindow.document; i.open("text/html", "replace"); i.write(a) }
+   catch (c) {} } }; r(function() { window.sovrn.auction.sendBeacon() });
+   var reg = new RegExp("MSIE ([0-9]+[\\.0-9]*)");
+   reg.exec(navigator.userAgent) ? 10 === parseInt(RegExp.$1) &&
+   (window.onload = function() { window.sovrn.auction.sendContainer() }) :
+   window.onload = function() { window.sovrn.auction.sendContainer() };
+   //]]>
+
+   IFRAME: //www.googletagmanager.com/ns.html?id=GTM-TLFP4R
+
+   (BUTTON) continue to article
+     *
+     * News
+          + All Local News
+          + Search
+          + Last 36 hours
+          + Nation + World
+          + Environment
+          + Politics
+          + Justice
+          + Polygamy
+          + Health Care
+          + Education
+          + Weather
+          + Utah's Right
+          + Elevate
+          + Empower Utah
+          + Legal Notices
+     * Sports
+          + Utah Jazz
+          + RSL
+          + Utah Utes
+          + BYU Cougars
+          + USU Aggies
+          + WSU Wildcats
+          + Preps
+          + Grizzlies
+          + Bees
+          + Outdoors
+          + Winter Sports
+     * College
+     * Monson
+     * Kragthorpe
+     * All-time BYU football stats
+     * All-time Utes football stats
+
+     Blogs
+     * The Utah Effect
+     * Politics
+     * UPIN
+     * The Cricket
+     * TV
+     * Jazz Notes
+     * U of U Sports
+     * BYU Sports
+     * Prep Sports
+     * RSL
+     * Hiking
+     * Outdoors & Travel
+     * Sundance
+     * More Blogs
+
+     Opinion
+     * Editorials
+     * Commentary
+     * Letters
+     * Bagley Cartoon
+     * Gehrke
+     * Rolly
+     * Cannon
+     * Kirby
+     * Blog: State of the Debate
+     * Submit a Letter
+
+     Faith
+     * Religion news
+     * LDS Church
+     * Faith Blog
+
+     Entertainment
+     * Calendar
+     * Film-Finder
+     * Movies
+     * Restaurants
+     * Lifestyle
+     * Arts
+     * Food
+     * Music
+     * TV
+     * Sundance
+     * Shopping
+     * Puzzles & Games
+     * Comics
+     * Horoscopes
+
+     Cool Stuff
+     * The Legacy of Joe Hill
+     * I Love videos
+     * Whatever Happened To...
+     * Special Reports
+     * Videos
+     * Photo Galleries
+     * Utah Bucket List
+     * Mormon Rivals
+     * Preparing to play
+     * Paul Rolly Roast
+
+     Money
+     * Top Workplaces
+     * The Realty Show
+     * Home Prices
+
+     Obituaries
+
+     Jobs
+     * Top Employer
+     * Top Educator
+     * Top Jobs
+     * Employment News
+     * Employers Post A Job
+     * Contact Us
+
+     Homes
+     * Find a Home
+     * Find a Realtor
+     * Rentals
+
+     Cars
+     * Find a car
+     * Browse
+     * Dealers
+     * Fuel Stop
+
+     Top Workplaces
+     * Top Workplaces
+
+     Subscribe
+     *    Print
+     * New Subscription
+     * Register for e-Edition
+     * Access your e-Edition
+     * Print Registration
+     * Print Login
+     *    sltrib.com Membership
+     * Become a Supporting Member
+     * Premium Ad-Free Site Login
+     * Account Login
+     * Member FAQ
+     *
+
+   (BUTTON) Toggle navigation The Salt Lake Tribune
+     *
+     * News
+          + All Local News
+          + Search
+          + Last 36 hours
+          + Nation + World
+          + Environment
+          + Politics
+          + Justice
+          + Polygamy
+          + Health Care
+          + Education
+          + Weather
+          + Utah's Right
+          + Elevate
+          + Empower Utah
+          + Legal Notices
+          +    SPONSORED BY:
+          +
+     * Sports
+          + Utah Jazz
+          + RSL
+          + Utah Utes
+          + BYU Cougars
+          + USU Aggies
+          + WSU Wildcats
+          + Preps
+          + Grizzlies
+          + Bees
+          + Outdoors
+          + Winter Sports
+     * College
+     * Monson
+     * Kragthorpe
+     * All-time BYU football stats
+     * All-time Utes football stats
+
+     Blogs
+     * The Utah Effect
+     * Politics
+     * UPIN
+     * The Cricket
+     * TV
+     * Jazz Notes
+     * U of U Sports
+     * BYU Sports
+     * Prep Sports
+     * RSL
+     * Hiking
+     * Outdoors & Travel
+     * Sundance
+     * More Blogs
+
+     Opinion
+     * Editorials
+     * Commentary
+     * Letters
+     * Bagley Cartoon
+     * Gehrke
+     * Rolly
+     * Cannon
+     * Kirby
+     * Blog: State of the Debate
+     * Submit a Letter
+
+     Faith
+     * Religion news
+     * LDS Church
+     * Faith Blog
+
+     Entertainment
+     * Sundance
+     * Calendar
+     * Film-Finder
+     * Movies
+     * Restaurants
+     * Lifestyle
+     * Arts
+     * Food
+     * Music
+     * TV
+     * Shopping
+     * Puzzles & Games
+     * Comics
+     * Horoscopes
+     *    SPONSORED BY:
+     *
+
+     Cool Stuff
+     * The Legacy of Joe Hill
+     * I Love videos
+     * Whatever Happened To...
+     * Special Reports
+     * Videos
+     * Photo Galleries
+     * Utah Bucket List
+     * Mormon Rivals
+     * Preparing to play
+     * Paul Rolly Roast
+
+     Money
+     * Top Workplaces
+     * The Realty Show
+     * Home Prices
+
+     Obituaries
+
+     Jobs
+     * Top Employer
+     * Top Educator
+     * Top Jobs
+     * Employment News
+     * Employers Post A Job
+     * Contact Us
+     *    SPONSORED BY:
+     *
+
+     Homes
+     * Find a Home
+     * Find a Realtor
+     * Rentals
+
+     Cars
+     * Find a car
+     * Browse
+     * Dealers
+     * Fuel Stop
+     *    SPONSORED BY:
+     *
+
+     Top Workplaces
+
+     Subscribe
+     *    Print
+     * New Subscription
+     * Register for e-Edition
+     * Access your e-Edition
+     * Print Registration
+     * Print Login
+     *    sltrib.com Membership
+     * Become a Supporting Member
+     * Premium Ad-Free Site Login
+     * Account Login
+     * Member FAQ
+
+   Home » News
+   Overcast
+   Salt Lake City 30 °
+   Traffic / Ski Report
+   Stories from last 36 hours
+   The Salt Lake Tribune
+   WWW.SLTRIB.COM
+   JAN 24, 2017
+   Become a Member | Ad-Free Login
+   ____________________ (BUTTON)
+   Home » News
+   The Salt Lake Tribune JAN 24, 2017  |  Salt Lake City 30 °  |  Traffic
+   / Ski Report
+   Stories from last 36 hours
+   Become a Member | Ad-Free Login
+   ____________________ (BUTTON)
+   Home » News
+   Become a Member | Ad-Free Login
+   ____________________ (BUTTON)
+
+Video: Utah protest targets World Congress of Families’ definition of family
+
+   By PAMELA MANSON | The Salt Lake Tribune connect
+   First Published Oct 29 2015 09:45PM    •    Last Updated Apr 30 2016
+   05:09 pm
+     __________________________________________________________________
+
+   Please enable Javascript to watch this video
+     __________________________________________________________________
+
+   Protesters say the group spreads a message of exclusion and
+   divisiveness.
+   Facebook Twitter Google+ Pinterest Email Print
+   Share This Article
+   ARTICLE PHOTO GALLERY (10)
+   gallery thumbnail
+   gallery thumbnail
+   gallery thumbnail
+   gallery thumbnail
+   gallery thumbnail
+   gallery thumbnail
+   gallery thumbnail
+   gallery thumbnail
+   gallery thumbnail
+   gallery thumbnail
+
+   IFRAME: pFrame
+
+   About 50 protesters braved the rain Thursday night to demonstrate
+   against the ninth World Congress of Families and its definition of
+   family.
+
+   The demonstrators — who marched outside the Grand America Hotel, where
+   the organization is meeting this week — carried signs that read "WFC
+   Spreads Hate Not Truth," "Love Makes a Family" and "Don't Diss Adoptive
+   Parents."
+
+   The World Congress of Families promotes "the natural family" of a
+   married mother and father and their children, and it says it works to
+   strengthen all families.
+
+   But critics say the organization hurts families and supports laws in
+   other countries that criminalize homosexuality. Restore Our Humanity,
+   which organized Thursday's demonstration, says it strongly opposes the
+   WCF message of exclusion and divisiveness.
+     __________________________________________________________________
+
+   VIDEOS
+   TOP JOBS
+     __________________________________________________________________
+     __________________________________________________________________
+
+   And the Southern Poverty Law Center has declared the World Congress of
+   Families to be a "hate group" for fostering homophobia under the guise
+   of protecting families.
+
+   WCF officials reject the hate-group allegation and say they are "not
+   'anti' anything."
+
+   Demonstrator Mary Vaughan said she is disappointed that some of Utah's
+   leaders, including Gov. Gary Herbert, spoke at the conference.
+
+   Mark Lawrence, director of Restore Our Humanity, which works to further
+   human rights in Utah, also objected to the governor's appearance and
+   said he is going to work against Herbert's re-election.
+
+   Salt Lake County District Attorney Sim Gill, who spoke at the
+   demonstration, questioned how anyone could support the World Congress
+   of Families. He said the group incites the fear of persecution.
+
+   "This is not about family," Gill said. "This is about tearing families
+   apart."
+
+   pmanson@sltrib.com
+
+   Twitter: @PamelaMansonSLC
+
+     __________________________________________________________________
+
+   Facebook Twitter Google+ Pinterest Email Print
+   Share This Article
+   ARTICLE PHOTO GALLERY
+   (Scott Sommerdorf | The Salt Lake Tribune) Salt Lake County District
+   Attorney Sim Gill speaks at a protest outside the Grand America Hotel
+   and prior to a march by LGBT activist and allies, including Jackie
+   Biskupski, and Mark Lawrence, Thursday, October 29, 2015.
+   (Scott Sommerdorf | The Salt Lake Tribune) Jackie Biskupski speaks at a
+   protest outside the Grand America Hotel and prior to a march by LGBT
+   activist and allies, including Salt Lake County District Attorney Sim
+   Gill, and Mark Lawrence, Thursday, October 29, 2015.
+   (Scott Sommerdorf | The Salt Lake Tribune) Restore Our Humanity founder
+   Mark Lawrence speaks at a protest outside the Grand America Hotel and
+   prior to a march by LGBT activist and allies, including Salt Lake
+   County District Attorney Sim Gill, and Jackie Biskupski, Thursday,
+   October 29, 2015.
+   (Scott Sommerdorf | The Salt Lake Tribune) Protestors including Jackie
+   Biskupski and Sim Gill march by the Grand America Hotel as they protest
+   the World Council of Families. Gill, Biskupski and Mark Lawrence spoke
+   prior to the march around the hotel, Thursday, October 29, 2015.
+   (Scott Sommerdorf | The Salt Lake Tribune) Protestors march by the
+   Grand America Hotel as they protest the World Council of Families.
+   Jackie Biskupski, Sim Gill, and Mark Lawrence spoke prior to the march
+   around the hotel, Thursday, October 29, 2015.
+   (Scott Sommerdorf | The Salt Lake Tribune) Protestors march by the
+   Grand America Hotel as they protest the World Council of Families.
+   Jackie Biskupski, Sim Gill, and Mark Lawrence spoke prior to the march
+   around the hotel, Thursday, October 29, 2015.
+   (Scott Sommerdorf | The Salt Lake Tribune) Jackie Biskupski, Sim Gill,
+   and Mark Lawrence speak during a march around the Grand America Hotel,
+   Thursday, October 29, 2015.
+   (Scott Sommerdorf | The Salt Lake Tribune) Mayoral candidate Jackie
+   Biskupski pauses to encourage protestors as she leaves a march by LGBT
+   activists and allies, as she is about to cross State Street near the
+   City and County Building, Thursday, October 29, 2015.
+   (Scott Sommerdorf | The Salt Lake Tribune) Mayoral candidate Jackie
+   Biskupski crosses State Street near the City and County Building, after
+   walking with protestors and speaking at a rally and march by LGBT
+   activists and allies, Thursday, October 29, 2015.
+   10 photos VIEW PHOTO GALLERY
+   comment bubble JOIN THE DISCUSSION
+       Post a Comment
+   POPULAR STORIES
+     * 'We raised our voices here': Massive women's march headlines Utah
+       Legislature's opening day
+     * Rolly: What do Chaffetz and a disgraced deputy fuhrer have in
+       common? Think suck-up, not Nazi
+     * New legacy trust means Utah Jazz are here to stay, says Gail Miller
+     * Reid: No group is harder on me than fellow Mormons
+     * Utah man sent to prison for torturing, killing cats
+
+   ELEVATE
+     * Professional-in-Residence Jim Mortensen Prepares Students to Become
+       Top Advisors   Sponsored article
+     * Sponsored image 3 Unforgettable Date Night Ideas   Sponsored
+       article
+     * Sponsored image Ririe-Woodbury to Perform ‘Wiggle-Friendly’ Family
+       Matinée as Part of its Winter Season   Sponsored article
+
+   Contests and Promotions
+
+                             TV Weekly Magazine
+
+   COMMENTS
+   POST A COMMENT      ()
+
+   The Salt Lake Tribune
+   News
+     * All Local News
+     * Search
+     * Last 36 hours
+     * Nation + World
+     * RSS
+     * Twitter
+     * Environment
+     * Politics
+     * Justice
+     * Polygamy
+     * Education
+     * Weather
+     * Utah's Right
+     * Elevate
+     * Empower Utah
+
+   Cool Stuff
+     * The Legacy of Joe Hill
+     * I Love videos
+     * Whatever Happened To...
+     * Special Reports
+     * Videos
+     * Photo Galleries
+     * Utah Bucket List
+     * Mormon Rivals
+     * Preparing to play
+
+   Sports
+     * All Sports
+     * Olympics
+     * TribPreps
+     * Utah Jazz
+     * Utah Utes
+     * BYU Cougars
+     * USU Aggies
+     * WSU Wildcats
+     * College
+     * RSL
+     * Grizzlies
+     * Bees
+     * Winter Sports
+     * Outdoors
+     * Gordon Monson
+     * Kurt Kragthorpe
+     *
+     *
+     * All-time BYU football stats
+     * All-time Utes football stats
+
+   Money
+     * All Money
+     * Top Workplaces
+     * Home Prices
+
+   Blogs
+     * All Blogs
+     * Politics
+     * The Cricket
+     * TV
+     * Jazz Notes
+     * U of U Sports
+     * BYU Sports
+     * Prep Sports
+     * RSL
+     * Hiking
+     * Sundance
+
+   Opinion
+     * All Opinion
+     * Editorials
+     * Commentary
+     * Letters
+     * Bagley Cartoons
+     * Gehrke
+     * Rolly
+     * Cannon
+     * Kirby
+     * Submit a Letter
+
+   Faith
+     * All Faith
+     * LDS Church
+     * Religion news
+     * Faith Blog
+
+   Entertainment
+     * All Entertainment
+     * Calendar
+     * Film-Finder
+     * Movies
+     * Restaurants
+     * Lifestyle
+     * Arts
+     * Food
+     * Music
+     * TV
+     * Sundance
+     * Shopping
+     * Puzzles & Games
+     * Comics
+     * Horoscopes
+
+   Membership
+     * Ad-Free Site Login
+     * Become a Member
+     * Account Login
+     * Member FAQ
+
+   Obituaries
+     * Search Obituaries
+     * Place an Obituary
+
+   Marketplace
+     * Search Cars
+     * Search Homes
+     * Search Jobs
+     * Search Marketplace
+     * Legal Notices
+
+   Other Services
+     * Advertise With Us
+     * Subscribe to the Newspaper
+     * Access your e-Edition
+     * Frequently Asked Questions
+     *
+     *
+     * Contact a newsroom staff member
+     *
+     * Access the Trib Archives
+     * Privacy Policy
+
+   Missing your paper? Need to place your paper on vacation hold? For this
+   and any other subscription related needs, click here or call
+   801.204.6100
+   Copyright @ 2017, The Salt Lake Tribune
+
+   IFRAME: //s.thebrighttag.com/iframe?c=6EeDEhH
+
+   Circulars tab

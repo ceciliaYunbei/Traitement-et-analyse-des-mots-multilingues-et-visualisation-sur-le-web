@@ -1,0 +1,981 @@
+   
+ 
+ 			<div id="searchcontrol" style="display:none;"></div>
+			<script src="http://www.google.com/jsapi?key=ABQIAAAAvsgivNpvMK_nckNGGhf7_BSc38fuRaMkBwHEb-ji-IXYL4YQDhSxVR010vsEzM4CEwmGPkdT2Y6K3A" type="text/javascript"></script>
+			<script type="text/javascript">
+			    //<![CDATA[
+			    
+			    google.load("search", "1");
+			    
+			    var global_motCle 		= "définition famille";
+				//alert(global_motCle);
+			    var global_centerPoint 	= "Paris, France";
+				
+				// --------------------------------------------------
+				// recherche sur Google Web !!!
+				// --------------------------------------------------
+				function googleOnLoad_webSearch() {
+					// Create a search control
+					var searchControl = new google.search.SearchControl();
+			       searchControl.setResultSetSize(GSearch.LARGE_RESULTSET );
+					
+					// Add in a full set of searchers
+					var localSearch = new google.search.LocalSearch();
+					searchControl.addSearcher(new google.search.WebSearch());
+					      
+					
+					// Set the Local Search center point
+					localSearch.setCenterPoint(global_centerPoint);
+					
+					// Tell the searcher to draw itself and tell it where to attach
+					searchControl.draw(document.getElementById("searchcontrol"));
+										
+					// Execute an inital search
+					searchControl.execute(global_motCle);
+					
+					// callback
+					searchControl.setSearchCompleteCallback("", donneesCharger);	
+					function donneesCharger(o_searchControl, o_searcher){
+						var html = $("#searchcontrol").html();	    	
+						
+						/*
+							// permet d'afficher l'arbre HTML pour pouvoir l'analyser
+							
+						var htmlAvecEntite = HTMLentities(html);
+						reg = new RegExp("(&gt;)", "g");
+						htmlAvecEntite_modifier = htmlAvecEntite.replace(reg, "><br \/>");
+						$("#divAfficherHtml").html(htmlAvecEntite_modifier);
+						*/
+						
+						var urlPourAjax = "";
+						
+						// title
+						var t_title = $(".gs-webResult div.gs-title a.gs-title");
+						var title = "";
+						for(var i=0; i<t_title.length; i++){
+							title = $(t_title[i]).html();
+							//alert("title => \n\n"+title);
+							urlPourAjax += "&title[]="+encodeURIComponent(title);
+						}
+						
+						// lien
+						var t_link = $(".gs-webResult div.gs-title a.gs-title");
+						var link = "";
+						for(var i=0; i<t_link.length; i++){
+							link = $(t_link[i]).attr("href");
+							//alert("link => \n\n"+link);
+							urlPourAjax += "&link[]="+encodeURIComponent(link);
+						}
+						
+						// snippet
+						var t_snippet = $(".gs-webResult .gs-snippet");
+						var snippet = "";
+						for(var i=0; i<t_snippet.length; i++){
+							snippet = $(t_snippet[i]).html();
+							//alert("snippet => \n\n"+snippet);
+							urlPourAjax += "&snippet[]="+encodeURIComponent(snippet);
+						}
+						
+						var autreVariable = "";
+						autreVariable += "idSens="+encodeURIComponent("127740");
+						urlPourAjax = autreVariable + urlPourAjax;
+						//alert("urlPourAjax => \n\n"+urlPourAjax);
+						$.ajax({type:"POST",url:"../urlGoogleInsertBdd.php",data:urlPourAjax,success:function(msg){recevoirDonneesAjax(msg)}});
+						function recevoirDonneesAjax(msg){
+							//alert(msg);	
+						}
+							
+					}	
+				}
+				
+				// --------------------------------------------------
+				//
+				// --------------------------------------------------
+				function googleOnLoad_videoSearch() {
+					// Create a search control
+					var searchControl = new google.search.SearchControl();
+					
+					// Add in a full set of searchers
+					var localSearch = new google.search.LocalSearch();
+					searchControl.addSearcher(new google.search.VideoSearch());
+					
+					// Set the Local Search center point
+					localSearch.setCenterPoint(global_centerPoint);
+					
+					// Tell the searcher to draw itself and tell it where to attach
+					searchControl.draw(document.getElementById("searchcontrol"));
+					
+					// Execute an inital search
+					searchControl.execute(global_motCle);		
+				}
+				
+				// --------------------------------------------------
+				//
+				// --------------------------------------------------
+				function googleOnLoad_blogSearch() {
+					// Create a search control
+					var searchControl = new google.search.SearchControl();
+					
+					// Add in a full set of searchers
+					var localSearch = new google.search.LocalSearch();
+					searchControl.addSearcher(new google.search.BlogSearch());
+					
+					// Set the Local Search center point
+					localSearch.setCenterPoint(global_centerPoint);
+					
+					// Tell the searcher to draw itself and tell it where to attach
+					searchControl.draw(document.getElementById("searchcontrol"));
+					
+					// Execute an inital search
+					searchControl.execute(global_motCle);		
+				}
+				
+				// --------------------------------------------------
+				//
+				// --------------------------------------------------
+				function googleOnLoad_newsSearch() {
+					// Create a search control
+					var searchControl = new google.search.SearchControl();
+					
+					// Add in a full set of searchers
+					var localSearch = new google.search.LocalSearch();
+					searchControl.addSearcher(new google.search.NewsSearch());
+					
+					// Set the Local Search center point
+					localSearch.setCenterPoint(global_centerPoint);
+					
+					// Tell the searcher to draw itself and tell it where to attach
+					searchControl.draw(document.getElementById("searchcontrol"));
+					
+					// Execute an inital search
+					searchControl.execute(global_motCle);		
+				}
+				
+				// --------------------------------------------------
+				//
+				// --------------------------------------------------
+				function googleOnLoad_imageSearch() {
+					// Create a search control
+					var searchControl = new google.search.SearchControl();
+					
+					// Add in a full set of searchers
+					var localSearch = new google.search.LocalSearch();
+					searchControl.addSearcher(new google.search.ImageSearch());
+					
+					// Set the Local Search center point
+					localSearch.setCenterPoint(global_centerPoint);
+					
+					// Tell the searcher to draw itself and tell it where to attach
+					searchControl.draw(document.getElementById("searchcontrol"));
+					
+					// Execute an inital search
+					searchControl.execute(global_motCle);		
+				}
+				
+				// --------------------------------------------------
+				//
+				// --------------------------------------------------
+				function googleOnLoad_bookSearch() {
+					// Create a search control
+					var searchControl = new google.search.SearchControl();
+					
+					// Add in a full set of searchers
+					var localSearch = new google.search.LocalSearch();
+					searchControl.addSearcher(new google.search.BookSearch());
+					
+					// Set the Local Search center point
+					localSearch.setCenterPoint(global_centerPoint);
+					
+					// Tell the searcher to draw itself and tell it where to attach
+					searchControl.draw(document.getElementById("searchcontrol"));
+					
+					// Execute an inital search
+					searchControl.execute(global_motCle);		
+				}
+				
+			    google.setOnLoadCallback(googleOnLoad_webSearch);
+			    //google.setOnLoadCallback(googleOnLoad_videoSearch);
+			    //google.setOnLoadCallback(googleOnLoad_blogSearch);
+			    //google.setOnLoadCallback(googleOnLoad_newsSearch);
+			    //google.setOnLoadCallback(googleOnLoad_imageSearch);
+			    //google.setOnLoadCallback(googleOnLoad_bookSearch);
+			    
+			    function HTMLentities(texte) 
+				{
+					texte = texte.replace(/&/g,'&amp;'); // 38 26 // on doit toujours mettre celui-la en premier
+					texte = texte.replace(/"/g,'&quot;'); // 34 22
+					texte = texte.replace(/\'/g,'&#39;'); // 39 27
+					texte = texte.replace(/</g,'&lt;'); // 60 3C
+					texte = texte.replace(/>/g,'&gt;'); // 62 3E
+					texte = texte.replace(/\^/g,'&circ;'); // 94 5E
+					texte = texte.replace(/‘/g,'&lsquo;'); // 145 91
+					texte = texte.replace(/’/g,'&rsquo;'); // 146 92
+					texte = texte.replace(/“/g,'&ldquo;'); // 147 93
+					texte = texte.replace(/”/g,'&rdquo;'); // 148 94
+					texte = texte.replace(/•/g,'&bull;'); // 149 95
+					texte = texte.replace(/–/g,'&ndash;'); // 150 96
+					texte = texte.replace(/—/g,'&mdash;'); // 151 97
+					texte = texte.replace(/˜/g,'&tilde;'); // 152 98
+					texte = texte.replace(/™/g,'&trade;'); // 153 99
+					texte = texte.replace(/š/g,'&scaron;'); // 154 9A
+					texte = texte.replace(/›/g,'&rsaquo;'); // 155 9B
+					texte = texte.replace(/œ/g,'&oelig;'); // 156 9C
+					texte = texte.replace(//g,'&#357;'); // 157 9D
+					texte = texte.replace(/ž/g,'&#382;'); // 158 9E
+					texte = texte.replace(/Ÿ/g,'&Yuml;'); // 159 9F
+					// texte = texte.replace(/ /g,'&nbsp;'); // 160 A0
+					texte = texte.replace(/¡/g,'&iexcl;'); // 161 A1
+					texte = texte.replace(/¢/g,'&cent;'); // 162 A2
+					texte = texte.replace(/£/g,'&pound;'); // 163 A3
+					//texte = texte.replace(/ /g,'&curren;'); // 164 A4
+					texte = texte.replace(/¥/g,'&yen;'); // 165 A5
+					texte = texte.replace(/¦/g,'&brvbar;'); // 166 A6
+					texte = texte.replace(/§/g,'&sect;'); // 167 A7
+					texte = texte.replace(/¨/g,'&uml;'); // 168 A8
+					texte = texte.replace(/©/g,'&copy;'); // 169 A9
+					texte = texte.replace(/ª/g,'&ordf;'); // 170 AA
+					texte = texte.replace(/«/g,'&laquo;'); // 171 AB
+					texte = texte.replace(/¬/g,'&not;'); // 172 AC
+					texte = texte.replace(/­/g,'&shy;'); // 173 AD
+					texte = texte.replace(/®/g,'&reg;'); // 174 AE
+					texte = texte.replace(/¯/g,'&macr;'); // 175 AF
+					texte = texte.replace(/°/g,'&deg;'); // 176 B0
+					texte = texte.replace(/±/g,'&plusmn;'); // 177 B1
+					texte = texte.replace(/²/g,'&sup2;'); // 178 B2
+					texte = texte.replace(/³/g,'&sup3;'); // 179 B3
+					texte = texte.replace(/´/g,'&acute;'); // 180 B4
+					texte = texte.replace(/µ/g,'&micro;'); // 181 B5
+					texte = texte.replace(/¶/g,'&para'); // 182 B6
+					texte = texte.replace(/·/g,'&middot;'); // 183 B7
+					texte = texte.replace(/¸/g,'&cedil;'); // 184 B8
+					texte = texte.replace(/¹/g,'&sup1;'); // 185 B9
+					texte = texte.replace(/º/g,'&ordm;'); // 186 BA
+					texte = texte.replace(/»/g,'&raquo;'); // 187 BB
+					texte = texte.replace(/¼/g,'&frac14;'); // 188 BC
+					texte = texte.replace(/½/g,'&frac12;'); // 189 BD
+					texte = texte.replace(/¾/g,'&frac34;'); // 190 BE
+					texte = texte.replace(/¿/g,'&iquest;'); // 191 BF
+					texte = texte.replace(/À/g,'&Agrave;'); // 192 C0
+					texte = texte.replace(/Á/g,'&Aacute;'); // 193 C1
+					texte = texte.replace(/Â/g,'&Acirc;'); // 194 C2
+					texte = texte.replace(/Ã/g,'&Atilde;'); // 195 C3
+					texte = texte.replace(/Ä/g,'&Auml;'); // 196 C4
+					texte = texte.replace(/Å/g,'&Aring;'); // 197 C5
+					texte = texte.replace(/Æ/g,'&AElig;'); // 198 C6
+					texte = texte.replace(/Ç/g,'&Ccedil;'); // 199 C7
+					texte = texte.replace(/È/g,'&Egrave;'); // 200 C8
+					texte = texte.replace(/É/g,'&Eacute;'); // 201 C9
+					texte = texte.replace(/Ê/g,'&Ecirc;'); // 202 CA
+					texte = texte.replace(/Ë/g,'&Euml;'); // 203 CB
+					texte = texte.replace(/Ì/g,'&Igrave;'); // 204 CC
+					texte = texte.replace(/Í/g,'&Iacute;'); // 205 CD
+					texte = texte.replace(/Î/g,'&Icirc;'); // 206 CE
+					texte = texte.replace(/Ï/g,'&Iuml;'); // 207 CF
+					texte = texte.replace(/Ð/g,'&ETH;'); // 208 D0
+					texte = texte.replace(/Ñ/g,'&Ntilde;'); // 209 D1
+					texte = texte.replace(/Ò/g,'&Ograve;'); // 210 D2
+					texte = texte.replace(/Ó/g,'&Oacute;'); // 211 D3
+					texte = texte.replace(/Ô/g,'&Ocirc;'); // 212 D4
+					texte = texte.replace(/Õ/g,'&Otilde;'); // 213 D5
+					texte = texte.replace(/Ö/g,'&Ouml;'); // 214 D6
+					texte = texte.replace(/×/g,'&times;'); // 215 D7
+					texte = texte.replace(/Ø/g,'&Oslash;'); // 216 D8
+					texte = texte.replace(/Ù/g,'&Ugrave;'); // 217 D9
+					texte = texte.replace(/Ú/g,'&Uacute;'); // 218 DA
+					texte = texte.replace(/Û/g,'&Ucirc;'); // 219 DB
+					texte = texte.replace(/Ü/g,'&Uuml;'); // 220 DC
+					texte = texte.replace(/Ý/g,'&Yacute;'); // 221 DD
+					texte = texte.replace(/Þ/g,'&THORN;'); // 222 DE
+					texte = texte.replace(/ß/g,'&szlig;'); // 223 DF
+					texte = texte.replace(/à/g,'&aacute;'); // 224 E0
+					texte = texte.replace(/á/g,'&aacute;'); // 225 E1
+					texte = texte.replace(/â/g,'&acirc;'); // 226 E2
+					texte = texte.replace(/ã/g,'&atilde;'); // 227 E3
+					texte = texte.replace(/ä/g,'&auml;'); // 228 E4
+					texte = texte.replace(/å/g,'&aring;'); // 229 E5
+					texte = texte.replace(/æ/g,'&aelig;'); // 230 E6
+					texte = texte.replace(/ç/g,'&ccedil;'); // 231 E7
+					texte = texte.replace(/è/g,'&egrave;'); // 232 E8
+					texte = texte.replace(/é/g,'&eacute;'); // 233 E9
+					texte = texte.replace(/ê/g,'&ecirc;'); // 234 EA
+					texte = texte.replace(/ë/g,'&euml;'); // 235 EB
+					texte = texte.replace(/ì/g,'&igrave;'); // 236 EC
+					texte = texte.replace(/í/g,'&iacute;'); // 237 ED
+					texte = texte.replace(/î/g,'&icirc;'); // 238 EE
+					texte = texte.replace(/ï/g,'&iuml;'); // 239 EF
+					texte = texte.replace(/ð/g,'&eth;'); // 240 F0
+					texte = texte.replace(/ñ/g,'&ntilde;'); // 241 F1
+					texte = texte.replace(/ò/g,'&ograve;'); // 242 F2
+					texte = texte.replace(/ó/g,'&oacute;'); // 243 F3
+					texte = texte.replace(/ô/g,'&ocirc;'); // 244 F4
+					texte = texte.replace(/õ/g,'&otilde;'); // 245 F5
+					texte = texte.replace(/ö/g,'&ouml;'); // 246 F6
+					texte = texte.replace(/÷/g,'&divide;'); // 247 F7
+					texte = texte.replace(/ø/g,'&oslash;'); // 248 F8
+					texte = texte.replace(/ù/g,'&ugrave;'); // 249 F9
+					texte = texte.replace(/ú/g,'&uacute;'); // 250 FA
+					texte = texte.replace(/û/g,'&ucirc;'); // 251 FB
+					texte = texte.replace(/ü/g,'&uuml;'); // 252 FC
+					texte = texte.replace(/ý/g,'&yacute;'); // 253 FD
+					texte = texte.replace(/þ/g,'&thorn;'); // 254 FE
+					texte = texte.replace(/ÿ/g,'&yuml;'); // 255 FF
+					return texte;
+				}
+			    //]]>
+			</script>
+			   
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+ 
+<title>FAMILLE : d&eacute;finition du mot 'famille' dans le dictionnaire fran&ccedil;ais - CocoLeDico.com</title> 
+
+<meta name="keywords" lang="fr" content="famille,'famille',definition de famille,definition du mot famille,le mot famille,dictionnaire,dico,dictionnaire francais,dictionnaire fran&ccedil;ais,dico en ligne,le dico,dictionnaire de francais" />
+<meta name="description" content="famille : la d&eacute;finition de 'famille' avec Coco le Dico, le dictionnaire fran&ccedil;ais, en ligne gratuit. En savoir plus sur famille gr&acirc;ce aux sites consacr&eacute;s &agrave; 'famille'." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="fr" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="shortcut icon" href="http://www.cocoledico.com/image/cocoledico.gif">
+
+<meta property="og:type" content="definition"/>
+<meta property="og:url" content="http://www.cocoledico.com/dictionnaire/famille,127740.xhtml"/>
+<meta property="og:site_name" content="Coco Le Dico"/>
+<meta property="og:description" content="Coco vous propose la d&eacute;finition du mot 'famille' ou plut&ocirc;t de nombreuses d&eacute;finitions de ce mot." />
+<meta property="og:image" content="http://www.cocoledico.com/image/coco-le-dico.png"/>
+	 
+<script type="text/javascript" src="/include/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="/include/js/dynatext/dynatext.js.php"></script>
+<script type="text/javascript" src="/include/js/jquery/jquery-1.1.4.pack.js"></script>  
+<style type="text/css">
+*{padding:0px;margin:0px;border:0px;}
+html{}
+body{font-family:arial;background-color:#277007;font-size:13px;background-image:url('/image/bandeauFond.gif');background-repeat:repeat-x;}
+a:link {text-decoration:underline;}
+a:visited{text-decoration:underline;}
+a:hover{text-decoration:underline;}
+a:active{text-decoration:underline;} 
+.selectionner {background-color:#B70004;text-decoration:none;} 
+.selectionner2 {background-color:#FECB00;text-decoration:none;}    
+input {border:1px solid #cccccc;background-color:#ffffff;color:#000000;padding:1px;}  
+input.inputRadio {border:0px solid #000000;width:12px;}   
+textarea {border:1px solid #cccccc;background-color:#ffffff;color:#000000;padding:1px;}  
+p {color:#000000;margin-left:0px;margin-bottom:10px;}   
+dl{display:inline;color:#000000;}
+dt{display:none;}  
+dd{display:inline;}
+table {margin-left:20px;} 
+th {width:140px;color:#B70004;text-align:left;}  
+th a {color:#000000;} 
+td {color:#000000;text-align:left;}         
+td a {color:#000000;} 
+
+#divSite{width:984px;}
+
+#divBandeau{background-image:url('/image/bandeauFond.gif');position:relative;height:150px;padding-top:20px;text-align:left;margin-bottom:0px;}
+ 
+#divBandeau #divBandeau2 {background-image:url('/image/bandeau.gif');position:absolute;top:0px;left:0px;width:984px;height:170px;cursor:pointer;}
+#divBandeau #divRecherche {position:absolute;top:180px;left:240px;background-image:url('/image/fondRechercher.gif');width:496px;height:42px;}
+#divBandeau #divRecherche #inputChercher {margin-left:31px;margin-top:9px;height:19px;width:293px;padding:3px;background-color:transparent;font-size:16px;color:#B70004;font-weight:bold;border:0px solid transparent;}
+#divBandeau #divRecherche #inputChercherBtn {margin-left:32px;width:110px;height:33px;background-color:transparent;font-size:0px;color:transparent;border:0px solid transparent;cursor:pointer;}
+
+#divBody{width:1142px;background-image:url('/image/fondSite3colonne_2.gif');background-repeat:repeat-y;} 
+
+#divColonneGauche{width:185px;float:left;}   
+#divColonneGauche .divBloc .divBlocTitre h2 {width:172px;background-image:url('/image/fondTitreGauche.gif');color:#ffffff;font-size:15px;height:28px;padding-left:10px;padding-top:7px;}                  
+#divColonneGauche .divBloc .divBlocContenu .divParagraphe {width:172px;background-color:#FECB00;color:#B70004;font-size:12px;padding-top:7px;padding-bottom:7px;}   
+#divColonneGauche .divBloc .divBlocContenu .divParagraphe a:link {color:#B70004;text-decoration:none;margin-left:2px;}                                                
+#divColonneGauche .divBloc .divBlocContenu .divParagraphe a:visited {color:#B70004;text-decoration:none;margin-left:2px;}                                                
+#divColonneGauche .divBloc .divBlocContenu .divParagraphe a:hover {color:#B70004;text-decoration:underline;margin-left:2px;}                                                
+#divColonneGauche .divBloc .divBlocContenu .divParagraphe a:active {color:#B70004;text-decoration:none;margin-left:2px;}                                                
+#divColonneGauche .divBloc .divBlocContenu .divParagraphe a:focus {color:#B70004;text-decoration:none;margin-left:2px;} 
+                                                
+#divColonneCentre {width:770px;float:left;padding-top:75px;background-color:#ffffff;overflow:hidden;}  
+#divColonneCentre h1 {height:40px;color:#277007;background-image:url('/image/fondH1.gif');margin-left:20px;margin-right:20px;margin-bottom:10px;}  
+#divColonneCentre h2 {clear:both;font-size:20px;height:32px;color:#277007;background-image:url('/image/fondH2.gif');margin-left:20px;margin-right:20px;margin-bottom:10px;margin-top:20px;} 
+#divColonneCentre h3 {color:#B70004;font-size:16px;font-weight:bold;margin-left:20px;margin-right:20px;margin-bottom:10px;}  
+#divColonneCentre .divColonneCentreBloc .strongDefinition {display:inline;margin-left:20px;}                   
+#divColonneCentre .divColonneCentreBloc .divSource {color:#B70004;margin-left:20px;}                                         
+#divColonneCentre .divColonneCentreBloc .divSource a {color:#B70004;text-decoration:none;}                      
+#divColonneCentre .divColonneCentreBloc .divDernierMaj {color:#277007;font-size:10px;text-align:right;margin-right:20px;position:relative;top:-8px;}   
+#divColonneCentre .divColonneCentreBloc p {margin-left:20px;margin-right:20px;}                           
+#divColonneCentre .divColonneCentreBloc p a:link {color:#000000;text-decoration:underline;}                                                       
+#divColonneCentre .divColonneCentreBloc p a:visited {color:#000000;text-decoration:underline;}                     
+#divColonneCentre .divColonneCentreBloc p a:hover {color:#000000;text-decoration:none;}                     
+#divColonneCentre .divColonneCentreBloc p a:active {color:#000000;text-decoration:underline;}                     
+#divColonneCentre .divColonneCentreBloc p a:focus {color:#000000;text-decoration:none;}
+
+#divColonneDroite{width:184px;float:right;border-left:3px solid #000000;} 
+#divColonneDroite .divBloc .divBlocTitre h2 {width:170px;background-image:url('/image/fondTitreDroite.gif');color:#B70004;font-size:15px;height:28px;padding-left:10px;padding-top:7px;}                  
+#divColonneDroite .divBloc .divBlocTitre h2 a {color:#B70004;text-decoration:none;}     
+#divColonneDroite .divBloc .divBlocContenu {padding-left:5px;}
+#divColonneDroite .divBloc .divBlocContenu .divParagraphe {width:172px;background-color:#277007;color:#FECB00;font-size:12px;padding-top:7px;padding-bottom:7px;}   
+#divColonneDroite .divBloc .divBlocContenu .divParagraphe a:link {color:#FECB00;text-decoration:none;}                                                
+#divColonneDroite .divBloc .divBlocContenu .divParagraphe a:visited {color:#FECB00;text-decoration:none;}                                                
+#divColonneDroite .divBloc .divBlocContenu .divParagraphe a:hover {color:#FECB00;text-decoration:underline;}                                                
+#divColonneDroite .divBloc .divBlocContenu .divParagraphe a:active {color:#FECB00;text-decoration:none;}                                                
+#divColonneDroite .divBloc .divBlocContenu .divParagraphe a:focus {color:#FECB00;text-decoration:none;} 
+
+#divFooter {clear:both;color:#B70004;position:relative;text-align:center;padding-top:50px;background-image:url('/image/fondFooter.gif');background-repeat:no-repeat;background-position:193px 25px;}
+#divFooter #divLien {position:absolute;top:53px;left:380px;}     
+#divFooter #divLien a:link {color:#B70004;text-decoration:none;}                                                
+#divFooter #divLien a:visited {color:#B70004;text-decoration:none;}                                                
+#divFooter #divLien a:hover {color:#B70004;text-decoration:underline;}                                                
+#divFooter #divLien a:active {color:#B70004;text-decoration:none;}                                                
+#divFooter #divLien a:focus {color:#B70004;text-decoration:none;}  
+#divFooter #divPartenaire {position:absolute;top:90px;left:193px;}      
+#divFooter #divPartenaire a:link {color:#277007;text-decoration:none;font-size:10px;}                                                
+#divFooter #divPartenaire a:visited {color:#277007;text-decoration:none;font-size:10px;}                                                
+#divFooter #divPartenaire a:hover {color:#277007;text-decoration:underline;font-size:10px;}                                                
+#divFooter #divPartenaire a:active {color:#277007;text-decoration:none;font-size:10px;}                                                
+#divFooter #divPartenaire a:focus {color:#277007;text-decoration:none;font-size:10px;}  
+
+.pub728x90{width:728px;height:90px;overflow:hidden;background-color:#dddddd;margin-left:20px;margin-bottom:20px;clear:both;}
+</style>	 
+</head>
+<body>
+<div id="divSite"> 
+	<div id="divBandeau">
+	<div>   
+		<div id="divBandeau2" onclick="javascript:document.location.href='http://www.cocoledico.com';"></div> 
+		<div id="divRecherche">
+			<input id="inputChercher" type="text" value="" onfocus="javascript:this.value='';" maxlength="255" /> <input id="inputChercherBtn" type="button" onclick="javascript:validerFormSens();" value="Rechercher" /> 
+			<script type="text/javascript"> 
+			function validerFormSens()
+			{
+				var mot = totalTrim(document.getElementById("inputChercher").value); 
+				if (mot != "")
+				{
+				document.location.href = "/dictionnaire/"+encodeURIComponent(mot)+".xhtml?search=oui";
+				}
+			}  
+			function totalTrim(string) 
+			{ 
+				var theString = string.replace(/(^\s*)|(\s*$)/g,''); 
+				return theString.replace(/(\s)+/g,' '); 
+			} 
+			$('#inputChercher').keydown(function(e) {
+				if(e.keyCode == 13){
+					validerFormSens();
+				}
+			});
+	    	</script>                                                                  
+	    </div> 
+	</div>
+		</div>	<div id="divBody">
+	<div id="divColonneGauche">	  
+		<div class='divBloc'>
+		<div class='divBlocTitre'>
+			<h2>Nature des mots</h2>
+		</div>
+		<div class='divBlocContenu'>
+			<div class='divParagraphe'>
+				        
+				<a href="/dictionnaire-mot/lettre-a.xhtml" title="tous les mot du dictionnaire" >Tous les mots</a><br />  
+				<a href="/dictionnaire-abreviation/lettre-a.xhtml" title="dictionnaire abrevation" >Abr&eacute;viation</a><br /> 
+				<a href="/dictionnaire-adjectif/lettre-a.xhtml" title="dictionnaire adjectif" >Adjectif</a><br />     
+				<a href="/dictionnaire-adverbe/lettre-a.xhtml" title="dictionnaire adverbe" >Adverbe</a><br />
+				<a href="/dictionnaire-conjonction/lettre-a.xhtml" title="dictionnaire conjonction" >Conjonction</a><br />
+				<a href="/dictionnaire-determinant/lettre-a.xhtml" title="dictionnaire determinant" >D&eacute;terminant</a><br />
+				<a href="/dictionnaire-interjection/lettre-a.xhtml" title="dictionnaire interjection" >Interjection</a><br />
+				<a href="/dictionnaire-nom-commun/lettre-a.xhtml" title="dictionnaire nom commun" >Nom commun</a><br />
+				<a href="/dictionnaire-onomatopee/lettre-a.xhtml" title="dictionnaire onomatopee" >Onomatop&eacute;e</a><br />
+				<a href="/dictionnaire-preposition/lettre-a.xhtml" title="dictionnaire preposition" >Pr&eacute;position</a><br />
+				<a href="/dictionnaire-pronom/lettre-a.xhtml" title="dictionnaire pronom" >Pronom</a><br />
+				<a href="/dictionnaire-verbe/lettre-a.xhtml" title="dictionnaire verbe" >Verbe</a><br /> 
+			</div>
+		</div> 
+	</div>
+	     	
+	 
+			<div class='divBloc'>
+			<div class='divBlocTitre'>
+				<h2>Alphabet</h2>
+			</div>
+			<div class='divBlocContenu'> 
+				        
+				<div class='divParagraphe' style="font-size:11px;">						
+					<a href="/dictionnaire-mot/lettre-a.xhtml"  title="lettre alphabet : a">A</a> -  
+					<a href="/dictionnaire-mot/lettre-b.xhtml"  title="lettre alphabet : b">B</a> - 
+					<a href="/dictionnaire-mot/lettre-c.xhtml"  title="lettre alphabet : c">C</a> - 
+					<a href="/dictionnaire-mot/lettre-d.xhtml"  title="lettre alphabet : d">D</a> - 
+					<a href="/dictionnaire-mot/lettre-e.xhtml"  title="lettre alphabet : e">E</a> - 
+					<a href="/dictionnaire-mot/lettre-f.xhtml"  title="lettre alphabet : f">F</a> - 
+					<a href="/dictionnaire-mot/lettre-g.xhtml"  title="lettre alphabet : g">G</a> - 
+					<a href="/dictionnaire-mot/lettre-h.xhtml"  title="lettre alphabet : h">H</a> -
+					<a href="/dictionnaire-mot/lettre-i.xhtml"  title="lettre alphabet : i">I</a><br />
+					<a href="/dictionnaire-mot/lettre-j.xhtml"  title="lettre alphabet : j">J</a> - 
+					<a href="/dictionnaire-mot/lettre-k.xhtml"  title="lettre alphabet : k">K</a> - 
+					<a href="/dictionnaire-mot/lettre-l.xhtml"  title="lettre alphabet : l">L</a> - 
+					<a href="/dictionnaire-mot/lettre-m.xhtml"  title="lettre alphabet : m">M</a> -
+					<a href="/dictionnaire-mot/lettre-n.xhtml"  title="lettre alphabet : n">N</a> - 
+					<a href="/dictionnaire-mot/lettre-o.xhtml"  title="lettre alphabet : o">O</a> - 
+					<a href="/dictionnaire-mot/lettre-p.xhtml"  title="lettre alphabet : p">P</a> - 
+					<a href="/dictionnaire-mot/lettre-q.xhtml"  title="lettre alphabet : q">Q</a> - 
+					<a href="/dictionnaire-mot/lettre-r.xhtml"  title="lettre alphabet : r">R</a><br />
+					<a href="/dictionnaire-mot/lettre-s.xhtml"  title="lettre alphabet : s">S</a> - 
+					<a href="/dictionnaire-mot/lettre-t.xhtml"  title="lettre alphabet : t">T</a> - 
+					<a href="/dictionnaire-mot/lettre-u.xhtml"  title="lettre alphabet : u">U</a> - 
+					<a href="/dictionnaire-mot/lettre-v.xhtml"  title="lettre alphabet : v">V</a> -
+					<a href="/dictionnaire-mot/lettre-w.xhtml"  title="lettre alphabet : w">W</a> - 
+					<a href="/dictionnaire-mot/lettre-x.xhtml"  title="lettre alphabet : x">X</a> -
+					<a href="/dictionnaire-mot/lettre-y.xhtml"  title="lettre alphabet : y">Y</a> - 
+					<a href="/dictionnaire-mot/lettre-z.xhtml"  title="lettre alphabet : z">Z</a> 
+				</div>
+			</div> 
+		</div>
+		  
+	 
+			 	
+	<div class='divBloc'>
+		<div class='divBlocTitre'>
+			<h2>J'ai pas trouv&eacute;</h2>
+		</div>
+		<div class='divBlocContenu'>
+			<div class='divParagraphe'>
+				<a href="/proposer-un-mot/index.xhtml" title="Proposez un mot, nous chercherons sa definition">Proposer un mot</a><br />
+			</div>
+		</div> 
+	</div> 
+	  
+	                      
+	</div>  
+	<div id="divColonneDroite">	
+	</div> 	<div id="divColonneCentre"> 
+<h1>famille</h1> 
+<div style="position:relative;">
+	<div style="position:absolute;right:10px;top:-43px;">
+		<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.cocoledico.com%2Fdictionnaire%2Ffamille%2C127740.xhtml&amp;layout=button_count&amp;show_faces=true&amp;width=90&amp;action=like&amp;colorscheme=light" allowtransparency="true" style="border: medium none; overflow: hidden; width: 110px; height: 25px;" frameborder="0" scrolling="no"></iframe>
+	</div>
+</div>
+<div class="pub728x90" style="margin-top:20px;">
+	<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-2031277610108796";
+	/* www.cocoledico.com - 728x90 sous une d�finition dans une fiche */
+	google_ad_slot = "1797022442";
+	google_ad_width = 728;
+	google_ad_height = 90;
+	//-->
+	</script>
+	<script type="text/javascript"
+	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+</div> 
+<div class="divColonneCentreBloc">   
+		<h2> 
+		Nom commun 
+		, f&eacute;minin    
+		, singulier	</h2>
+		
+	<p> 
+	Voir les mots d&eacute;riv&eacute;s de
+	<a href="/dictionnaire/famille.xhtml" title="famille : definition de famille">famille</a>.
+	</p>
+</div> 
+ 
+ 
+    
+<div class="divColonneCentreBloc">
+		<h2>D&eacute;finition de "famille"</h2>
+	<div>
+						
+								<div style="float:left;margin-left:20px;margin-right:20px;">
+					<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-2031277610108796";
+					/* www.cocoledico.com - 250x250 milieu droite d&#39;une fiche */
+					google_ad_slot = "1157894046";
+					google_ad_width = 250;
+					google_ad_height = 250;
+					//-->
+					</script>
+					<script type="text/javascript"
+					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+					</script>
+				</div> 
+											<h3>Acad&eacute;mie fran&ccedil;aise, 8<sup>&egrave;me</sup> &eacute;dition</h3>
+															<strong class="strongDefinition">D&eacute;finition 1 :</strong> 
+								<div style="margin-left:20px;">
+								<dl>
+									<dt>famille</dt>
+									<dd>Ensemble de personnes
+unies par le sang ou l'alliance. C'est un homme
+qui ch&eacute;rit sa famille. Il vit bien avec sa famille.
+Une famille nombreuse. La famille royale.
+R&eacute;unir sa famille. Chef de famille. Tous les
+membres de la famille. La famille de sa femme.
+Il ne veut voir personne de sa famille. Porter le
+trouble dans les familles. &Ecirc;tre en famille. D&icirc;ner
+en famille. Un repas, une f&ecirc;te de famille. Ce sont
+des devoirs de famille. Par extension, La grande
+famille humaine.
+
+Avoir un air de famille, Avoir cette conformit&eacute;
+de traits, de physionomie, qui existe
+ou qu'on croit reconna&icirc;tre entre les personnes
+d'une m&ecirc;me famille. Ils ont tous un air de
+famille.
+
+Il se dit sp&eacute;cialement de la Suite des individus
+n&eacute;s d'une m&ecirc;me souche. Bonne famille.
+Honn&ecirc;te famille. Famille riche consid&eacute;rable,
+noble, ancienne. De quelle famille est-elle? Dites-
+moi votre nom de famille. La ruine des familles.
+D&eacute;shonorer sa famille. Entrer dans une famille.
+Il est de famille de robe. Il est d'une famille
+bourgeoise. Il y a eu de grands hommes dans
+cette famille. Ces deux familles sont depuis
+longtemps ennemies. La famille r&eacute;gnante.
+
+Belle-famille, Les p&egrave;res, m&egrave;res, fr&egrave;res et
+soeurs d'un des deux &eacute;poux par rapport &agrave;
+l'autre.
+
+Il se dit aussi de Parents qui ont un m&ecirc;me
+foyer, qui habitent ensemble; et plus particuli&egrave;rement
+du P&egrave;re, de la m&egrave;re et des enfants,
+ou m&ecirc;me des enfants seulement. Il ne se pla&icirc;t
+que dans sa famille. Vivre en famille. Il est
+trait&eacute; comme une personne de la famille. J'ai
+pass&eacute; huit jours dans cette aimable famille.
+Il est charg&eacute; d'une nombreuse famille. P&egrave;re de
+famille. M&egrave;re de famille. C'est un bon p&egrave;re, une
+bonne m&egrave;re de famille. Plusieurs de ceux qui
+ont p&eacute;ri &eacute;taient des p&egrave;res de famille. Ce jeune
+
+
+homme est le soutien de sa famille. Il est le fl&eacute;au
+de sa famille.
+
+Famille par alliance, Personnes entre lesquelles
+existent des liens r&eacute;sultant de mariages.
+Beau-fr&egrave;re, gendre, belle-fille, neveu, cousin par
+alliance.
+
+Fils de famille, Jeune homme n&eacute; d'une
+famille riche et qui profite de la situation de
+ses parents pour s'endetter.
+
+Soutien de famille. Voyez SOUTIEN.
+
+Conseil de famille. Voyez CONSEIL.
+
+En termes de Proc&eacute;dure, User, prendre
+soin d'une chose en bon p&egrave;re de famille,
+M&eacute;nager, administrer une chose qui ne vous
+appartient pas avec autant d'&eacute;conomie que le
+propri&eacute;taire lui-m&ecirc;me pourrait le faire.
+
+En termes de Peinture, Sainte Famille, Tableau
+qui repr&eacute;sente Notre-Seigneur, la Vierge,
+saint Joseph, et quelquefois saint Jean. Une
+sainte Famille de Rapha&euml;l. Une sainte Famille
+du Poussin.
+
+Figur&eacute;ment, il d&eacute;signe aussi un Ensemble
+d'&ecirc;tres ou de choses pr&eacute;sentant des caract&egrave;res
+communs. En termes d'Histoire naturelle, Cet
+ordre d'oiseaux est divis&eacute; en trois familles. Les
+Labi&eacute;es, les Ombellif&egrave;res forment des familles
+de plantes. En termes de Philologie, Il y a
+plusieurs grandes familles de langues. Famille
+de mots, Les mots qui sont sortis d'un mot
+simple par les proc&eacute;d&eacute;s de d&eacute;rivation ou de
+composition.</dd>
+								</dl>       
+								</div>
+								<br />
+														<h3>Wiktionnaire</h3>
+															<strong class="strongDefinition">D&eacute;finition 1 :</strong> 
+								<div style="margin-left:20px;">
+								<dl>
+									<dt>famille</dt>
+									<dd>Au sens strict, ensemble formé par les parents et leurs enfants.
+
+Maintenant que je suis marié, je vais pouvoir avoir ma propre famille.
+
+</dd>
+								</dl>       
+								</div>
+								<br />
+															<strong class="strongDefinition">D&eacute;finition 2 :</strong> 
+								<div style="margin-left:20px;">
+								<dl>
+									<dt>famille</dt>
+									<dd>Au sens large, ensemble des personnes ayant des liens de parenté par le sang ou par alliance.
+
+Dans ma famille, j’ai un oncle et deux cousins.
+
+</dd>
+								</dl>       
+								</div>
+								<br />
+															<strong class="strongDefinition">D&eacute;finition 3 :</strong> 
+								<div style="margin-left:20px;">
+								<dl>
+									<dt>famille</dt>
+									<dd>Toutes les personnes qui vivent sous la protection d’un chef.
+
+Les Corleone sont une des cinq familles mafieuses de la ville de New York.
+La famille de l’ambassadeur désignait les domestiques et officiers qui sont sous ses ordres.
+
+</dd>
+								</dl>       
+								</div>
+								<br />
+															<strong class="strongDefinition">D&eacute;finition 4 :</strong> 
+								<div style="margin-left:20px;">
+								<dl>
+									<dt>famille</dt>
+									<dd>Groupe, catégorie de choses ou d’êtres partageant des caractères communs.
+
+La famille des hypocrites est immense.
+
+</dd>
+								</dl>       
+								</div>
+								<br />
+															<strong class="strongDefinition">D&eacute;finition 5 :</strong> 
+								<div style="margin-left:20px;">
+								<dl>
+									<dt>famille</dt>
+									<dd>(Mathématiques) Notions de n-uplet et de suite.
+
+{1&#160;; 2&#160;; 5} est une famille finie de N de cardinal 3.
+
+</dd>
+								</dl>       
+								</div>
+								<br />
+															<strong class="strongDefinition">D&eacute;finition 6 :</strong> 
+								<div style="margin-left:20px;">
+								<dl>
+									<dt>famille</dt>
+									<dd>(Biologie) Taxon qui regroupe les genres qui présentent le plus de similitudes entre eux.
+
+Le tigre est un mammifère de la famille des félidés.</dd>
+								</dl>       
+								</div>
+								<br />
+											<div class="divSource">Source : <a href="http://fr.wiktionary.org/wiki/famille">http://fr.wiktionary.org/wiki/famille</a></div>
+					
+	</div>
+							<h2>Citations famille</h2>
+						<div>
+							<p>Quelques <strong>phrases sur le mot famille</strong> glan&eacute;es ici et l&agrave; sur le Web afin d'illustrer et mieux comprendre le mot famille.</p>
+						</div>
+								
+							<div>
+								<strong class="strongDefinition">Citation 1 :</strong> 
+								<div style="margin-left:20px;">
+									<q>Les enfants sont la chose la plus pr&eacute;cieuse dans la vie. Un parent doit faire tout ce qu'il peut pour donner &agrave; un enfant le sens de la famille.</q>
+								</div>
+								<br />
+							</div>
+									
+							<div>
+								<strong class="strongDefinition">Citation 2 :</strong> 
+								<div style="margin-left:20px;">
+									<q>On appelle famille un groupe d'individus unis par le sang et brouill&eacute;s par des questions d'argent.</q>
+								</div>
+								<br />
+							</div>
+									
+							<div>
+								<strong class="strongDefinition">Citation 3 :</strong> 
+								<div style="margin-left:20px;">
+									<q>Il faut reconna&icirc;tre tout &ecirc;tre humain, sans chercher &agrave; savoir s'il est blanc, noir, basan&eacute; ou rouge ; lorsque l'on envisage l'humanit&eacute; comme une seule famille, il ne peut &ecirc;tre question d'int&eacute;gration ni de mariage inter-racial.</q>
+								</div>
+								<br />
+							</div>
+								
+						<div class="divSource">Source : <a href="http://citation-celebre.leparisien.fr/citation/famille" target="blank">http://citation-celebre.leparisien.fr/citation/famille</a></div>
+							   
+		<h2>Votre d&eacute;finition de "famille"</h2>
+	<div style="border:0px solid #000000;margin-left:20px;margin-right:20px;padding:0px;">
+		Coco vous propose de r&eacute;diger votre propre d&eacute;finition du mot &laquo; <strong>famille</strong> &raquo;.
+		<br />
+		<br />		
+				<style>	
+			#mediaclic_728x90_bas{
+				display:block;
+				width:100%;overflow:hidden;height:90px;padding-top:20px;margin-bottom:20px;text-align:center;
+			}
+			#mediaclic_300x250_bas{
+				display:none;
+				width:100%;overflow:hidden;height:250px;padding-top:20px;margin-bottom:20px;text-align:center;
+			}
+			@media screen and (min-width:0px) and (max-width:728px){	
+				#mediaclic_728x90_bas{
+					display:none;
+				}	
+				#mediaclic_300x250_bas{
+					display:block;
+				}
+			}
+		</style>
+		<div style="padding-bottom:10px;background:#fff;">
+			<div id="mediaclic_728x90_bas">
+				<mediaclic zone-id='26000' width='728' height='90'></mediaclic><script async src='http://pub14.media-clic.com/www/delivery/asyncjs.js'></script>
+			</div>
+			<div id="mediaclic_300x250_bas">
+				<mediaclic zone-id='26003' width='300' height='250'></mediaclic><script async src='http://pub14.media-clic.com/www/delivery/asyncjs.js'></script>
+			</div>
+		</div>
+						<script src="http://connect.facebook.net/fr_FR/all.js#xfbml=1"></script>
+		<div id="fb-root"></div>
+		<fb:comments href="http://www.cocoledico.com/dictionnaire/famille,127740.xhtml" num_posts="10" width="577"></fb:comments>
+	</div>
+			<div class="pub728x90" style="margin-bottom:40px;">
+		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-2031277610108796";
+		/* www.cocoledico.com - 728x90 en bas des pages au-dessus du footer */
+		google_ad_slot = "5764720448";
+		google_ad_width = 728;
+		google_ad_height = 90;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+	</div>
+			
+			</div>
+    
+<div class="divColonneCentreBloc" id="divAutreDefinitionMoteurExterne">
+	<h2>D&eacute;finition du mot "famille" (autres sites)</h2>
+		
+</div>
+	<script>
+		document.getElementById("divAutreDefinitionMoteurExterne").style.display = "none";
+	</script>
+	 
+	</div>
+	<div id="divFooter" style="position:relative;min-height:150px;">
+	 
+		<div style="position:absolute;top:30px;left:381px;">
+		2017 &copy; <a href="http://fabien.pro" rel="nofollow" title="Concepteur web et r&eacute;f&eacute;renceur" target="_blank" style="text-decoration:underline;color:#c42b0b;">Fabien Branchut</a>
+	</div>
+	<div id="divLien">
+		<a href="/contact/index.xhtml">Contactez Coco</a>
+		|
+		<a href="/cookies.php">R&egrave;gles sur les cookies</a>
+		|
+		<a href="http://www.cocoledico.com" title="dictionnaire francais" style="text-decoration:none;cursor:text;">Dictionnaire</a>
+		|
+    	web design : <a href="http://www.integrateur-html.fr" title="int�grateur html">Nathalie Millasseau</a>
+	</div>
+	</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-674815-11']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ 
+  
+ 
+ 
+<style>
+	.cookiesLegalRules.container{
+		background:#ffffff;
+		padding:10px;
+		font-family:arial;
+		font-size:12px;
+		text-align:center;
+		color:#839E9E;
+	}
+	.cookiesLegalRules.container a{
+		color:#839E9E;
+		text-decoration:none;
+	}
+	.cookiesLegalRules.container a:hover{
+		text-decoration:underline;
+	}
+	.cookiesLegalRules.container a.ok{
+		background:#839E9E;
+		color:#ffffff;
+		display:inline-block;
+		padding:5px;
+		padding-top:3px;
+		padding-bottom:3px;
+		text-decoration:none;
+	}
+	.cookiesLegalRules.container a.moreInfo{
+		font-size:11px;
+	}
+</style>
+<script>
+	function cookiesLegalRules_setCookie(cname, cvalue, exdays) 
+	{
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+	function cookiesLegalRules_getCookie(cname) 
+	{
+		var name = cname + "=";
+		var ca = document.cookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length,c.length);
+			}
+		}
+		return "";
+	}
+	function cookiesLegalRules_clickOk()
+	{
+		$('.cookiesLegalRules.container').remove();
+		cookiesLegalRules_setCookie('cookiesLegalRules_accepted', 'yes', 300);
+	}
+	$(document).ready(function()
+	{
+		//cookiesLegalRules_setCookie('cookiesLegalRules_accepted', '', 0); // Delete cookie.
+		if(cookiesLegalRules_getCookie('cookiesLegalRules_accepted') != 'yes')
+		{
+			var link_href_moreInfo = '/cookies.php';
+			var htmlContent = '<div class="cookiesLegalRules container">En poursuivant votre navigation, vous acceptez l\'utilisation de cookies et partager des donn&eacute;es &agrave; des tiers afin de r&eacute;aliser des statistiques d\'audiences et vous proposer des services, contenus ou publicit&eacute;s adapt&eacute;s selon vos centres d\'int&eacute;r&ecirc;ts. <a href="javascript:function(){return false;}" class="ok" onclick="javascript:cookiesLegalRules_clickOk();">OK</a> <a href="'+link_href_moreInfo+'" class="moreInfo" target="_blank">En savoir plus</a></div>';
+			$('body').prepend(htmlContent);
+		}
+	});
+</script>
+
+	</div>
+<style>	
+	#mediaclic_728x90_bas{
+		display:block;
+		width:100%;overflow:hidden;height:90px;padding-top:20px;margin-bottom:20px;text-align:center;
+	}
+	#mediaclic_300x250_bas{
+		display:none;
+		width:100%;overflow:hidden;height:250px;padding-top:20px;margin-bottom:20px;text-align:center;
+	}
+	@media screen and (min-width:0px) and (max-width:728px){	
+		#mediaclic_728x90_bas{
+			display:none;
+		}	
+		#mediaclic_300x250_bas{
+			display:block;
+		}
+	}
+</style>
+<div style="padding-bottom:10px;background:#fff;">
+	<div id="mediaclic_728x90_bas">
+		<mediaclic zone-id='26000' width='728' height='90'></mediaclic><script async src='http://pub14.media-clic.com/www/delivery/asyncjs.js'></script>
+	</div>
+	<div id="mediaclic_300x250_bas">
+		<mediaclic zone-id='26003' width='300' height='250'></mediaclic><script async src='http://pub14.media-clic.com/www/delivery/asyncjs.js'></script>
+	</div>
+</div>
+</body>
+</html>

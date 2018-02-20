@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<head>
+     <meta charset="utf-8">
+     <meta name="generator" content="http://www.typepad.com/" />
+     <meta name="keywords" content="Revit, Revit Structure, Trémie, Famille, Tutoriels" /><meta name="description" content="Dans Revit Structure il est possible de créer ses propres objets paramétriques permettant de répondre précisément à vos besoins spécifiques. Vous pouvez ainsi créer des objets dynamiques annotés automatiquement dès leur création avec une représentation graphique prédéfinie. Cet article montre comment créer une famille de trémies ajustable graphiquement dans laquelle..." />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta property="og:title" content="Notion de Familles Imbriquées" />
+<meta property="og:site_name" content="Village BIM" />
+<meta property="og:type" content="blog" />
+<meta property="og:url" content="http://villagebim.typepad.com/villagebim/2010/11/notion-de-familles-imbriqu%C3%A9es.html" />
+<meta property="og:description" content="Dans Revit Structure il est possible de créer ses propres objets paramétriques permettant de répondre précisément à vos besoins spécifiques. Vous pouvez ainsi créer des objets dynamiques annotés automatiquement dès leur création avec une représentation graphique prédéfinie. Cet article montre comment créer une famille de trémies ajustable graphiquement dans laquelle..." />
+<meta property="fb:admins" content="" />
+<meta property="og:image" content="http://villagebim.typepad.com/.a/6a015391e15a28970b015436b28b61970c-600wi" />
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="Notion de Familles Imbriquées">
+<meta name="twitter:description" content="Dans Revit Structure il est possible de créer ses propres objets paramétriques permettant de répondre précisément à vos besoins spécifiques. Vous pouvez ainsi créer des objets dynamiques annotés automatiquement dès leur création avec une représentation graphique prédéfinie. Cet article montre comment créer une famille de trémies ajustable graphiquement dans laquelle...">
+<meta name="twitter:image" content="http://villagebim.typepad.com/.a/6a015391e15a28970b015436b28b61970c-pi">
+
+
+     <!-- Custom fonts for this template -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="/.shared/themes/common/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap bridge -->
+    <link href="/.shared/themes/common/bootstrap/css/bootstrap-bridge.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="http://villagebim.typepad.com/villagebim/styles.css?v=6" type="text/css" media="screen" />
+    <style>.navbar-header, .nav { display:block !important; }</style>
+
+        <link rel="stylesheet" href="http://static.typepad.com/.shared:vb8443f8:typepad:en_us/themes/common/print.css" type="text/css" media="print" />
+        <link rel="alternate" type="application/atom+xml" title="Notes sur 'Village BIM' (Atom)" href="http://villagebim.typepad.com/villagebim/atom.xml" />
+        <link rel="alternate" type="application/rss+xml" title="Notes sur 'Village BIM' (RSS 1.0)" href="http://villagebim.typepad.com/villagebim/index.rdf" />
+        <link rel="alternate" type="application/rss+xml" title="Notes sur 'Village BIM' (RSS 2.0)" href="http://villagebim.typepad.com/villagebim/rss.xml" />
+
+    <script src="//code.jquery.com/jquery.js"></script>
+
+        <script type="text/javascript">
+                var TPApp = {};
+                TPApp.app_uri = "http://www.typepad.com/";
+        </script>
+        <script type="text/javascript" src="http://static.typepad.com/.shared:vb8443f8:typepad:en_us/js/yui/yahoo-dom-event.js,/js/app/thumbnail-gallery-min.js,/js/app/flyouts-min.js"></script>
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-225723-36', 'auto', {'name': 'Typepad'}, {'allowLinker': true} );  // Separate tracker for Typepad.
+ga('Typepad.require', 'linker');
+ga('Typepad.linker:autoLink', ['none']);
+ga('Typepad.set', 'dimension1', '6a015391e15a28970b015391e16ba1970b');
+ga('Typepad.set', 'dimension2', 'Individual');
+ga('Typepad.send', 'pageview');
+</script>
+
+
+
+
+
+        <link rel="alternate" type="application/atom+xml" title="Commentaires sur 'Notion de Familles Imbriquées' (Atom)" href="http://villagebim.typepad.com/villagebim/2010/11/notion-de-familles-imbriqu%C3%A9es/comments/atom.xml" />
+        <link rel="alternate" type="application/rss+xml" title="Commentaires sur 'Notion de Familles Imbriquées' (RSS 2.0)" href="http://villagebim.typepad.com/villagebim/2010/11/notion-de-familles-imbriqu%C3%A9es/comments/rss.xml" />
+        <title>Notion de Familles Imbriquées - Village BIM</title>
+        <link rel="start" href="http://villagebim.typepad.com/villagebim/" title="Home" />
+        <link rel="prev" href="http://villagebim.typepad.com/villagebim/2010/11/nouvelle-carte-sismique-transition-des-ps92-vers-leurocode-8.html?no_prefetch=1" title="Nouvelle Carte sismique, transition des PS92 vers l'Eurocode 8." />
+        <link rel="next" href="http://villagebim.typepad.com/villagebim/2010/11/les-eurocodes-dans-autodesk-robot-structural-analysis-2011.html?no_prefetch=1" title="Les Eurocodes dans Autodesk Robot Structural Analysis 2011" />
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+
+
+<body class="layout-two-column-right post">
+	
+	<div id="container" class="container">
+		<div id="container-inner" class="pkg">
+			
+                <div class="row">
+     
+
+
+<a id="home"></a>
+   
+
+              <div id="banner" class="jumbotron">
+                <h1><a href="http://villagebim.typepad.com/villagebim/" accesskey="1">Village BIM</a></h1>
+                <h2>Village BIM est le blog technique des solutions BIM Autodesk. Pour les architectes, les ingénieurs et les constructeurs désirant évoluer vers le BIM. Retrouvez-y tous les trucs et astuces, et nouveautés des solutions Autodesk.</h2>
+              </div>
+
+     
+     
+      <div id="autocollapse" class="navbar navbar-default navbar-fixed-top">
+
+<div class="navbar-inner">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+          </button>
+         <a class="navbar-brand" href="http://villagebim.typepad.com/villagebim/">Accueil</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+<li><a href="http://www.autodesk.fr/">Autodesk France</a></li>
+<li><a href="http://villagebim.typepad.com/villagebim/architecture/">Architecture</a></li>
+<li><a href="http://villagebim.typepad.com/villagebim/structure/">Structure</a></li>
+<li><a href="http://villagebim.typepad.com/villagebim/mep/">MEP</a></li>
+<li><a href="http://villagebim.typepad.com/villagebim/plant/">Plant</a></li>
+<li><a href="http://villagebim.typepad.com/villagebim/construction/">Construction</a></li>
+<li><a href="http://villagebim.typepad.com/villagebim/education/">Education</a></li>
+
+          </ul><!-- end main navbar -->
+        </div><!--/.nav-collapse-->
+</div><!--/.navbar-inner-->
+
+      </div><!--/.navbar-->
+
+     
+
+
+
+			<div id="pagebody">
+
+
+				<div id="pagebody-inner" class="pkg">
+                                        <div id="alpha" class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+						<div id="alpha-inner" class="pkg">
+							<!-- the plain version removes the extra jquery -->
+<!-- content nav -->
+<p class="content-nav">
+	<a class="content-nav-prev" href="http://villagebim.typepad.com/villagebim/2010/11/nouvelle-carte-sismique-transition-des-ps92-vers-leurocode-8.html">&laquo; Nouvelle Carte sismique, transition des PS92 vers l'Eurocode 8.</a> |
+	<a class="content-nav-main" href="http://villagebim.typepad.com/villagebim/">Accueil</a>
+	| <a class="content-nav-next" href="http://villagebim.typepad.com/villagebim/2010/11/les-eurocodes-dans-autodesk-robot-structural-analysis-2011.html">Les Eurocodes dans Autodesk Robot Structural Analysis 2011 &raquo;</a>
+</p>
+<script type="text/javascript">
+   $(function(){
+       var query = window.location.search.substring(1);
+       if( query == "pintix=1" ) {
+          var e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://static.typepad.com/.shared:vb8443f8:typepad:en_us//js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e);
+       }
+   });
+</script>
+<script type="text/javascript">
+    window.ZemantaBlogSettings = "2614045|false";
+    window.ZemantaPostSettings = "";
+</script>
+<script type="text/javascript" src="http://content.zemanta.com/static/typepad/js/recommend.js"></script>
+<input type="hidden" name="zemanta-related" val="" />
+<!-- entry -->
+
+	<h2 class="date-header">22/11/2010</h2>
+
+
+<div class="entry-category-autodesk_revit_structure entry-author-julien_drouet entry-type-post entry" id="entry-6a015391e15a28970b015436b24bfa970c">
+   <div class="entry-inner">
+			<h3 class="entry-header">Notion de Familles Imbriquées</h3>
+	
+
+
+
+	<div class="entry-content">
+		<div class="entry-body">
+			<p style="text-align: justify;">Dans Revit Structure il est possible de créer ses propres objets paramétriques permettant de répondre précisément à vos besoins spécifiques. Vous pouvez ainsi créer des objets dynamiques annotés automatiquement dès leur création avec une représentation graphique prédéfinie.</p>
+<p style="text-align: justify;">Cet article montre comment créer une famille de trémies ajustable graphiquement&#0160;dans laquelle ont été ajouté un pochage et une annotation paramétrable.&#0160;Cette famille&#0160;de trémies contient donc 2 familles imbriquées (1 pour le pochage et 1 pour l&#39;annotation).&#0160;En utilisant cette famille dans un projet on obtient alors automatiquement une représentation graphique de la trémie&#0160; sous cette forme :</p>
+<p>&#0160; <a href="http://villagebim.typepad.com/.a/6a015391e15a28970b015436b28b61970c-popup" onclick="window.open( this.href, &#39;_blank&#39;, &#39;width=640,height=480,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39; ); return false" style="display: inline;"><img alt="Families - 1" class="asset  asset-image at-xid-6a015391e15a28970b015436b28b61970c" src="http://villagebim.typepad.com/.a/6a015391e15a28970b015436b28b61970c-500wi" style="display: block; margin-left: auto; margin-right: auto;" title="Families - 1" /></a></p>
+<p><a href="http://structurebim.typepad.com/RST/Famille_Imbriquee_Tremie/Creation_Famille_Imbriquee-Tremie.pdf">Téléchargez le tutoriel décrivant la création de cette famille (1900.4K)</a> <a href="http://structurebim.typepad.com/RST/Famille_Imbriquee_Tremie/Creation_Famille_Imbriquee-Tremie.zip"><br />Téléchargez les fichiers contenant les familles (491.5K) <br /></a></p>
+		</div>
+		
+
+                        <!-- SIGNATURE -->
+                        
+
+		
+	</div>
+
+	<div class="entry-footer">
+			<p class="entry-footer-info">
+				<span class="post-footers">Rédigé par <a rel="author" href="http://profile.typepad.com/6p015391e15a28970b">Julien Drouet</a> à 21:45 dans <a href="http://villagebim.typepad.com/villagebim/autodesk-revit-structure/">Autodesk Revit Structure</a> </span> <span class="separator">|</span> <a class="permalink" href="http://villagebim.typepad.com/villagebim/2010/11/notion-de-familles-imbriqu%C3%A9es.html">Lien permanent</a>
+			</p>
+		
+		<!-- technorati tags -->
+
+
+		<!-- post footer links -->
+	<p class="entry-footer-share entry-footer-share-buttons">
+		<span class="entry-footer-links-twitter">
+     <a href="http://twitter.com/share?url=http%3A%2F%2Fbit.ly%2FtJzM8S&text=Notion%20de%20Familles%20Imbriqu%C3%A9es" target="_blank"><img src="/.shared/images/circle-twitter.png" alt="Twitter" /></a>
+</span> <span class="separator">|</span> <span class="entry-footer-links-facebook_like">
+     
+     <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fvillagebim.typepad.com%2Fvillagebim%2F2010%2F11%2Fnotion-de-familles-imbriqu%25C3%25A9es.html" target="_blank"><img src="/.shared/images/circle-facebook.png" alt="Facebook" /></a>
+     
+</span>
+	</p>
+
+
+	</div>
+   </div>
+</div>
+
+
+
+        
+        
+        <a id="comments"></a>
+	<div class="comments" id="all-comments">
+		<h3 class="comments-header">Commentaires</h3>
+					<div class="comments-info">
+				<p><a href="http://villagebim.typepad.com/villagebim/2010/11/notion-de-familles-imbriqu%C3%A9es/comments/atom.xml"><img src="http://static.typepad.com/.shared:vb8443f8:typepad:en_us/images/feed.png" alt="Flux" width="10" height="10" /></a> Vous pouvez suivre cette conversation en vous abonnant au <a href="http://villagebim.typepad.com/villagebim/2010/11/notion-de-familles-imbriqu%C3%A9es/comments/atom.xml">flux des commentaires</a> de cette note.</p>
+			</div>
+		
+		<div class="comments-content" id="comments-content">
+                <!-- comment list -->
+
+		</div>
+        
+	</div>
+<script type="text/javascript">var c943723d42e77e9214eb884a1d898ea="</form>";</script>
+<script type="text/javascript">var ffe51c373e0873b7778b6324a0b5533 = '<form id="comment-form" action="';</script>
+<script type="text/javascript">var c943723d42e77e9214eb884a1d898za = '" method="post"><input type="hidden" name="entry_xid" id="comment-entry-xid" value="6a015391e15a28970b015436b24bfa970c" \/><input type="hidden" name="token" value="1485704517-3fffffe479fc2a6fa10c0f806e8af05b28d5979d:reJZHHQ2fOpRgkAV" \/>';</script>
+<script type="text/javascript">var OOcd55d4dc47109d7b462b01c7dd4dab = "aHR0cDovL3ZpbGxhZ2ViaW0udHlwZXBhZC5jb20vLnNlcnZpY2VzL2NvbW1lbnRz";</script>
+<script type="text/javascript">var bad4dd7c10b264b7d90174cd4d55dc00 = atob(OOcd55d4dc47109d7b462b01c7dd4dab);</script>
+
+<!-- comment-form-atp -->
+
+
+<p class="comments-closed font-entrybody">
+	L'utilisation des commentaires est désactivée pour cette note.
+</p>
+
+
+
+
+
+    
+    
+
+
+
+
+						</div>
+					</div>
+                                        <div id="beta" class="well col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div id="beta-inner" class="pkg">
+							
+<!-- sidebar -->
+
+
+<div id="a_propos_des_auteurs" class="module-typelist module">
+<h2 class="module-header">A propos des Auteurs</h2>
+	<div class="typelist-plain module-content">
+		<ul class="module-list">
+							<li class="module-list-item"><div class="typelist-note"><table border=0" cellpadding="3" cellspacing="0">
+<tr>
+<td valign="top">
+<a href="http://villagebim.typepad.com/villagebim/stephane-balmain.html"><img src="http://villagebim.typepad.com/stephane_balmain_88x88.jpg" border=0></a><br> 
+<a href="http://villagebim.typepad.com/villagebim/stephane-balmain.html">Stephane Balmain</a>
+</td>
+<td valign="top">
+<a href="http://villagebim.typepad.com/villagebim/olivier-bayle.html"><img src="http://villagebim.typepad.com/olivier_bayle_88x88.jpg" border=0></a><br> 
+<a href="http://villagebim.typepad.com/villagebim/olivier-bayle.html">Olivier Bayle</a>
+</td>
+</tr>
+<tr><td colspan="2" style="height:6px;">&nbsp;</td></tr>
+<tr>
+<td valign="top" align="center">
+<a href="http://villagebim.typepad.com/villagebim/julien-drouet.html"><img src="http://villagebim.typepad.com/jujuleretour.jpg" border=0></a><br> 
+<a href="http://villagebim.typepad.com/villagebim/julien-drouet.html">Julien Drouet</a>
+</td>
+<td valign="top">
+<a href="http://villagebim.typepad.com/villagebim/alexandre-mihalache.html#tp"><img src="http://villagebim.typepad.com/alexandre_mihalache_88x88.jpg" border=0></a><br> 
+<a href="http://villagebim.typepad.com/villagebim/alexandre-mihalache.html#tp">Alexandre Mihalache</a>
+</td>
+</tr>
+</table>
+
+<!-- SiteCatalyst code version: H.15.1.
+Copyright 1997-2008 Omniture, Inc. More info available at http://www.omniture.com -->
+<script type="text/javascript">
+wa = new Object;
+</script>
+<script language="JavaScript" type="text/javascript" 
+src="http://images.autodesk.com/metrics/s_code_bcd.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+/*
+* SiteCatalyst variables can be valued below; for testing, let's use these values...
+*/
+wa.pathMain=location.pathname;
+wa.pageNameLocal=document.title;
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code);</script>
+<!-- End SiteCatalyst code version: H.15.1. -->
+
+
+</div></li>
+			
+		</ul>
+	</div>
+</div>
+
+<div id="abonnement" class="module-typelist module">
+<h2 class="module-header">Abonnement</h2>
+	<div class="typelist-plain module-content">
+		<ul class="module-list">
+							<li class="module-list-item"><div class="typelist-note"><a href="http://feeds.feedburner.com/typepad/qqsm"><img src="http://villagebim.typepad.com/feed.png" border="0" align="absmiddle"> &nbsp;Abonnement RSS</a></div></li>
+							<li class="module-list-item"><div class="typelist-note-label">Abonnement e-mail</div><div class="typelist-note"><form style="solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=typepad/qqsm', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p><input type="text" style="width:110px" name="email"/></p><input type="hidden" value="typepad/qqsm" name="uri"/><input type="hidden" name="loc" value="fr_FR"/><input type="submit" value="Valider e-mail" /></form></div></li>
+			
+		</ul>
+	</div>
+</div>
+
+<div class="module-custom_html module">
+    <div class="module-content">
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'fr',
+    gaTrack: true,
+    gaId: 'UA-8359962-2'
+  }, 'google_translate_element');
+}
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+</div>
+<div class="module-search module">
+    <h2 class="module-header">Rechercher</h2>
+    <div class="module-content">
+        <form id="search-blog" method="get" action="http://villagebim.typepad.com/.services/blog/6a015391e15a28970b015391e16ba1970b/search" class="form-search form-inline" role="search">
+            
+<div class="form-group"><input type="search" name="filter.q" results="5" value="" class="form-control" placeholder="Search" /></div><button type="submit" value="Rechercher" class="btn btn-default">Submit</button>
+            
+        </form>
+    </div>
+</div>
+<!-- END Blog Search Module -->
+	<div class="module-archives module">
+		<h2 class="module-header">Les notes récentes</h2>
+		<div class="module-content">
+			<ul class="module-list">
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/plant-3d-v2-du-project-calgary-la-version-beta-de-la-collaboration-cloud-%C3%A0-grande-%C3%A9chelle-pour-plant.html">Plant 3D: Project Calgary, la version 2 Beta de la collaboration cloud pour Plant</a></li>
+					
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/exportez-intelligemment-vers-navisworks.html">Exportez intelligemment vers Navisworks</a></li>
+					
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/test-materiel-le-surface-book-microsoft.html">Test Matériel : Le Surface Book Microsoft</a></li>
+					
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/acc%C3%A9dez-%C3%A0-vault-%C3%A0-partir-dun-appareil-mobile-ios.html">Accédez à Vault à partir d'un appareil mobile iOS</a></li>
+					
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/r%C3%A9sultats-de-lenqu%C3%AAte-impacts-du-bim-dans-la-communication-et-les-%C3%A9changes-collaboratif.html">Résultats de l'enquête: Impacts du BIM dans la communication et les échanges collaboratif</a></li>
+					
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/autodesk-stingray-une-experience-virtuelle-immersive-en-temps-reel.html">Autodesk Stingray : une expérience virtuelle immersive en temps réel</a></li>
+					
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/localiser-le-point-zro-interne-sous-revit-2017-pour-un-export-navisworks-infraworks-360.html">Localiser le point interne sous Revit 2017 pour un export Navisworks / InfraWorks 360</a></li>
+					
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/rserver-votre-soire-du-2-fvrier-pour-le-prug-paris-revit-user-group.html">Réservez votre soirée du 2 février pour le PRUG, Paris Revit User Group</a></li>
+					
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/tester-les-assemblages-acier-de-revit-2018-beta.html">Tester les Assemblages Acier de Revit 2018 Beta</a></li>
+					
+				
+									<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/jeudi-19-janvier-faro-et-autodesk-vous-invitent-a-grenoble.html">Jeudi 19 Janvier - Faro et Autodesk vous invitent à Grenoble</a></li>
+					
+				
+			</ul>
+		</div>
+	</div>
+<div class="module-categories module">
+	<h2 class="module-header"><a href="http://villagebim.typepad.com/villagebim/archives.html">Catégories</a></h2>
+	<div class="module-content">
+                   <ul class="module-list">
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/applications-partenaires/">Applications Partenaires</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/architecture/">Architecture</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/autodesk-bim-360/">Autodesk BIM 360</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/cr%C3%A9ation/">Autodesk FormIt360</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/autodesk-inventor/">Autodesk Navisworks</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/data-management/">Autodesk Revit</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/autodesk-revit-structure0a/">Autodesk Revit Architecture</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/autodesk-revit-mep/">Autodesk Revit MEP</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/autodesk-revit-structure/">Autodesk Revit Structure</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/autodesk-robot-structural-analysis/">Autodesk Robot Structural Analysis</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/autodesk-vault-aec/">Autodesk Vault AEC</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/avant-premi%C3%A8re/">Avant-première</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/biblioth%C3%A8ques/">Bibliothèques</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/bim/">BIM</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/capture-de-la-r%C3%A9alit%C3%A9/">Capture de la réalité</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/collaboration/">Collaboration</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/construction/">Construction</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/cvc/">CVC</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/documentation/">Documentation</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/education/">Education</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/electricit%C3%A9/">Electricité</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/familles/">Familles</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/gestion-de-donn%C3%A9es/">Gestion de données</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/ifc/">IFC</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/ing%C3%A9nierie/">Ingénierie</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/interop%C3%A9rabilit%C3%A9/">Interopérabilité</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/labs/">Labs</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/maquette-num%C3%A9rique/">Maquette numérique</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/mep/">MEP</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/mod%C3%A9lisation/">Modélisation</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/nouveaut%C3%A9s/">Nouveautés</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/performances-%C3%A9nerg%C3%A9tiques/">Performances énergétiques</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/plant/">Plant</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/plomberie/">Plomberie</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/rendu/">Rendu</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/service-pack/">Service Pack</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/souscription/">Souscription</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/structure/">Structure</a></li>
+
+
+
+                        <li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/trucs-et-astuces/">Trucs et astuces</a></li>
+</span>
+		</ul>
+
+<a style="font-size:85%;display:none;" class="cat-more" href="http://villagebim.typepad.com/villagebim/archives.html">See More</a>
+	</div>
+</div>
+	<div class="module-archives module">
+		<h2 class="module-header"><a href="http://villagebim.typepad.com/villagebim/archives.html">Archives</a></h2>
+		<div class="module-content">
+												<ul class="module-list">
+				
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2017/01/index.html">janvier 2017</a></li>
+				
+							
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2016/12/index.html">décembre 2016</a></li>
+				
+							
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2016/11/index.html">novembre 2016</a></li>
+				
+							
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2016/10/index.html">octobre 2016</a></li>
+				
+							
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2016/09/index.html">septembre 2016</a></li>
+				
+							
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2016/08/index.html">août 2016</a></li>
+				
+							
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2016/07/index.html">juillet 2016</a></li>
+				
+							
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2016/06/index.html">juin 2016</a></li>
+				
+							
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2016/05/index.html">mai 2016</a></li>
+				
+							
+				<li class="module-list-item"><a href="http://villagebim.typepad.com/villagebim/2016/04/index.html">avril 2016</a></li>
+									</ul>
+									<p class="module-more"><a href="http://villagebim.typepad.com/villagebim/archives.html">Plus...</a></p>
+				
+				
+			
+		</div>
+	</div>
+
+<div id="sites_et_blogs" class="module-typelist module">
+<h2 class="module-header">Sites et Blogs</h2>
+	<div class="module-content">
+		<ul class="module-list">
+							<li class="module-list-item"><a href="http://abcdblog.typepad.com/" >Architecture, BIM, and Conceptual Design</a><br /></li>
+							<li class="module-list-item"><a href="http://beyonddesign.typepad.com/posts/" >Beyond Design</a><br /></li>
+							<li class="module-list-item"><a href="http://buildz.blogspot.com/" >Buildz</a><br /></li>
+							<li class="module-list-item"><a href="http://civilfrance.typepad.com/" >Civil - Made in France</a><br /></li>
+							<li class="module-list-item"><a href="http://blogs.autodesk.com/dalbiminpoi/" target="_blank">dal BIM in poi</a><br /></li>
+							<li class="module-list-item"><a href="http://forums.autodesk.com/t5/revit-et-bim-francais/bd-p/198" target="_blank">Forum francophone Revit et BIM</a><br /></li>
+							<li class="module-list-item"><a href="http://geospatialfrance.typepad.com/" >Geospatial made in France</a><br /></li>
+							<li class="module-list-item"><a href="http://insidethefactory.typepad.com/" >Inside the Factory</a><br /></li>
+							<li class="module-list-item"><a href="http://labs.blogs.com/" >It is Alive in the Lab</a><br /></li>
+							<li class="module-list-item"><a href="https://revitbeyondbim.wordpress.com/" target="_blank">Revit Beyond BIM</a><br /></li>
+							<li class="module-list-item"><a href="http://www.facebook.com/revitarchitectureutopiccity" >Revit Utopic City</a><br /></li>
+							<li class="module-list-item"><a href="http://thebuildingcoder.typepad.com/" >The Building Coder - APIs</a><br /></li>
+							<li class="module-list-item"><a href="http://revitclinic.typepad.com/" >The Revit Clinic</a><br /></li>
+			
+		</ul>
+	</div>
+</div>
+
+<div id="blogs_partenaires" class="module-typelist module">
+<h2 class="module-header">Blogs Partenaires</h2>
+	<div class="module-content">
+		<ul class="module-list">
+							<li class="module-list-item"><a href="http://syncronia.com/3d-models.asp/lingua_en/id_0/free-3dmodels-furniture-interior-design.html" >Syncronia - Bibliothèques Revit et textures</a><br /></li>
+							<li class="module-list-item"><a href="http://www.pdoteam.com/" >PDO Team - Plant 3D</a><br /></li>
+							<li class="module-list-item"><a href="http://forums.autodesk.com/t5/blog-francais/bg-p/199" >Communauté Autodesk Francophone</a><br /></li>
+			
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+</div> <!-- row -->
+			
+
+
+<!-- footer -->
+<div id="footer">
+<div class="row well"><div class="col-md-12">
+	<div id="footer-inner">
+		<ul class="footer-list pkg list-inline" >
+			<li class="footer-list-item"><a href="http://villagebim.typepad.com/villagebim/">Village BIM</a></li>
+			<li class="last-footer-list-item footer-list-item"><a href="http://www.typepad.com/">Powered by Typepad</a></li>
+		</ul>
+	</div>
+</div></div>
+</div>
+
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="/.shared/themes/common/bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+     function autocollapse() {
+        var navbar = jQuery('#autocollapse'); navbar.removeClass('collapsed');
+            if(navbar.innerHeight() > 50) {
+               navbar.addClass('collapsed');
+               $('.navbar button').css("visibility","visible");
+             }
+     }
+autocollapse();
+
+$('.navbar-nav,.navbar-header').fadeIn('slow');
+jQuery(window).on('resize', autocollapse);
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+var extra_happy = Math.floor(1000000000 * Math.random());
+document.write('<img src="http://www.typepad.com/t/stats?blog_id=95580414464333579&amp;user_id=&amp;page=' + escape(location.href) + '&amp;referrer=' + escape(document.referrer) + '&amp;i=' + extra_happy + '" width="1" height="1" alt="" style="position: absolute; top: 0; left: 0;" />');
+// -->
+</script>
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-28611349-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">_qoptions = { tags:"typepad.core" }; _qacct="p-fcYWUmj5YbYKM"; quantserve();</script>
+<noscript>
+<a href="http://www.quantcast.com/p-fcYWUmj5YbYKM" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-fcYWUmj5YbYKM.gif?tags=typepad.core" style="display: none" border="0" height="1" width="1" alt="Quantcast"/></a>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!-- Begin comScore Tag -->
+<script>
+document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js'%3E%3C/script%3E"));
+</script>
+<script>
+COMSCORE.beacon({
+  c1: 2,
+  c2: "6035669",
+  c3: "",
+  c4: "http://villagebim.typepad.com/villagebim/2010/11/notion-de-familles-imbriqu%C3%A9es.html",
+  c5: "",
+  c6: "",
+  c15: ""
+});
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/b?c1=2&c2=6035669&c3=&c4=http%3A%2F%2Fvillagebim.typepad.com%2Fvillagebim%2F2010%2F11%2Fnotion-de-familles-imbriqu%25C3%25A9es.html&c5=&c6=&c15=&cv=1.3&cj=1" style="display:none" width="0" height="0" alt="" />
+</noscript>
+<!-- End comScore Tag -->
+<!-- Begin disqus Tag -->
+
+<!-- End disqus Tag -->
+</body>
+</html>
+
+<!-- ph=1 -->

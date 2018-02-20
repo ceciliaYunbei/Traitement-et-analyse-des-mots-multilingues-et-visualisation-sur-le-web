@@ -1,0 +1,9 @@
+   sur 'Village BIM' (RSS 2.0) Commentaires sur 'Notion de Familles
+   Imbriquées' (Atom) Commentaires sur 'Notion de Familles Imbriquées'
+Notion de Familles Imbriquées
+   Cet article montre comment créer une famille de trémies ajustable
+   paramétrable. Cette famille de trémies contient donc 2 familles
+   cette famille dans un projet on obtient alors automatiquement une
+   Téléchargez le tutoriel décrivant la création de cette famille
+   Téléchargez les fichiers contenant les familles (491.5K)
+     * Familles

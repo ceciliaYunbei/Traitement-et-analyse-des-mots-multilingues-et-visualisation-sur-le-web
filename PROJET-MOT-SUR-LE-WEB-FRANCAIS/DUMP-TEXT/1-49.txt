@@ -1,0 +1,161 @@
+
+   REFRESH(1799 sec):
+   http://www.francetvinfo.fr/economie/menages/a-quoi-ressemble-la-famille
+   -francaise-d-aujourd-hui_1225665.html
+   #alternate alternate
+
+   logo Franceinfo
+     * vidéos
+     *
+     * radio
+     *
+     * jt
+     *
+     * magazines
+
+   Direct TVDirect Radio
+
+     *
+     * politique
+     * faits divers
+     * société
+     * éco/conso
+          +
+               o Auto-entrepreneurs
+               o Automobile
+               o Aéronautique
+               o Bourse
+               o Budget
+               o Commerce
+               o Crise
+               o Déficit
+               o Emploi
+               o Entreprises
+               o Fraude
+               o G8
+          +
+               o Grève
+               o Immobilier
+               o Impôts - Fiscalité
+               o Industrie
+               o Médias
+               o Ménages
+               o Retraite
+               o Soldes
+               o Tendances
+               o Transports
+               o Télécom
+               o Votre argent
+            Les sujets du moment
+          +
+               o Bitcoin
+               o Crise en Bretagne
+               o Crise financière en Chine
+               o Croissance
+               o Davos
+          +
+               o Disparités salariales
+               o Free
+               o Loi Macron
+               o Services
+               o Thomas Piketty
+     * monde
+     * culture
+     * sports
+     * santé
+     * sciences
+     * tech/web
+     * animaux
+     * météo
+     * Le live
+
+     * Actualités
+     * Eco / Conso
+     * Ménages
+
+À quoi ressemble la famille française d'aujourd'hui ?
+
+Sur le plateau du 12/13, Sandrine Aramon détaille l'étude réalisée par
+l'Insee sur les évolutions des foyers français.
+
+   Voir la vidéoFRANCE 3
+
+   Franceinfo
+
+   Mis à jour le 16/12/2015 | 17:58, publié le 16/12/2015 | 17:10
+
+   L'Insee vient de dresser le portrait de la famille française actuelle.
+   Elle est d'abord composée d'un couple marié dans sept cas sur 10, comme
+   l'explique Sandrine Aramon sur le plateau de France 3. "Deux tiers des
+   adultes sont en couple, soit un peu plus de 31 millions de Français, et
+   parmi eux il y a 73% de mariés, 23% qui vivent en union libre, et 4%
+   seulement de pacsés".
+
+De plus en plus de mères seules
+
+   Mais si le modèle du couple marié avec enfant(s) reste majoritaire, les
+   familles monoparentales, des parents célibataires qui élèvent seuls
+   leurs enfants, sont à la hausse. Elles représentaient 16,3% des
+   familles en 1999, mais 20,3% en 2011. Dans 85% des cas, ces parents
+   seuls sont des femmes, qui selon l'Insee sont moins diplômées et donc
+   pénalisées sur le marché de l'emploi. En conséquence, un enfant de
+   famille monoparentale sur trois vit sous le seuil de pauvreté.
+   Le JT
+     * JT de 12/13 du mercredi 16 décembre 2015 L'intégrale
+
+   Les autres sujets du JT
+     * 1 Des employ&eacute;s de l'usine automobile Smart France arrivent
+       sur le site de l'entreprise d'Hambach (Moselle), vendredi 11
+       septembre 2015. Smart : retour aux 39 heures
+     * 2 Un Britannique pensait acheter un ordinateur d'occasion. Il a en
+       fait pay&eacute; pour une mauvaise photo. Internet : des rabais
+       souvent gonflés
+     * 3 La carte déposée par Arnold Schwarzenegger, devant le Bataclan,
+       le 5 décembre 2015. Attentats de Paris : la ville préserve la
+       mémoire
+     * 4 Une femme se fait vacciner contre le virus Ebola, &agrave;
+       Conakry (Guin&eacute;e), lors de tests cliniques, le 10 mars 2015.
+       Ebola : un vaccin testé dans plusieurs hôpitaux français
+     * 5 Capture d'&eacute;cran de la campagne initi&eacute;e par
+       Collectif F&eacute;ministe contre le viol qui souhaite&nbsp;faire
+       figurer le terme "inceste" dans la loi. Inceste : quatre millions
+       de Français victimes
+     * 6 Les&nbsp;médias anglo-saxons&nbsp;comme le "Daily
+       Mirror"&nbsp;ont rapporté,&nbsp;début novembre, que "boire trois
+       verres de champagne par semaine pourrait aider à conjurer la
+       démence et la maladie d'Alzheimer". Le prosecco, l'autre vin qui
+       fait sensation
+     * 7 Le champagne devient le quatri&egrave;me vin et spiritueux
+       &agrave; b&eacute;n&eacute;ficier d'une reconnaissance officielle
+       dans le pays. Le champagne contre-attaque
+     * 8 Pour un sapin de 1,80 m, il faudra compter 37 boules, selon les
+       calculs de deux math&eacute;maticiens britanniques. Décoration de
+       Noël : un village miniature dans la Sarthe
+     * 9 Sortie officielle du "Réveil de la force" au Grand Rex (Paris)
+       mercredi 16 décembre 2015. "Star Wars" : "Le Réveil de la Force" a
+       sonné
+     * 10 Des fans de "Star Wars" posent en costume à la sortie
+       d'une&nbsp;séance du "Réveil de la Force", le 16 décembre 2015,
+       devant le Grand Rex, à Paris. Star Wars épisode VII : les fans de
+       la saga sont conquis
+
+   A lire aussi
+     * JT de 12/13 du mercredi 26 octobre 2016
+     * JT de 12/13 du mardi 25 octobre 2016
+     * JT de 12/13 du lundi 24 octobre 2016
+     * JT de 12/13 du samedi 22 octobre 2016
+     * JT de 12/13 du vendredi 21 octobre 2016
+
+   Sujets associés
+     * 12/13
+     * Eco / Conso
+     * Ménages
+     * France
+     * Société
+
+   Sur dix enfants, sept vivent avec leurs deux parents, deux dans une
+   famille monoparentale, et un dans une famille recompos&eacute;e, selon
+   une &eacute;tude de l'Insee publi&eacute;e le 23 octobre 2013. Sur dix
+   enfants, sept vivent avec leurs deux parents, deux dans une famille
+   monoparentale, et un dans une famille recomposée, selon une étude de
+   l'Insee publiée le 23 octobre 2013. (THOMAS BARWICK / GETTY IMAGES)

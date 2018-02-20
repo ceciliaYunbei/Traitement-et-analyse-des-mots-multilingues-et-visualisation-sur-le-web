@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="animate" lang="fr">
+
+
+<head>
+    <title>Master TAL Projet encadré : notion de famille en français, anglais et chinois</title>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <meta name="keywords" content="famille notion bash html trameur nuage chinois enfant unique chine"/>
+    <meta name="description" content="">	
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="famille_home.css"/>
+    <link rel="shortcut icon" href="photos/icon.ico"/>
+</head>
+
+<body>
+
+<div id="header">
+    
+    <h1>Notion de Famille</h1>
+
+    <br>
+
+    <div id="nav"> <!-- Begin navigation section -->
+        <a href="famille_home.html"><div class="highlight">Accueil</div></a>
+        <a href="famille_francais.html"><div class="highlight">En Français</div></a>
+        <a href="famille_anglais.html"><div class="highlight">En Anglais</div></a>
+        <a href="famille_chinois.html"><div class="highlight">En Chinois</div></a>
+        <a href="famille_resultats.html"><div class="highlight">Résultats</div></a>
+        <a href="http://projetgroupe.unblog.fr/"><div ; class="highlight">Blog</div></a>
+    </div> <!-- End of navigation section -->
+
+</div>
+
+<br>
+
+<div id="wrapper"> <!-- Begin wrapper section, puts a buffer around the edge of the page -->
+
+<div id="section"> <!-- Start of main content -->
+    
+    <br>
+    <br>
+    
+    <p align="center">✽&nbsp;✽&nbsp;✽</p>
+    <h3 class="h3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Considérée depuis longtemps comme pierre de soubassement de la société, la famille est pour les chinois le vrai cœur de la vie quotidienne, de la société, voire de la nation, la « famille (家庭) » est redevenue un sujet populaire ces dernières années en raison d’une succession de politiques et de lois concernant le mariage et les enfants.</h3>
+    <h3 class="h3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surtout après avoir constaté les effets de la politique de l’enfant unique sur le taux de fécondité, il était temps pour les Chinois de faire face sérieusement au décalage entre les vieux concepts de la famille et les vraies demandes dans la nouvelle époque.</h3>
+    <h3 class="h3"></h3>
+    <p align="center">✽&nbsp;✽&nbsp;✽</p>
+    
+    <br>
+    <div class="image0"> 
+        <img src="./photos/wordcloud (3).png"/> 
+    </div>
+    <br>
+	<div id="Script" class="sectionWrapper">
+	  <div class="vAlignWrapper">
+	    <div class="contentWrapper">
+    
+            <h1 align="left">I. <span style="font-family: Snell Roundhand, Times New Roman, arial, sans-serif;">Script</span></h1>
+    
+            <br>
+            <p class="sl">>>> <a href="./PROJET-MOT-SUR-WEB_CHINOIS/PROGRAMMES/Programme_chinois.sh" download="script_chinois.sh">Veuillez cliquer pour télécharger le script.</a></p>
+            <br>
+            <div id="sh"><object width="95%" height="450px" data="./PROJET-MOT-SUR-WEB_CHINOIS/PROGRAMMES/Programme_chinois.sh"></object></div>
+            <br>
+            <br>
+            <br>
+            <p>Afin d’analyser cette notion de famille en chinois, on collecte  comme source une cinquantaine de textes sur Internet dont la plupart viennent des grands sites d'actualité en chinois (sina.com, qq.com, sohu.com, people.com, ifeng.com, etc.).</p>
+            <p class="sl">>>> <a href="/Users/shinmanoko/Desktop/PROJET-MOT-SUR-WEB/URLS/liste_url_家庭.txt" download="listeURL_chinois.sh">Veuillez cliquer pour télécharger la liste des URL.</a></p>
+       
+        </div><!-- /contentWrapper -->
+	  </div><!-- /vAlignWrapper -->
+    </div><!-- /sectionWrapper -->
+    
+    
+    <div id="Tableaux" class="sectionWrapper">
+	  <div class="vAlignWrapper">
+	    <div class="contentWrapper">
+    
+            <h1 align="left">II. <span style="font-family: Snell Roundhand, Times New Roman, arial, sans-serif;">Tableau final</span></h1>
+
+            <br>
+            <p></p>
+            <div class="table_ch">
+                <object width="95%" height="450px" data="./PROJET-MOT-SUR-WEB_CHINOIS/TABLEAUX/TABLEAU-FINAL-copie.html"></object>
+            </div>
+            <br>
+            <p></p>
+    
+        </div><!-- /contentWrapper -->
+	  </div><!-- /vAlignWrapper -->
+    </div><!-- /sectionWrapper -->
+      
+      
+    <div id="Segmentation" class="sectionWrapper">
+	  <div class="vAlignWrapper">
+	    <div class="contentWrapper">
+	
+            <h1 align="left">III. <span style="font-family: Snell Roundhand, Times New Roman, arial, sans-serif;">Segmentation</span></h1>
+    
+            <br>
+            <p>Une fois que le corpus est bien collecté, on passe à l’étape suivante: le traitement de corpus.</p>
+            <p>Ressemblant à d’autres langues de l’extrême-orient, il n'y a pas de délimiteur naturel de mots dans la langue chinoise. Le traitement automatique des textes demande au préalable un traitement par des logiciels de segmentation avant de passer à une analyse.</p>
+            <p>Dans ce projet, on emploie le « Chinese Segmenter » proposé par l’université de Stanford (source ouverte sur le site <a style="text-decoration:underline" href="http://nlp.stanford.edu/software/segmenter.shtml">http://nlp.stanford.edu/software/segmenter.shtml</a>). Par rapport au « Stanford Tokenizer » applicable pour l’anglais, le français et l’espagnol, cet outil possède une compétence dans le pré-process du traitement des textes brutes.</p> 
+            <br>
+            <p>Puis, il faut nettoyer le corpus.</p>
+            <p>Dans les textes communs, les ponctuations possèdent une haute fréquence. Afin d’éliminer son influence sur le traitement automatique du corpus, on emploie la commande sed pour les enlever.</p>
+            <div align="center"><img src="./photos/sed_p.png"/></div>
+            <p>Les ponctuations chinoises sont différentes de celles des langues occidentales : d’un côté, il existe des ponctuations particulières ( «。», «《》», «、», etc.); de l’autre côté, même les ponctuations en commun avec l’anglais et le français peuvent être présentées sous une forme spéciale dite « pleine chasse », constaté aussi dans d’autres langues occidentales comme le japonais ou le coréen, et elles sont à distinguer des « ponctuations à demi chasse («?» en français et «？» en chinois). A l’aide de l’expression régulière « [:punct:] », il est possible de tout enlever.</p>
+            <p>De la même manière, on peut enlever également quelques mots communs (les pronoms personnels et interrogatifs ; la copule « 是 (être) » ; les prépositions et conjonctions fréquentes ).</p>
+            <div align="center"><img src="./photos/sed_c.png"/></div>
+            <p>Ainsi, on obtient le corpus final à analyser.</p>
+            <h3 class="h3">Corpus concaténé et segmenté : </h3>
+            <div>
+            <table id="table_texte" align="center">
+                <tr>
+                    <td align="center"><b>DUMP</b></td>
+                    <td align="center"><b>CONTEXT</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <object width="350px" height="300px" data="./PROJET-MOT-SUR-WEB_CHINOIS/concat/DUMP/CONCATFILE_SEGMENT0.txt"></object>
+                    </td>
+                    <td>
+                        <object width="350px" height="300px" data="./PROJET-MOT-SUR-WEB_CHINOIS/concat/CONTEXT/CONCATFILE_SEGMENT0.txt"></object>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><a href="./PROJET-MOT-SUR-WEB_CHINOIS/concat/DUMP/CONCATFILE_SEGMENT0.txt">Télécharger</a></td>
+                    <td align="center"><a href="./PROJET-MOT-SUR-WEB_CHINOIS/concat/CONTEXT/CONCATFILE_SEGMENT0.txt">Télécharger</a></td>
+                </tr>
+            </table>
+            </div>
+            <br>
+    
+        </div><!-- /contentWrapper -->
+	  </div><!-- /vAlignWrapper -->
+    </div><!-- /sectionWrapper -->
+    
+    
+    <div id="Analyse" class="sectionWrapper">
+	  <div class="vAlignWrapper">
+	    <div class="contentWrapper">
+	
+            <h1 align="left">IV. <span style="font-family: Snell Roundhand, Times New Roman, arial, sans-serif;">Analyse</span></h1>
+    
+            <br>
+            <p>L’outil d’analyse principal utilisé ici est leTrameur. A l’aide duquel on s’intéresse à la cooccurrence des expressions avec le pôle « 家庭 (famille) ».</p>
+            <div class="image0"><img src="./photos/trameur.png"/></div>
+            <br>
+            <p>Et voici les nuages de mots :</p>
+            <p></p>
+            <div class="image" align="center";>
+               <img src="./photos/nuage_dump.png" title="Nuage des textes dump"/>
+               <img src="./photos/nuage_context.png" title="Nuage des textes context"/>
+            </div>
+            <p>On remarque tout d’abord une forte influence de la « politique de l’enfant unique ( 独生子女政策 ) » sur la notion de famille en Chine, en listant les mots qui y sont liés fortement : « 政策(politique) », « 空巢家庭 (Famille de nid vide) », « 失独家庭 (Famille perdant l’enfant unique) » et « 421 (4 grands-parents + 2 parents + 1 enfant) » qui définit un nouveau modèle de famille de nos jours. De plus, l’influence très rapide de la politique de deux enfants :  « 一 (un (enfant)) », « 二／两 (deux (enfants)) », « 第二 (deuxième) »…</p>
+            <p>Dans ce résultats, une certaine évolution, de la famille élargie traditionnelle à la famille nucléaire moderne, est évidemment visible. La structure de la famille se simplifie, le rôle du mariage s’affaiblit au fils du temps. </p>
+            <p>En outre, les termes « 重组家庭 (famille recomposée) », « 单亲家庭 (famille monoparentale) », existe aussi, mais d’une manière moins fréquente. « 同性恋婚姻 (Mariage homosexuelle) » encore moins…</p>
+            <p>Les autres termes qui apparaissent aux premiers rangs sont « 幸福(bonheur) », « 丁克 (Dinks) », « 压力(pression) », « 女 (femme) », « 教育 (éducation) », « 住房 (logement) », « 收入 (revenus) »… Leur présence montre un changement des mentalités et la mise en question de la restriction forcée de la maternité qui est accompagnée de problèmes sociaux : « 养老 (bénéficier de soins des enfants) », « 生育率 (taux de fécondité) »…</p>
+			<br>
+			<p>Pour le résultat final, veuillez consulter la rubrique "<a href="famille_resultats.html">Résultats</a>". </p>
+    
+        </div><!-- /contentWrapper -->
+	  </div><!-- /vAlignWrapper -->
+    </div><!-- /sectionWrapper -->
+    
+    
+    <div id="Difficultés" class="sectionWrapper">
+	  <div class="vAlignWrapper">
+	    <div class="contentWrapper">
+	
+            <h1 align="left">V. <span style="font-family: Snell Roundhand, Times New Roman, arial, sans-serif;">Difficultés rencontrées</span></h1>
+    
+            <br>
+            <p></p>
+            <ul>
+                <li><em>Encodage "GBK"</em></li>
+                <p>Une grande difficulté ici concerne l’encodage grandement employé par des sites en chinois, celui de « GKB », qui reste méconnaissable par lynx, et ainsi impossible à traiter avec le script proposé. </p>
+                <p>Ce « GBK» n’est point marginal. Les grands sites regroupant une énorme qualité de webpages, tels que www.163.com, utilisent principalement cet encodage. </p>
+                <p>Cela cause ainsi un grand problème : une grande partie de corpus sur le web chinois ne peut pas être traitée par cette méthode.</p>
+                <br>
+                <li><em>Segmentation incorrete</em></li>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:30%">
+                            <div id="image" align="center"><img src="./photos/seg1.png"></div>
+                        </td>
+                        <td>
+                            <p>Malgré l’avancement remarquable des outils, l’exactitude de la segmentation reste insuffisante. </p>
+                            <p>On constate dans les résultats de iTrameur certaines chaînes de caractères chinois mal découpées par Stanford Segmenter. Ici « (失)独家庭 », qui désigne « famille perdant leur enfant unique » est découpé en 2 parties :  « 独家庭 » et « 失 ».</p>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <li><em>Nettoyage de corpus</em></li>
+                <br>
+                <p>Le problème des ponctuations et des mots communs en chinois peut être réglé à l'aide de la commande <span id="commande">sed</span>, comme montré ci-dessus.</p>
+                <p>Par ailleurs, d'autres intrus (publicités, contenu de la barre de navigation) sont largement déblayés dans les textes du contexte.</p>
+            </ul>
+            
+        </div><!-- /contentWrapper -->
+	  </div><!-- /vAlignWrapper -->
+    </div><!-- /sectionWrapper -->
+    
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+</div> <!-- End of main content -->
+
+<br>
+<br>
+
+</div> <!-- End of wrapper  -->
+
+
+
+<div id="col">
+    <ol type="I">
+        <li><a class="js-scrollTo" href="#Script">Script</a></li>
+        <li><a class="js-scrollTo" href="#Tableaux">Tableaux</a></li>
+        <li><a class="js-scrollTo" href="#Segmentation">Segmentation</a></li>
+        <li><a class="js-scrollTo" href="#Analyse">Analyse</a></li>
+        <li><a class="js-scrollTo" href="#Difficultés">Difficultés</a></li>
+    </ol>
+</div>
+
+
+
+<div id="footer">
+    Projet encadré @MasterTAL2016-2017
+</div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+	    $(document).ready(function() {
+		    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			    var page = $(this).attr('href'); // Page cible
+			    var speed = 750; // Durée de l'animation (en ms)
+			    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			    return false;
+		    });
+	    });
+    </script>
+
+
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="animate" lang="fr">
+
+
+<head>
+    <title>Master TAL Projet encadré : notion de famille en français, anglais et chinois</title>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <meta name="keywords" content="famille notion bash html trameur nuage chinois enfant unique chine"/>
+    <meta name="description" content="">	
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="famille_home.css"/>
+    <link rel="shortcut icon" href="photos/icon.ico"/>
+</head>
+
+<body>
+
+<div id="header">
+    
+    <h1>Notion de Famille</h1>
+
+    <br>
+
+    <div id="nav"> <!-- Begin navigation section -->
+        <a href="famille_home.html"><div class="highlight">Accueil</div></a>
+        <a href="famille_francais.html"><div class="highlight">En Français</div></a>
+        <a href="famille_anglais.html"><div class="highlight">En Anglais</div></a>
+        <a href="famille_chinois.html"><div class="highlight">En Chinois</div></a>
+        <a href="famille_resultats.html"><div class="highlight">Résultats</div></a>
+        <a href="http://projetgroupe.unblog.fr/"><div ; class="highlight">Blog</div></a>
+    </div> <!-- End of navigation section -->
+
+</div>
+
+<br>
+
+<div id="wrapper"> <!-- Begin wrapper section, puts a buffer around the edge of the page -->
+
+<div id="section"> <!-- Start of main content -->
+    
+    <br>
+    <br>
+    
+    <p align="center">✽&nbsp;✽&nbsp;✽</p>
+    <h3 class="h3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dans cette partie nous traiterons de la notion anglophone du mot famille.</h3>
+    <p align="center">✽&nbsp;✽&nbsp;✽</p>
+    
+    <br>
+    <div class="image0"> 
+        <img src="PROJET-MOT-SUR-LE-WEB-ANGLAIS/IMAGES/wordle-dump4.png"/> 
+    </div>
+    <br>
+	<div id="Corpus" class="sectionWrapper">
+	  <div class="vAlignWrapper">
+	    <div class="contentWrapper">
+    
+            <h1 align="left">I. <span style="font-family: Snell Roundhand, Times New Roman, arial, sans-serif;">Corpus</span></h1>
+    
+            <br>
+            
+            <p>Pour ce projet, nous avions comme première tâche de constituer un corpus d'une cinquantaine d'URLS traitant de notre sujet. J'ai donc répertorié dans un fichier texte brut un bon nombre de sites internet traitant de la notion et de la définition anglophone du mot "family". </p>
+			<p> Bien que cette tâche n'ait pas représenté de grandes difficultés au niveau informatique, j'ai très rapidement pris conscience que mes résultats n'allaient pas être des plus objectifs car c'est moi qui, au final, sélectionnais les URLS. J'avais tendance à choisir des sites qui allaient vers une certaine analyse, qui reflétaient ma vision personnelle de la famille et donnaient une opinion proche de la mienne, ou dans tout les cas pas trop extrême. J'ai ensuite essayé, avec plus ou moins de succès, de trouver des sites différents, un peu plus variés. </p>
+			<p> Mon corpus final était composé de cinquante-quatre sites. Certains de ces sites sont des sites classiques de définitions, d'autres sont des articles d'actualité américaine, anglaise ou australienne parlant de la famille. </p>
+			<br>
+			<p class="sl">>>> <a href="./PROJET-MOT-SUR-LE-WEB-ANGLAIS/URLS/liens.txt" download="liens.txt">Veuillez cliquer pour télécharger la liste des URL.</a></p>
+
+        </div><!-- /contentWrapper -->
+	  </div><!-- /vAlignWrapper -->
+    </div><!-- /sectionWrapper -->
+	
+	<div id="Script" class="sectionWrapper">
+	  <div class="vAlignWrapper">
+	    <div class="contentWrapper">
+    
+            <h1 align="left">II. <span style="font-family: Snell Roundhand, Times New Roman, arial, sans-serif;">Script</span></h1>
+    
+			<br>
+			
+			<p> Ensuite, nous devions comprendre, utiliser et éventuellement modifier un script bash fourni par notre professeur. Je n'avais jamais fait de programmation avant et ce script était donc une première pour moi. J'ai travaillé sous Windows 10 et j'ai utilisé le terminal Bash Ubuntu pour faire fonctionner le programme. </p>
+			<p> Ce Script m'a permis de découvrir plusieurs commandes bash telles que "echo" qui permet d'écrire des informations, iconv qui convertit une chaîne de caractères ou un fichier dans un certain encodage ou encore egrep qui permet de reconnaître une chaine de caractères et de prendre la ligne dans laquelle elle se situe. Nous avons aussi utilisé des boucles "for" et "if" ainsi que la redirection de flux de sortie ou d'entrée d'un commande grâce aux chevrons entrant et fermant. </p>
+			<p> Le problème majeur que j'ai rencontré durant cette partie du projet a été une erreur d'encodage. En effet, après avoir modifié mon script pour que la syntaxe corresponde à celle de Bash Ubuntu et que le script puisse marcher, seule la dernière URL de mon fichier liens était réellement prise en compte par le programme. Le soucis étant que je travaillais sous Windows 10, et que mes fichiers script, liens et paramètre étaient tous enregistrés sous l'encodage Windows et non sous l'encodage Unix reconnu par Bash Ubuntu. Les retours à la ligne différant entre ces deux encodages, seul le dernier lien, pour lequel aucun retour à la ligne ne suivait, était pris en compte. Après avoir converti proprement tous mes fichiers grâce à la commande dos2unix mon script a bien fonctionné et j'ai pu obtenir le tableau attendu. </p>
+			<p> Voici ci-joint le fichier paramètre utilisé et mon script : </p>
+			<br>
+			<p align="center"><img src="PROJET-MOT-SUR-LE-WEB-ANGLAIS/IMAGES/photo-parametre-anglais.png"></p>
+			<br>
+            <p class="sl">>>> <a href="./PROJET-MOT-SUR-LE-WEB-ANGLAIS/PROGRAMMES/programme.bash" download="programme.bash">Veuillez cliquer pour télécharger le script.</a></p>
+            <br>
+            <div id="sh"><object width="95%" height="450px" data="./PROJET-MOT-SUR-LE-WEB-ANGLAIS/PROGRAMMES/programme.bash"></object></div>
+            <br>
+            <br>
+            <br>
+       
+        </div><!-- /contentWrapper -->
+	  </div><!-- /vAlignWrapper -->
+    </div><!-- /sectionWrapper -->
+        
+    <div id="Tableaux" class="sectionWrapper">
+	  <div class="vAlignWrapper">
+	    <div class="contentWrapper">
+    
+            <h1 align="left">III. <span style="font-family: Snell Roundhand, Times New Roman, arial, sans-serif;">Tableau final</span></h1>
+
+            <br>
+            <p> Voici le tableau obtenu grâce au script : </p>
+            <div class="table_ch">
+                <object width="95%" height="450px" data="./PROJET-MOT-SUR-LE-WEB-ANGLAIS/TABLEAUX/tableau.html"></object>
+            </div>
+			<br>
+			<p class="sl">>>> <a href="./PROJET-MOT-SUR-LE-WEB-ANGLAIS/TABLEAUX/tableau.html" download="tableau.html">Veuillez cliquer pour télécharger le tableau final.</a></p>
+            <br>
+            <p>Pour mon site numéro vingt, mon programme n'a pas reussi à aspirer la page. </p>
+    
+        </div><!-- /contentWrapper -->
+	  </div><!-- /vAlignWrapper -->
+    </div><!-- /sectionWrapper -->
+    
+    
+    <div id="Analyse" class="sectionWrapper">
+	  <div class="vAlignWrapper">
+	    <div class="contentWrapper">
+	
+            <h1 align="left">IV. <span style="font-family: Snell Roundhand, Times New Roman, arial, sans-serif;">Analyse</span></h1>
+    
+            <br>
+			<p> Après avoir obtenu tous les fichiers dumps et contextes issus des sites internet, il fallait que nous les concatenions à l'aide d'un programme donné par notre professeur. Une fois les fichiers dumps concatenés et les fichiers contextes concatenés, j'ai nettoyé les concatfiles à la main, enlevant toutes les informations des sites internet qui n'étaient pas pertinentes. </p>
+			<br>
+			<h3 class="h3">Corpus concaténé : </h3>
+            <div>
+            <table id="table_texte" align="center">
+                <tr>
+                    <td align="center"><b>DUMP</b></td>
+                    <td align="center"><b>CONTEXT</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <object width="350px" height="300px" data="./PROJET-MOT-SUR-LE-WEB-ANGLAIS/DUMP-TEXT/CONCATFILEDUMP.txt"></object>
+                    </td>
+                    <td>
+                        <object width="350px" height="300px" data="./PROJET-MOT-SUR-LE-WEB-ANGLAIS/CONTEXTES/CONCATFILECONTEXTES.txt"></object>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><a href="./PROJET-MOT-SUR-LE-WEB-ANGLAIS/DUMP-TEXT/CONCATFILEDUMP.txt">Télécharger</a></td>
+                    <td align="center"><a href="./PROJET-MOT-SUR-LE-WEB-ANGLAIS/CONTEXTES/CONCATFILECONTEXTES.txt">Télécharger</a></td>
+                </tr>
+            </table>
+            </div>
+            <br>
+			<p> J'ai d'abord fait une première analyse grâce au logiciel du Trameur qui calcule les coocurrents du mot "family" et voici ci-joint mes résultats avec le fichier dump concatené : </p>
+			<br>
+			<p align="center"><img src="PROJET-MOT-SUR-LE-WEB-ANGLAIS/IMAGES/Trameur-Dump3.png" height="700" width="1000"></p>
+			<br>
+			<p> Ensuite j'ai fait des analyses avec des outils de Itrameur.</p>
+			<br>
+			<p align="center"><img src="PROJET-MOT-SUR-LE-WEB-ANGLAIS/IMAGES/Dump.png" height="700" width="1000"></p>
+			<br>
+			<p> Malgré le fait que les fichiers concaténés aient été nettoyés, nous pouvons tout d'abord remarquer que certaines anomalies subsissent néanmoins lors des analyses. Nous pouvons par exemple retrouver des mots issus de la notion biologique du mot "famille" comme "anthropods" ou "biology".</p>
+			<p> Nous pouvons voir que les notions de famille "traditionnelle" et "nucléaire" sont présentes dans le corpus, ainsi que la notion de "religion" avec des mots tels que "traditional", "nuclear" et "religion". Selon wikipedia une famille nucléaire est "une forme de structure familiale fondée sur la notion de couple, soit un « ensemble de deux personnes liées par une volonté de former une communauté matérielle et affective, potentiellement concrétisée par une relation sexuelle conforme à la loi ». La famille nucléaire correspond donc à une famille regroupant deux adultes mariés ou non avec ou sans enfant. Cette structure familiale se distingue de la famille élargie et de la famille polygame." Cela représente l'idée générale que les pays occidentaux, tels que les pays anglophones, se font de l'idée générale de la famille. </p>
+			<p> Mais les notions de changement et d'expension de la définition traditionnelle de la famille sont aussi présentes avec des mots tels que "definition", "expanded" ou encore "broad" et "changing". En effet, depuis des années, les familles sont de plus en plus recomposées et il y a aussi la question de l'IVG, du mariage et de l'adoption pour les couples gays, qui peuvent aggrandir le schéma traditionnel de la famille. </p>
+			    <br>
+    <p>Pour le résultat final, veuillez consulter la rubrique "<a href="famille_resultats.html">Résultats</a>". </p>
+    
+        </div><!-- /contentWrapper -->
+	  </div><!-- /vAlignWrapper -->
+    </div><!-- /sectionWrapper -->
+
+    
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+</div> <!-- End of main content -->
+
+<br>
+<br>
+
+</div> <!-- End of wrapper  -->
+
+
+
+<div id="col">
+    <ol type="I">
+        <li><a class="js-scrollTo" href="#Corpus">Corpus</a></li>
+        <li><a class="js-scrollTo" href="#Script">Script</a></li>
+        <li><a class="js-scrollTo" href="#Tableaux">Tableaux</a></li>
+        <li><a class="js-scrollTo" href="#Analyse">Analyse</a></li>
+    </ol>
+</div>
+
+
+
+<div id="footer">
+    Projet encadré @MasterTAL2016-2017
+</div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+	    $(document).ready(function() {
+		    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			    var page = $(this).attr('href'); // Page cible
+			    var speed = 750; // Durée de l'animation (en ms)
+			    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			    return false;
+		    });
+	    });
+    </script>
+
+
+
+</body>
+</html>
+
+
+
+
+

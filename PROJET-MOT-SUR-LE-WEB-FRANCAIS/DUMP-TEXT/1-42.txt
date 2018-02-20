@@ -1,0 +1,653 @@
+    #Actualité
+
+   Le Journal des femmes
+     *
+     *
+
+   Moteur de recherche
+
+   ____________________ (BUTTON) Rechercher
+
+     * S'inscrire
+     * Connexion
+
+     * Mon carnet de recette
+     * Editer mes informations
+     * Boîte de réception
+     * Gérer mes chroniques
+     * Se déconnecter
+
+     * Mode (BUTTON)
+          + Vêtements
+          + Accessoires
+          + Défilés
+          + Voir aussi
+     * Beauté (BUTTON)
+          + Coiffure
+          + Maquillage
+          + Soins
+          + Minceur
+     * Luxe (BUTTON)
+          + Shopping luxe
+          + Défilés
+          + Evasions
+          + Voir aussi
+     * Déco (BUTTON)
+          + Salon
+          + Cuisine
+          + Chambre
+          + Voir aussi
+     * Cuisine (BUTTON)
+          + Entrées
+          + Desserts
+          + Recettes
+          + Pratique
+     * Maman (BUTTON)
+          + Grossesse
+          + Bébé
+          + Enfant
+          + Voir aussi
+     * Santé (BUTTON)
+          + Nutrition
+          + Dossiers santé
+          + Gynéco
+          + Voir aussi
+     * People (BUTTON)
+          + Tout sur les stars
+          + L'actu people
+          + Ils s'aiment
+     * Loisirs (BUTTON)
+          + Cine-tv
+          + Culture
+          + Voyages
+          + Auto
+     * Société (BUTTON)
+          + Dans l'actu
+          + Combats de femmes
+          + Au boulot !
+     * Couple (BUTTON)
+          + Séduction
+          + Vie à deux
+          + Sexo
+          + Rupture
+     * Mariage (BUTTON)
+          + Robes de mariée
+          + Planning
+          + Coiffure
+          + Alliances
+          + Chroniques
+          + Salons du mariage
+     * Jardin (BUTTON)
+          + Déco du jardin
+          + Toutes les plantes
+          + Jardiner bio
+          + Chroniques
+     * Horoscope
+     * Noël
+
+   (BUTTON) Menu
+     * Forum Mode - Echangez vos astuces mode avec nos lectrices !
+          + Vêtements
+               o Robes
+               o Tops
+               o Pantalons
+               o Jupes
+               o Manteaux
+               o Lingerie
+               o Maillots de bain
+          + Accessoires
+               o Chaussures
+               o Sacs
+               o Bijoux
+               o Lunettes de soleil
+          + Défilés
+               o Espace fashion week
+               o Espace haute couture
+               o Défilés prêt-à-porter
+               o Défilés haute couture
+          + Voir aussi
+               o Actu mode
+               o Conseils
+               o Looks de stars
+               o Forum
+               o Tenues de mariage
+       Mode
+     * Forum Beauté - Echangez vos astuces beauté avec nos lectrices !
+          + Coiffure
+               o Coupe de cheveux
+               o Cheveux courts
+               o Cheveux longs
+               o Coiffures de star
+               o Coloration
+               o Soin des cheveux
+               o Studio de relooking
+          + Maquillage
+               o Yeux
+               o Teint
+               o Lèvres
+               o Ongles
+               o Astuces maquillage
+          + Soins
+               o Visage
+               o Corps
+               o Anti-âge
+               o Médecine esthétique
+               o Bronzage
+               o Epilation
+          + Minceur
+               o Regime
+               o Recettes légères
+               o Exercices
+               o Sport
+               o Soins
+       Beauté
+     *
+          + Shopping luxe
+               o Chaussures de luxe
+               o It-bags
+               o Joaillerie
+               o Horlogerie
+               o Lunettes de soleil créateurs
+          + Défilés
+               o Espace haute couture
+               o Espace fashion week
+               o Défilés haute couture
+               o Défilés prêt-à-porter
+          + Evasions
+               o Hôtels
+               o Spas
+               o Stations de ski
+          + Voir aussi
+               o L'actu du luxe
+               o Beauté d'exception
+               o Haute gastronomie
+       Luxe
+     * Forum déco - Echangez vos astuces déco avec nos lectrices !
+          + Salon
+               o Canapé
+               o Table basse
+               o Salle à manger
+               o Fauteuil
+               o Couleur de salon
+               o Bibliothèque
+               o Table
+               o Chaise
+               o Meuble TV
+          + Cuisine
+               o Meuble de cuisine
+               o Ilot central
+               o Crédence
+               o Plan de travail
+               o Cuisine ouverte
+               o Couleur de cuisine
+               o Cuisiniste
+               o Cuisine IKEA
+          + Chambre
+               o Chambre parentale
+               o Literie
+               o Couleur de chambre
+               o Chambre d'enfant
+               o Chambre d'ado
+               o Chambre de bébé
+               o Linge de lit
+               o Dressing
+               o Suite parentale
+          + Voir aussi
+               o Salle de bains
+               o Couleur salle de bains
+               o Meuble salle de bains
+               o Douche à l'italienne
+               o Petit espace
+               o Déco de table
+               o Architecture
+               o Chroniques
+               o Shoppings
+
+A la maison dans une bulle de bien-être.
+Avec Electrolux
+       Déco
+     * Forum cuisine - Echangez vos astuces cuisine avec nos lectrices !
+          + Entrées
+               o Entrées froides
+               o Entrées chaudes
+               o Soupe et potages
+               o Apéritif
+               o Nouveautés
+          + Desserts
+               o Cake
+               o Chocolat
+               o Crêpes
+               o Gâteaux
+               o Tartes
+               o Nouveautés
+          + Recettes
+               o Viandes
+               o Poissons
+               o Pâtes et riz
+               o Recettes minceur
+               o Recettes de saison
+               o Recettes faciles
+               o Recettes thermomix
+               o Recettes poulet
+          + Pratique
+               o Astuces
+               o Encyclopédie
+               o Menu semaine
+               o Vidéo
+       Cuisine
+     * Forum maman - Echangez vos astuces maman avec nos lectrices !
+          + Grossesse
+               o Maternités
+               o Suivi de grossesse
+               o Accouchement
+               o Congé maternité
+               o Prise de poids
+               o Symptômes
+          + Bébé
+               o Crèches
+               o Mode de garde
+               o Mois par mois
+               o Alimentation
+               o Soins
+               o Puériculture
+          + Enfant
+               o Écoles
+               o Sorties
+               o Ados
+               o Rentrée scolaire
+               o Anniversaire
+               o Santé
+               o Sommeil
+          + Voir aussi
+               o Chroniques
+               o Prénoms
+               o Psycho-test
+               o Parents People
+               o Papa
+               o Grands-parents
+       Maman
+     * Forum santé - Echangez vos conseils et posez vos questions
+          + Nutrition
+               o Calcul imc
+               o Guide des calories
+               o Surpoids
+               o Diabète
+               o Cholesterol
+               o Conseils
+          + Dossiers santé
+               o Analyses
+               o Conseils pratiques
+               o Bien-être
+               o Cancérologie
+               o Forme
+               o Médecine douce
+          + Gynéco
+               o Contraception
+               o Cancer du sein
+               o Endométriose
+               o Ménopause
+               o Hygiène intime
+          + Voir aussi
+               o Allergies
+               o Dents
+               o Dermato
+               o Maux quotidiens
+               o Cardio
+               o Neuro
+               o Ophtalmo
+               o Rhumato
+               o Orl
+               o Psy
+       Santé
+     *
+          + Tout sur les stars
+               o Interviews
+               o Photos
+          + L'actu people
+               o Evénement
+               o Magazine
+               o Scandales
+          + Ils s'aiment
+               o Couples de stars
+               o Mariages de stars
+               o Bébés de stars
+       People
+     *
+          + Cine-tv
+               o En salles
+               o Films
+               o Programme TV
+               o Séries
+          + Culture
+               o Musique
+               o Livres
+               o Sorties
+          + Voyages
+               o L'actu
+               o Destinations
+               o Conseils pratiques
+          + Auto
+               o Tests
+               o Ma voiture
+       Loisirs
+     * Forum société - Echangez vos astuces société avec nos lectrices !
+          + Dans l'actu
+               o News
+               o En images
+               o Comprendre
+               o Insolite
+          + Combats de femmes
+               o Egalité
+               o Droit à l'IVG
+               o Fin des violences
+               o Halte au sexisme
+          + Au boulot !
+               o Conseils
+               o Femmes en entreprise
+       Société
+     * Noël
+     *
+          + Loisirs
+               o Cine-tv
+               o Culture
+               o Voyages
+               o Auto
+          + Société
+               o Dans l'actu
+               o Combats de femmes
+               o Au boulot !
+               o Forum société
+          + Couple
+               o Séduction
+               o Vie à deux
+               o Sexo
+               o Rupture
+               o Forum couple
+               o Forum sexo
+          + Mariage
+               o Robes de mariée
+               o Planning
+               o Coiffure
+               o Alliances
+               o Chroniques
+               o Salons du mariage
+               o Forum mariage
+          + Jardin
+               o Déco du jardin
+               o Toutes les plantes
+               o Jardiner bio
+               o Chroniques
+               o Forum jardin
+       Horoscope Horoscope
+          + Horoscope 2017
+          + Horoscope de la semaine
+          + Horoscope chinois
+          + Numérologie
+       (BUTTON)
+
+   Accueil
+   Forum
+   Grossesse
+
+   Signaler
+
+Une vraie famille, c'est quoi ?
+
+   Posez votre question Anonyme - Dernière réponse le 27 mai 2015 à 23:23
+   par Mika
+   Selon vous, qu'est-ce qu'une vraie famille ? Merci pour vos réponses.
+   Afficher la suite
+     * Qu'est ce que la famille
+     * La famille c'est quoi
+     * C‘est quoi une famille??
+     * Etes-vous pour ou contre une famille nombreuse ?
+     * Bonjour a tts je recherche tts personne du nom de famille levoyer
+       (Résolu)
+     * Cherche famille CONEJERO (Résolu)
+     * Famille alfonsi vallée d'alésani en corse/ nice (Résolu)
+     * RECHERCHE DESCENDANTS FAMILLE FOLEY ET TREULIER ET REGION D'ORI
+       (Résolu)
+
+   Utile
+   +19
+   moins plus
+   Signaler
+   Anonyme 17 févr. 2009 à 21:55
+   Une vraie famille c'est simplement de l'amour et surtout des gens qui
+   sont toujours là pour vous, qui ne vous jugent pas, qui savent vous
+   entourer quand il faut, c'est des moments inoubliables ou l'on se sent
+   tellement bien entouré de ceux que l'on aime. Bref c'est une chance que
+   tout le monde n'a malheureusement pas.
+   [INS: :INS]
+
+   Donnez votre avis
+
+   ____________________
+
+   Utile
+   +8
+   moins plus
+   Signaler
+   Anonyme 19 févr. 2009 à 12:13
+   une vraie famille c est dabord beaucoup d amour , savoir que l on peut
+   compter les uns sur les autres dans les bons et mauvais moments pas de
+   recette s aimer tout simplement
+   [INS: :INS]
+
+   Donnez votre avis
+
+   ____________________
+
+   Utile
+   +7
+   moins plus
+   Signaler
+   Anonyme 17 févr. 2009 à 20:19
+   une vraie famille : c'est vos proches ;votre papa ,votre maman ;vos
+   freres , vos soeurs;vos grands peres ,vos grandes meres !c'est ca
+   lavraie famille !!!...
+   Signaler lololololillloooloololill- 28 avril 2015 à 06:49
+   Je ne sais pas la mienne est morte
+   Répondre
+   Signaler lekabilien 7576Messages postés jeudi 18 décembre 2014Date
+   d'inscription 2 janvier 2017 Dernière intervention - 28 avril 2015 à
+   16:12
+   Bonjour lololololillloooloololill.
+   Si tu veux en discuter, ouvres un post pour ne encombrer celui la et ce
+   sera mieux pour s'y retrouver.
+   A bientôt si tu le désir.
+   Répondre
+   Signaler AP- 28 avril 2015 à 16:49
+   Une vraie famille, c'est un cercle chaleureux, plus ou moins grand, pas
+   forcément génétiquement lié, au sein duquel on se sent simplement bien,
+   libre d'être soi, aimé pour ce que l'on est. Un autre atout est sa
+   durée dans le temps, véritable cercle de témoins de nos vies, complices
+   de nos mutations.
+   C'est dire si c'est rare...
+   Mais c'est possible.
+   Répondre
+
+   Donnez votre avis
+
+   ____________________
+
+   Utile
+   +7
+   moins plus
+   Signaler
+   Anonyme 1 avril 2009 à 21:07
+   Personnellement, je me suis construite ma propre famille avec quelque
+   amis qui sont comme ma famille. Le reste, c'est du baratin.
+
+   Donnez votre avis
+
+   ____________________
+
+   Utile
+   +7
+   moins plus
+   Signaler
+   Leila057 5Messages postés mercredi 5 novembre 2014Date d'inscription 14
+   novembre 2014 Dernière intervention 5 nov. 2014 à 22:44
+   Pour moi, la famille est extensible.
+   C'est à dire qu'au delà des parents, frères, soeurs, cousins, etc., qui
+   sont tant bien que mal notre famille qu'on le veuille ou non, il y a
+   nos conjoints et leurs familles qui viennent l'agrandir et deviennent
+   tant bien que mal notre famille.
+   Puis il y a nos proches, nos amis fidèles, même parfois nos anciens
+   compagnons ou compagnes qui font toujours d'une façon ou d'une autre
+   partie de notre vie d'une manière plus filiale qu'autre chose.
+   La famille, c'est au delà de l'administratif et du fameux livret.
+   Elle peut prendre des tas de formes différentes.
+   On peut avoir déjà une famille, ne pas en avoir ou avoir une famille
+   qu'on aime pas. On peut la renier. Et on peut s'en créer une nouvelle
+   en ayant des enfants ou pas, en se mariant ou pas, en adoptant les
+   enfants de son conjoint ou en aimant ceux de ses meilleurs amis comme
+   les sien propres, quand il y a toujours une assiette pour vous et un
+   lit pour dormir.
+   ça peut être juste une mère célibataire (un père) et son enfant... on
+   peut y inclure sa ou son meilleur(e) ami(e). Quand on vous présente en
+   disant, c'est untel, il(elle) fait partie de la famille.
+   Une famille c'est un groupe d'individus liés par un sentiment filial.
+   Ce sentiment est en fait le point commun à toute l'humanité. Il n'a pas
+   de genre ni d'origine, ça peut être deux femmes, deux hommes, un homme
+   et une femme, ça peut être des compagnons, des amis qui élèvent
+   ensemble un ou des enfants ou pas.
+   En fait, ce qui fait une famille, c'est ce lien indéfectible. Celui qui
+   fait que quoi qu'on fasse, où qu'on aille et quoi qu'on pense, il y a
+   ces gens qui seront toujours là, encrés profondément dans nos âmes,
+   même quand on fini par se détester et qu'on coupe les ponts. C'est
+   d'aimer sans restriction chaque individu d'un groupe de personnes et
+   d'en ressentir une terrible frustration quand on est brouillé avec eux.
+   L'extension naturelle sociologique de la famille, c'est la tribu. La
+   tribu c'est la grande famille. Quand on arrive au stade tribu, il s'y
+   mêle des gens qu'on connait moins, qu'on apprécie moins. comme des
+   cousins éloignés qu'on saurait en faire partie sans avoir forcément de
+   liens directs.
+   Alors que finalement une famille, c'est quand ce groupe autour de vous,
+   tous liés à vous par ce sentiment filial qui n'a pas d'égal, qu'ils
+   soient deux ou cinquante, parfois se réuni tout ou partie et que les
+   voir ensemble avec vous vous empli de ce sentiment particulier de
+   plénitude et de grâce en sachant qu'à jamais ils seront présents dans
+   votre esprit.
+
+   Donnez votre avis
+
+   ____________________
+
+   Utile
+   +5
+   moins plus
+   Signaler
+   Anonyme 17 févr. 2009 à 20:54
+   une vraie famille c'est d'être entouré lorsque vous avez des soucis ou
+   des ennuis, ou de grandes joies .et tout un tas d'autres choses.
+
+   Donnez votre avis
+
+   ____________________
+
+   Utile
+   +5
+   moins plus
+   Signaler
+   Anonyme 18 mars 2009 à 16:28
+   une vraie famille c est celle qui ne porte pas de jugement sur la
+   maniere de vivre et qui est toujours la'
+
+   Donnez votre avis
+
+   ____________________
+
+   Utile
+   +3
+   moins plus
+   Signaler
+   Anonyme 18 févr. 2009 à 13:18
+   j' aurai presque la meme réponse que christel ,mais je voudrais
+   rajouter a ( qui ne vous juge pas) c' est aussi accepter les choix de
+   chacuns,etre la pour eux pour les bon et mauvais moment meme si vous n'
+   avez pas toujours la meme façon de vivre une famille ne doit etres que
+   de l' amour de la tendresse du soutien et de grand fou rire.
+   effectivement tout le monde n' a pas cette chance
+   Signaler Mika- 27 mai 2015 à 23:23
+   La famille ,pour moi c'est tout dans la vie. Le plus beau cadeau que
+   Dieu puisse donner à quelqu'un. C'est l'amour...
+   Répondre
+
+   Donnez votre avis
+
+   ____________________
+
+   Utile
+   +3
+   moins plus
+   Signaler
+   Anonyme 18 mars 2009 à 18:21
+   tu sais moi je vais te dire question famille mes parents mes freres &
+   soeursils m 'ont tous tourné le dos tous cela à causes de ma chere mere
+   j en souffre depuis 9 ans je n est plus aucun contacte avec eux et je
+   ne sais vraiment pas pourquoi le plus douloureux c'est de ne pas savoir
+   le fin mots ils n aimes pas dire la véritée de toute manières c est pas
+   le fort ils adorent faire du ma étant famille nombreuse et je suis l
+   'ainée mariée deux enfants j aurais pu écrire un livre sur mon enfance
+   car j en ai vraiment bavé comme on dit on ne choisis pas sa famille
+   mais ses amis j ai trois nieces et un neveu que je ne connais pas et
+   que mes enfants n ont pas eu le bonheur de connaitre comme ma dit un
+   jour mon mari la vie est con et pourris
+
+   Donnez votre avis
+
+   ____________________
+
+   Utile
+   +3
+   moins plus
+   Signaler
+   Anonyme 13 avril 2009 à 16:30
+   CEST ETRE DISPONIBLE A LEUR ATTENTE ETRE A LEUR ECOUTE
+
+   Donnez votre avis
+
+   ____________________
+
+   Répondre au sujet
+   Posez votre question
+   [INS: :INS]
+
+   Les membres obtiennent plus de réponses que les utilisateurs anonymes.
+
+   Le fait d'être membre vous permet d'avoir un suivi détaillé de vos
+   demandes.
+
+   Le fait d'être membre vous permet d'avoir des options supplémentaires.
+   S'inscrire maintenant
+
+Vous n'êtes pas encore membre ?
+inscrivez-vous, c'est gratuit et ça prend moins d'une minute !
+
+     * Magazine delle donne
+     * A Revista Da Mulher
+     * Hayatouki
+     * Qui sommes-nous ?
+     * Contact
+     * Publicité
+     * Recrutement
+     * Données personnelles
+     * Mentions légales
+     * © 2016 CCM Benchmark
+
+   CCM Benchmark Group
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+
+   Actualités | Carte de voeux | Bricolage | Cinéma | Coiffure |
+   Coloriages | Cuisine | Recette | CV | Déco | Dictionnaire | High-tech |
+   Horoscope | Jeux en ligne | Pages blanches | Pages jaunes |
+   Présidentielle 2017 | Programme TV | Restaurant | Santé | SMIC | Test
+   débit | Vacances scolaires |

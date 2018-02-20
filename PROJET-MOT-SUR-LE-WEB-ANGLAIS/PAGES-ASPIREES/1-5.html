@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <style> @charset "UTF-8";*,*:before,*:after{box-sizing:border-box}body,p,h1,h2,h3,h4,ul,ol,figure{margin:0;padding:0;font-weight:inherit}ul,ol{list-style:none}a,u{text-decoration:none}img{max-width:100%;height:auto;vertical-align:text-top}.sidebar section,li{page-break-inside:avoid;-webkit-column-break-inside:avoid;break-inside:avoid}input{outline:0}.content-related-slideshows,.grid{overflow:hidden;clear:both}.grid>*,.cell,.content-related-slideshows .slideshow{display:block;float:left;width:100%}.grid.centered{text-align:center}.grid.centered>*{text-align:left;display:inline-block;float:none}.content-related-slideshows{margin-left:-10px}.grid.boxed,.body,.footer-small{padding:10px 10px 0 0}.grid>*,.cell,.content-related-slideshows .slideshow{padding:0 0 10px 10px}.ad-article-bottom{padding:10px 0}.breadcrumbs ol,.slideshow-title,.sidebar header{padding:5px 0}.header{padding:0 10px}.footer-small .footer-about ul,.slideshow-image,.content-related header{padding-top:10px}.breadcrumbs{margin-top:-10px}.footer .site-social,#useful,.content-header h1,.content-related{padding-bottom:10px}.slideshow-title,.sidebar header,.sidebar-slideshows .sidebar-title{margin-bottom:10px}@media(min-width:615px){.content-related-slideshows{margin-left:-15px}.grid.boxed,.body,.footer-small{padding:15px 15px 0 0}.grid>*,.cell,.content-related-slideshows .slideshow{padding:0 0 15px 15px}.ad-article-bottom{padding:15px 0}.breadcrumbs ol,.slideshow-title,.sidebar header{padding:7.5px 0}.header{padding:0 15px}.footer-small .footer-about ul,.slideshow-image,.content-related header{padding-top:15px}.breadcrumbs{margin-top:-15px}.footer .site-social,#useful,.content-header h1,.content-related{padding-bottom:15px}.slideshow-title,.sidebar header,.sidebar-slideshows .sidebar-title{margin-bottom:15px}}@media(min-width:980px){.content-related-slideshows{margin-left:-20px}.grid.boxed,.body,.footer-small{padding:20px 20px 0 0}.grid>*,.cell,.content-related-slideshows .slideshow{padding:0 0 20px 20px}.ad-article-bottom{padding:20px 0}.breadcrumbs ol,.slideshow-title,.sidebar header{padding:10px 0}.header{padding:0 20px}.footer-small .footer-about ul,.slideshow-image,.content-related header{padding-top:20px}.breadcrumbs{margin-top:-20px}.footer .site-social,#useful,.content-header h1,.content-related{padding-bottom:20px}.slideshow-title,.sidebar header,.sidebar-slideshows .sidebar-title{margin-bottom:20px}}@media(min-width:615px){.footer-lists,main,.footer-nav,.sidebar{float:left;clear:none;width:66.667%}.footer-nav,.sidebar{width:33.333%}}@media(min-width:750px){.footer-lists,main{width:calc(100% - 315px)}.footer-nav,.sidebar,.sidebar .ad{width:315px}}@media(min-width:980px){.footer-lists,main{width:calc(100% - 320px)}.footer-nav,.sidebar,.sidebar .ad{width:320px}}@media(min-width:1200px){.footer-lists,main{width:calc(100% - 356px)}.footer-nav,.sidebar,.sidebar .ad{width:356px}}.footer-small .footer-social{width:33.333%}.footer-small .footer-logo{width:66.667%}@media(min-width:360px){.content-related-slideshows .slideshow{width:50%}.footer-small .footer-social{width:40%}.footer-small .footer-logo{width:60%}}@media(min-width:400px){.footer-small .footer-logo,.footer-small .footer-social{width:50%}}.grid>.grid{padding:0}@font-face{font-family:rounded;font-weight:700;src:local("Nunito-Bold"),local("Arial-BoldMT"),local("Arial")}input,body,.text h2,.dateline{font:14px/1.2 'arial rounded mt bold','helvetica rounded',rounded,sans-serif;color:#000}.text,.text h3{font:17px/1.4 georgia,serif;color:#222}@media(min-width:615px){.content-body>p:first-of-type{font-size:20px;line-height:1.2}}.text h3{font-weight:bold}small{font:11px/1.1 sans-serif}a{color:#888;text-decoration:none}a:hover{text-decoration:underline}input{-webkit-appearance:none}[type="text"],[type="search"],textarea{font:16px/1 sans-serif}html{-webkit-text-size-adjust:100%;font-size:16px}.sidebar-topics .sidebar-image span,.fatnav-featured-image,.slideshow-image{background:50% 25% / cover no-repeat;display:block}.sidebar-topics .sidebar-image span{padding-bottom:100%}.fatnav-featured-image{padding-bottom:75%}.slideshow-image{padding-bottom:56.25%}.image .caption,.text figcaption,.image{font:12px sans-serif;color:#888;text-align:center}.image .caption,.text figcaption{padding-top:2px}.logo>b,.floating-header-heart{display:inline-block;color:transparent;width:24px;height:24px;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDYuMyw0LjJDNjcuMSw0LjIsODQsMjEsODQsNDEuOGMwLDEyLjctNi4zLDIzLjktMTUuOSwzMC44YzEuMiw2LjMsMTEuNiwxNC45LDE2LjcsMTkuM2MtMjYuNC03LjktNzYuMS0xNC03Ni4xLTUwQzguNywyMSwyNS42LDQuMiw0Ni4zLDQuMnoiLz48cGF0aCBmaWxsPSIjZTAwMDIyIiBkPSJNNDguMywxLjFMNDguMywxLjFMNDguMywxLjFjMTEuOCwwLDIyLjQsNC44LDMwLjEsMTIuNWM3LjcsNy43LDEyLjUsMTguNCwxMi41LDMwLjFoMHYwbDAsMGgwYzAsNy4yLTEuOCwxNC00LjksMTkuOWMtMC41LDAuOS0xLDEuOS0xLjcsMi44Yy0yLjMsMy42LTUuMSw2LjgtOC4zLDkuNmMyLjcsNC40LDkuNiwxMC4xLDEzLjUsMTMuNWwwLjQsMC4zYzIuMSwxLjgsMi40LDQuOSwwLjYsNy4xYy0xLjMsMS42LTMuNCwyLjItNS4zLDEuNmwwLDBjLTMuOS0xLjItOC41LTIuMy0xMy40LTMuNkM0My4zLDg3LjgsNS42LDc4LjIsNS42LDQzLjh2MGgwYzAtMTEuOCw0LjgtMjIuNCwxMi41LTMwLjJjMC4xLTAuMSwwLjItMC4yLDAuMy0wLjNDMjYuMSw1LjgsMzYuNiwxLjIsNDguMywxLjFMNDguMywxLjFMNDguMywxLjFMNDguMywxLjF6TTQ4LjMsMTEuMUw0OC4zLDExLjFMNDguMywxMS4xTDQ4LjMsMTEuMUw0OC4zLDExLjFjLTguOSwwLTE3LDMuNi0yMi44LDkuM2wtMC4yLDAuM2MtNS45LDUuOS05LjYsMTQuMS05LjYsMjMuMWgwdjBjMCwyNC45LDI5LjMsMzMuOSw1My45LDQwLjNjLTIuMi0yLjgtMy45LTUuNy00LjQtOC41aDBoMGwwLDBoMGMtMC40LTEuOSwwLjQtMy44LDItNWMzLjUtMi41LDYuNS01LjYsOC44LTkuM2MwLjQtMC43LDAuOS0xLjQsMS4zLTIuMmMyLjQtNC42LDMuOC05LjgsMy44LTE1LjJoMGwwLDB2MGgwYzAtOS0zLjctMTcuMi05LjYtMjMuMUM2NS40LDE0LjgsNTcuMywxMS4xLDQ4LjMsMTEuMXoiLz48cGF0aCBmaWxsPSIjZTAwMDIyIiBkPSJNMzkuMiwyNy42TDM5LjIsMjcuNkwzOS4yLDI3LjZjMS40LDAsMi43LDAuMiwzLjksMC42YzAuNiwwLjIsMS4yLDAuNCwxLjcsMC43bDAsMGwwLDBjMS4zLDAuNywyLjUsMS42LDMuNiwyLjdjMi4zLTIuNSw1LjYtNCw5LjItNGwwLDBoMGwwLDBjMy41LDAsNi42LDEuNCw4LjgsMy43YzIuMywyLjMsMy43LDUuNCwzLjcsOC44aDB2MGwwLDBoMGMwLDcuNC04LjksMTQuMi0xNS43LDE5LjNjLTEuNywxLjMtMy4zLDIuNS00LjQsMy40Yy0xLDAuOS0yLjYsMC45LTMuNiwwbDAsMGwwLDBsLTAuMS0wLjFjLTEuMS0wLjktMi42LTIuMS00LjItMy4zYy02LjctNS4xLTE1LjUtMTEuOS0xNS41LTE5LjRsMCwwbDAsMGwwLDBjMC0zLjUsMS40LTYuNiwzLjctOC45QzMyLjYsMjksMzUuOCwyNy42LDM5LjIsMjcuNkwzOS4yLDI3LjZMMzkuMiwyNy42eiIvPjwvc3ZnPg0K) 0/24px 24px no-repeat}.logo{display:inline-block;color:#299de9;font-size:32px;line-height:42px;text-transform:lowercase}.logo>b{height:42px;background-position:0 14px}.logo>u{color:#f65f13}.logo:hover{text-decoration:none}@font-face{font-family:icons;src:url(//cf.ltkcdn.net/fonts/icons5.woff2) format("woff2"),url(//cf.ltkcdn.net/fonts/icons5.woff) format("woff")}i,.ad-anchor:before,.supernav:after,.fatnav-featured-title:before,.text a[href*="//"]:after,#useful .yes:before,#useful .no:before,.slideshow-image:before,.slideshow-title:before{font-family:'icons'!important;speak:none;font-size:14px;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;cursor:default}.site-social i:before{background:#666;color:#fff;width:2rem;height:2rem;border-radius:1rem;font-size:1.25rem;line-height:2rem;text-align:center;display:inline-block;margin-right:.5rem}.site-social .fb:before{content:'f'}.site-social .tw:before{content:'t'}.site-social .pn:before{content:'p'}.site-social .gp:before{content:'g';margin-right:0}#page-share{display:none}@media(min-width:980px){#page-share{display:block;position:fixed;top:50%;left:0;background:#999;border:1px solid #fff;border-left:none;border-radius:0 3px 3px 0;box-shadow:0 1px 7px #aaa;padding:10px 5px 5px 5px;z-index:9000}}.ad{text-align:center}.content-body .ad{display:inline-block;width:100%;border:solid #ccc;border-width:1px 0;padding:8px 0;box-sizing:content-box}.ad-skin{height:0;overflow:hidden}.ad-anchor{position:fixed;bottom:0;width:100%;background:rgba(153,153,153,0.7);padding-top:10px;z-index:1000}.ad-anchor:before{content:'×';line-height:24px;position:absolute;right:2px;top:-18px;background:#666;width:24px;height:24px;color:#ccc;font-size:18px;border-radius:12px;text-align:center}@media(min-width:360px) and (max-width:467px){.ad-anchor:before{top:auto;right:2px}}.ad-anchor>*{background:#333}@media(min-width:360px) and (max-width:399px){.ad-anchor{text-align:left;padding-left:10px}}@media(min-width:615px){.ad-anchor{bottom:auto;top:52px;padding-bottom:10px}.ad-anchor:before{top:10px;right:10px}}@media(min-width:615px){.ad-anchor-only-narrow,.ad-anchor-wide{position:static;background:#fff}.ad-anchor-only-narrow:before,.ad-anchor-wide:before{display:none}.ad-anchor-only-narrow>:first-child,.ad-anchor-wide>:first-child{margin:15px 0}}@media(min-width:615px) and (min-width:980px){.ad-anchor-only-narrow,.ad-anchor-only-narrow>*,.ad-anchor-wide,.ad-anchor-wide>*{background:0}}.ad-anchor-disable{position:static;background:#fff}.ad-anchor-disable:before{display:none}.ad-anchor-disable>:first-child{margin:10px 0}@media(min-width:980px){.ad-anchor-disable,.ad-anchor-disable>*{background:0}}@media(max-width:614px){.ad-anchor-disable{display:none}}.ad.sticky{position:fixed;top:68px}.ad-article-bottom{text-align:center}body{margin-top:52px;overflow-y:scroll;overflow-x:hidden;background:#299de9}.body{background:#fff;overflow:hidden}@media(min-width:980px){body{background:#eee}.header{padding:0 60px}.body,.footer{margin:0 40px}}@media(min-width:1200px){.header{padding:0 calc(50% - 540px)}.body,.footer{width:1120px;margin:0 auto}}.search{position:relative;display:inline-block;width:80%;max-width:18.75rem;height:32px}.search ::-webkit-input-placeholder{font:smaller/32px sans-serif}.search :-ms-input-placeholder{font:smaller/32px sans-serif}.search ::-moz-placeholder{font:smaller/32px sans-serif}.search [type="search"]{position:absolute;width:100%;height:32px;line-height:32px;border:1px solid #999;border-radius:6px;padding:0 1.375rem 0 .125rem;opacity:1}.search button.search-btn,.search [type="submit"]{border:0;color:transparent;width:32px;height:32px;line-height:34px;font-size:20px;border-radius:16px;background:#f65f13 no-repeat center/20px url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDk2LjEsNDM1LjdMMzc0LjksMzMyLjZjLTEyLjUtMTEuMy0yNS45LTE2LjUtMzYuOC0xNmMyOC42LTMzLjUsNDUuOS03Nyw0NS45LTEyNC42QzM4NCw4NiwyOTgsMCwxOTIsMFMwLDg2LDAsMTkyczg2LDE5MiwxOTIsMTkyYzQ3LjUsMCw5MS4xLTE3LjMsMTI0LjYtNDUuOWMtMC41LDEwLjgsNC43LDI0LjIsMTYsMzYuOGwxMDMuMSwxMjEuM2MxNy43LDE5LjYsNDYuNSwyMS4zLDY0LjEsMy43UzUxNS44LDQ1My40LDQ5Ni4xLDQzNS43TDQ5Ni4xLDQzNS43eiBNMTkyLDMyMGMtNzAuNywwLTEyOC01Ny4zLTEyOC0xMjhTMTIxLjMsNjQsMTkyLDY0czEyOCw1Ny4zLDEyOCwxMjhTMjYyLjcsMzIwLDE5MiwzMjB6Ii8+PC9zdmc+DQo=);padding:0;position:absolute;right:-10px;box-shadow:-2px 0 2px #999}.search.primary [type="search"]{border-color:#ccc;background:#eee}.search.primary [type="submit"]{background-color:#e00022}.header{background:#000;box-shadow:0 4px 4px rgba(0,0,0,0.25);position:fixed;top:0;width:100%;z-index:20;height:52px;overflow:hidden;display:table}.header>*{display:table-cell;vertical-align:middle;width:1%;white-space:nowrap}.header-logo{line-height:42px}.header-tools{text-align:right}.header-section,.header-social{display:none}.search.header-search{width:auto}.search.header-search [type="submit"]{position:relative;right:auto}.floating-header{opacity:0}.header-search [type="search"]{transition:opacity .5s,width .5s,padding .5s;width:0;right:.625rem;padding:0;box-shadow:-6px 0 12px 6px #000;opacity:0}.header-search [type="submit"]{box-shadow:none}.header-search.full [type="search"]{opacity:1;width:11.75rem;padding:0 1.375rem 0 .125rem;font-size:14px}.header-search.full [type="submit"]{box-shadow:-2px 0 2px #999}.floating-header{box-shadow:none;padding-top:.625rem;transition:opacity .5s,z-index .5s;z-index:10}.floating-header.on{opacity:1;z-index:1010}.floating-header>*{display:block;float:left;width:auto}.floating-header .header-search{float:right}.floating-header-heart{width:2.063rem;height:2.063rem}.floating-header-title span{display:none}#header-share{float:right}#header-share .pw-button{padding:0 5px 0 0}#header-share .pw-button__inner{min-width:inherit}@media(min-width:360px){.floating-header-heart{display:none}#header-share{float:left}}@media(min-width:400px){.header-social{display:inline-block}.header-social i:before{margin:0 0 0 7px}.floating-header-heart{display:inline-block}#header-share{float:right}}@media(min-width:650px){.header{color:#ccc}.floating-header-title{white-space:normal;float:none;height:2rem;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}.floating-header-title span{display:block;padding:0 .5em;overflow:hidden;max-height:2rem;line-height:2rem}}@media(min-width:750px){.header-section{width:auto;display:table-cell;text-align:center;font-size:1.5rem;text-transform:uppercase}.header-section a{color:#ccc;text-decoration:none}}@media(min-width:980px){.header-search{padding-left:10.375rem}.header-search [type="search"]{opacity:1;width:11.75rem;padding:0 1.375rem 0 .125rem;font-size:14px}.header-search [type="submit"]{box-shadow:-2px 0 2px #999}.floating-header-title{font-size:larger}#header-share{margin-right:20px}}.supernav nav{display:none;position:relative;z-index:15;top:24px}.supernav:before,.supernav:after{display:block;background:#1c9dd8;padding:0 .5em;color:#fff;text-transform:uppercase;line-height:24px}.supernav:before{content:'Browse Topics';float:left;width:75%}.supernav:after{content:'›';float:right;text-align:right;width:25%}.supernav.on:after{content:'×'}.supernav.on nav{display:block}.supernav-verticals,.fatnav-channels{-moz-columns:2;-webkit-columns:2;columns:2;-moz-column-gap:0;-webkit-column-gap:0;column-gap:0}.supernav-vertical>a,.fatnav-channels a{display:block;padding:.5em;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.supernav-verticals{position:absolute;top:-1px;background:#fff;border:1px solid #1c9dd8;width:100%}.supernav-vertical>a{text-transform:uppercase;color:#000;font-size:12px}@media(min-width:360px){.supernav-vertical>a{font-size:14px}}.supernav-vertical>a.current{color:#888}.supernav-vertical.on{background:#eee}.supernav-vertical.on>a{color:#777}.supernav-vertical.on .fatnav{display:block}.fatnav{display:none;position:absolute;left:-1px;right:-1px;top:8.5em;border:1px solid #888;background:#eee}.fatnav a{color:#444}.fatnav-channels a:hover{background:#ddd;color:#000}.fatnav-featured{display:none;background:#ddd;padding:1em;order:2}.fatnav-featured a{display:block;min-width:7.5rem;max-width:10rem}.fatnav-featured-heading{font-weight:bold;font-size:1.2em;margin-bottom:.5em}.fatnav-featured-title{padding:.5em 0;display:block;line-height:1.3}.fatnav-featured-title:before{color:#f65f13;content:'→';float:right;font-size:1rem;margin-left:2px;overflow:hidden;width:1rem;text-align:right}@media(min-width:500px){.supernav-verticals{-moz-columns:3;-webkit-columns:3;columns:3}.supernav-vertical.on .fatnav{display:-webkit-box;display:-webkit-flex;display:flex}.fatnav{-webkit-box-align:stretch;-webkit-align-items:stretch;align-items:stretch;top:6em}.fatnav-channels{width:66.667%}.fatnav-featured{width:33.333%;display:block}}@media(max-width:649px){.fatnav{left:-1px!important;right:-1px!important;max-width:none!important}}@media(min-width:650px){.supernav:before,.supernav:after{display:none}.supernav nav{display:block;top:auto;border-bottom:1px solid #1c9dd8;transform:translate3d(0,0,0)}.supernav-verticals{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:space-between;-webkit-justify-content:space-between;justify-content:space-between;position:relative;border:0;width:calc(100%+.5em);transform:translateX(-0.25em)}.supernav-vertical{display:inline-block;width:auto;float:none}.supernav-vertical>a{padding:.25em;border:1px solid transparent;position:relative;z-index:1}.supernav-vertical span{display:none}.supernav-vertical.on .fatnav{display:none}.supernav-vertical:hover{background:#eee}.supernav-vertical:hover>a{border-color:#888;border-bottom-color:#eee}.supernav-vertical:hover .fatnav{display:-webkit-box;display:-webkit-flex;display:flex}.fatnav{transform:translateY(-1px);top:auto;left:0;right:0}.fatnav-channels{-moz-column-gap:2em;-webkit-column-gap:2em;column-gap:2em;-moz-column-rule:1px solid #ccc;-webkit-column-rule:1px solid #ccc;column-rule:1px solid #ccc;min-width:180px;width:auto;padding:1em;order:1}.fatnav-channels.single{-moz-columns:1;-webkit-columns:1;columns:1}.supernav-vertical:nth-child(n+5) .fatnav-channels{order:3}.fatnav-featured{width:auto}}@media(min-width:980px){.supernav-vertical:nth-last-child(n+3) span{display:inline}}@media(min-width:1200px){.supernav-vertical span{display:inline}}.footer header,.footer li a,.footer-tagline{line-height:1.3;color:#fff;margin-bottom:.7em;display:block}.footer{background:#000;padding-bottom:150px;position:relative;z-index:999}.footer header{text-transform:uppercase}.footer ol,.footer ul{list-style:none}.footer .site-social{border-bottom:1px solid #666}.footer-lists{background:#ddd}.footer-lists header{color:#000}.footer-lists li a{color:#000}.footer-logo .logo{text-shadow:1px 1px 2px #333}.footer-logo .logo b{text-shadow:none}.footer-tagline{font-size:16px;color:#bc001d}.footer-small{background:#ddd}.footer-small .site-social{border:0;padding:7px 0 0 0!important;text-align:right}.footer-small .site-social i:before{margin:0 0 0 7px}.footer-small .footer-about ul{border-top:1px solid #ccc}.footer-small .footer-about a{color:#000}@media(max-width:359px){.footer-small .site-social>:nth-child(2){display:none}}@media(max-width:399px){.footer-small .site-social>:nth-child(4){display:none}}@media(min-width:400px){.footer-small .site-social{text-align:left}.footer-small .site-social i:before{margin:0 7px 0 0}}@media(min-width:615px){.footer-small .site-social{text-align:right}.footer-small .site-social i:before{margin:0 0 0 7px}.footer-small .footer-about ul{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:space-between;-webkit-justify-content:space-between;justify-content:space-between}}@media(min-width:980px){.footer-small .footer-logo{width:auto;padding-right:20px}.footer-small .footer-social{width:auto;float:right;padding-left:13px}.footer-small .footer-about{float:none}.footer-small .footer-about ul{padding-top:5px;border:0;-webkit-box-pack:space-around;-webkit-justify-content:space-around;justify-content:space-around;-webkit-flex-wrap:wrap;flex-wrap:wrap}.footer-small .footer-about li{width:33%;text-align:center}}@media(min-width:1200px){.footer-small .footer-about ul{padding-top:15px}.footer-small .footer-about li{width:auto}}@media(min-width:360px) and (max-width:614px){.footer-social header{float:left;width:50%}.footer-about ul{-moz-columns:2;-webkit-columns:2;columns:2}}@media(min-width:400px){.footer-tagline{display:inline;margin-left:2em}}@media(min-width:615px){.footer{overflow:hidden;padding-bottom:0}.footer-lists,.footer-nav{float:left;clear:none}.footer-lists{min-height:385px}}@media(min-width:750px){.footer-nav.boxed,.footer-nav>*{padding:15px}.footer .site-social{padding-bottom:30px}}@media(min-width:980px){.footer-list{width:40%;margin-bottom:2em}.footer-list-topics{width:20%}}@media(min-width:1200px){.footer-social header{float:left;width:50%}.footer-about ul{-moz-columns:2;-webkit-columns:2;columns:2}.footer-social header{width:auto}.footer-social .site-social{text-align:right}}.image{max-width:100%;position:relative}table .image:first-child:last-child{text-align:center;margin:0 auto;max-width:none;display:block;float:none}a.image-source{position:absolute;top:0;right:0;opacity:.5;color:#fff!important;background:#000;font:9px sans-serif;text-transform:uppercase;padding:1px 3px;text-decoration:none}@media(min-width:400px){.image{max-width:50%;float:right;clear:right;margin-left:16px}.image.left{float:left;clear:left;margin-right:16px;margin-left:0}.image.center{clear:both;float:none;max-width:none;margin-right:auto;margin-left:auto}}.text a{color:#1c9dd8}.text a[href*="//"]:after{content:'♂';padding-left:.25em;display:inline-block}.text a[href*="//"]:hover:after{text-decoration:none}.text .image a:after,.image .text a:after,.text a[href*=".lovetoknow.com/"]:after,.text a[href*=".ltkcdn.net/"]:after{display:none}.text h2{margin:16px 0}.text h3{margin-top:16px}.text .image,.text p,.text hr,.text ul,.text ol,.text .ad-native,.text table{margin-bottom:16px}.text h2{font-size:20px;line-height:1.1}.text hr{border:0;border-top:1px solid #ddd}.text ul,.text ol{margin-left:2em;list-style:disc}.text ol{list-style:decimal}.text li{margin:.5em 0}.ad-content-top{height:115px}@media(min-width:916px){.ad-content-top{height:90px}}.ad-content-top.ad-half{width:47%;height:115px}.ad-content-middle{height:390px;height:390px}@media(min-width:360px){.ad-content-middle{height:330px}}@media(min-width:500px){.ad-content-middle{height:250px}}@media(min-width:615px){.ad-content-middle{height:330px}}@media(min-width:980px){.ad-content-middle{height:250px;max-width:727px}}.ad-content-bottom{display:none;border:0}@media(min-width:615px){.ad-content-bottom{display:block;height:220px}}@media(min-width:980px){.ad-content-bottom{height:170px}}#useful .yes,#useful .no,#useful .modal label[for*="reason"],#useful button,#useful input[type="submit"],.modal .content,#useful textarea{color:#777;background:#fff;border:1px solid #ccc;border-radius:3px}#useful .yes,#useful .no,#useful .modal label[for*="reason"],#useful button,#useful input[type="submit"]{display:inline-block;padding:3px 10px;-webkit-appearance:none;font-size:12px;line-height:1.3}.modal{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;align-items:center;z-index:5555555;position:fixed;top:0;bottom:0;right:0;left:0;background:rgba(0,0,0,0.5)}.modal .content{padding:12px;width:300px}#useful{font-size:13px;line-height:1.4;display:none}#useful.thanks{color:#f65f13}#useful .yes:before,#useful .no:before{font-size:12px;line-height:1.3;content:'×';color:#f65f13;padding-right:.5em;vertical-align:bottom}#useful .yes{margin-left:12px}#useful .yes:before{content:'√'}#useful textarea{width:100%;height:54px}#useful .modal label{margin-top:12px;float:left;clear:left}#useful .modal input:checked+label{color:#299de9;border-color:#299de9}#useful input[type="radio"]{display:none}#useful input[type="submit"]{color:#f65f13}#disqus_thread{border-top:1px solid #ccc}#disqus_thread a{color:#0d5280}.breadcrumbs{font-size:12px;line-height:1.5}.breadcrumbs a{color:#000;display:inline-block;padding:.25em 0}.breadcrumbs ol{list-style:none;border-bottom:1px solid #ccc;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.breadcrumbs li{display:inline;margin-right:.5em}.breadcrumbs li:nth-last-child(n+2):after{content:" »"}.breadcrumbs li:last-child{display:none}@media(min-width:615px){.breadcrumbs li:last-child{display:inline}.breadcrumbs li:last-child a{color:#888}}.slideshow-image{position:relative}.slideshow-image:before{font-size:100px;height:100px;margin-top:-50px;text-shadow:0 0 140px #000;content:'→';opacity:.6;color:#fff;position:absolute;width:100%;top:50%;text-align:center;display:block;cursor:pointer}@media(min-width:750px){.slideshow-image:before{font-size:150px;height:150px;margin-top:-75px;text-shadow:0 0 210px #000}}.slideshow-image:hover{text-decoration:none}.slideshow-title{font-size:14px;line-height:1.3;display:block;border-bottom:1px solid #aaa}.slideshow-title:before{color:#f65f13;content:'→';float:right;font-size:21px}.sidebar{line-height:1.2;-moz-columns:160px 2;-webkit-columns:160px 2;columns:160px 2;-moz-column-gap:0;-webkit-column-gap:0;column-gap:0}@media(min-width:615px){.sidebar{-moz-columns:1;-webkit-columns:1;columns:1}}.sidebar section{float:none}.sidebar header{border:solid #1c9dd8;border-width:1px 0;font-size:16px;line-height:1.1}.sidebar-topics li{margin-bottom:5px}.sidebar-topics li a{display:block;background:#eee;overflow:hidden;padding:5px}.sidebar-topics .sidebar-image{width:20%;margin-right:5px;float:left}@media(min-width:750px){.sidebar-topics .sidebar-image span{padding-bottom:75%}}@media(min-width:1200px){.sidebar-topics .sidebar-image{width:25%}}.sidebar-categories li{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;margin-top:.5em}.sidebar-categories li:first-child{margin:0}.content-header h1{font-size:22px;line-height:1.1}@media(min-width:615px){.content-header h1{font-size:1.75rem}}.author,.contributors,.review{font-size:14px;line-height:1.4;color:#888}.author{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;margin-bottom:10px}.author img{width:48px;border-radius:24px}.author .role{display:block}.author .pic{line-height:0;margin-right:10px}.text .video iframe,.text iframe[src*="youtube"]{max-width:100%;border:0;display:block;clear:both;margin:0 auto 16px auto}@media(min-width:980px){.text .tube-align-left iframe,.text .video.left iframe{max-width:50%;float:left;clear:left;margin-right:16px}.text .tube-align-right iframe,.text .video.right iframe{max-width:50%;float:right;clear:right;margin-left:16px}}.text table{border-collapse:collapse;overflow-x:auto;display:block;border:0}.text th,.text td{border:1px solid #ddd;padding:4px;vertical-align:top}.dateline{font-size:13px;line-height:1.4;color:#888}.image-primary{max-width:100%;float:none;clear:both;margin-right:auto;margin-left:auto}@media(min-width:980px){.image-primary{max-width:50%;margin-left:16px;margin-right:0;float:right;clear:right}}.content-related header{border-top:1px solid #ddd;font-size:16px;line-height:1}.content-related ul{list-style:disc}.content-related li{margin-top:1em;color:#888;margin-left:1.3em} </style>
+<script> LTK={};
+adsbygoogle=[];
+_comscore=[{c1:"2",c2:"6036441"}];
+ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+ltk =
+{
+q: [],
+$: function(c){ltk.q.push(c)},
+abgerr: !1,
+start: ga.l,
+channel: 'family',
+title: 'Definition of Family',
+url: 'http://family.lovetoknow.com/definition-family',
+trackers: ['UA-19249208-1', '.', 'UA-19268433-1'],
+type: 'Article',
+author: '16',
+age: '4+',
+updated: false,
+};
+ltkabg=function(){ltk.abgerr=!0};
+ltkjq=function(){}; </script>
+<script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
+<script> ltk.ads = {
+contentUnit: 'LTK_Parenting_Lifestyle_Family_Content',
+slots: [],
+define: function(id, unit, size, sizes, delay) {
+googletag.cmd.push(function() {
+var mapping = googletag.sizeMapping(), i = 0, length = sizes.length;
+for (; i < length; i++) {
+mapping.addSize(sizes[i][0], sizes[i][1]);
+}
+ltk.ads.slots[id] = googletag.defineSlot('/1004147/' + unit, size, id).
+defineSizeMapping(mapping.build()).
+addService(googletag.pubads());
+googletag.display(id);
+if (!delay) ltk.ads.refresh(id);
+});
+},
+refresh: function(id) {
+googletag.cmd.push(function() {
+googletag.pubads().refresh([ltk.ads.slots[id]]);
+});
+},
+listen: function(name, handler) {
+googletag.cmd.push(function() {
+googletag.pubads().addEventListener(name, handler);
+});
+}
+};
+googletag = window.googletag || {cmd: []};
+googletag.cmd.push(function() {
+googletag.pubads().set("page_url", location.href);
+googletag.pubads().collapseEmptyDivs();
+googletag.pubads().enableSingleRequest();
+googletag.pubads().disableInitialLoad();
+googletag.enableServices();
+}); </script>
+<script async src="//wfpscripts.webspectator.com/bootstrap/ws-FGQTSDLA.js"></script>
+<title>Definition of Family</title>
+<link rel="canonical" href="http://family.lovetoknow.com/definition-family" />
+<link rel="author" href="https://plus.google.com/108582518136701691801" />
+<meta property="og:site_name" content="LoveToKnow" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Definition of Family" />
+<meta property="og:image" content="http://cf.ltkcdn.net/family/images/std/139713-347x274-definition-family.jpg" />
+<link rel="icon" href="/favicon-196.png" />
+<link rel="apple-touch-icon-precomposed" href="/favicon-196.png"> <link rel="alternate" type="application/rss+xml" title="Family from LoveToKnow" href="/LoveToKnow_RSS" /> </head>
+<body class="channel-family article"> <header class="header" data-track-area="Header"> <div class="header-logo" data-track-section="Logo"><a class="logo" href="http://www.lovetoknow.com">L<b>o</b>ve<u>To</u>Know</a></div>
+<div class="header-section" data-track-section="Section"><a href="http://www.lovetoknow.com/family.html">Lifestyle</a></div>
+<div class="header-tools" data-track-section="Tools"> <form method="get" class="search header-search" action="/search/results"> <input type="search" name="q" placeholder="find advice you can trust" required pattern=".*\S.*"> <input type="submit"> </form><div class="site-socialheader-social"> <a href="https://www.facebook.com/LoveToKnow" data-network="Facebook"><i class="fb"></i></a>
+<a href="https://twitter.com/lovetoknow" data-network="Twitter"><i class="tw"></i></a>
+<a href="https://www.pinterest.com/lovetoknow/" data-network="Pinterest"><i class="pn"></i></a>
+<a href="https://plus.google.com/+Lovetoknow" data-network="Google"><i class="gp"></i></a> </div> </div> </header>
+<section id="ad-main-banner" class="ad ad-main-banner ad-anchor ad-anchor-wide"><script>ltk.ads.define("ad-main-banner","LTK_Parenting_Lifestyle_Family_Top",[],[[[0,0],[]],[[320,400],[[320,50],[300,50]]],[[320,550],[[320,100],[320,50],[300,100],[300,50]]],[[468,550],[[468,60],[320,100],[320,50],[300,100],[300,50]]],[[728,400],[728,90]],[[900,500],[[900,71],[728,90]]],[[960,500],[[960,91],[900,71],[728,90]]],[[970,500],[[970,91],[960,91],[900,71],[728,90]]],[[970,750],[[970,251],[970,91],[960,91],[900,71],[728,90]]]],false);googletag.cmd.push(function(){setInterval(function(){if(innerWidth<615)ltk.ads.refresh('ad-main-banner')},60000)})</script></section>
+<div class="body"> <section class="supernav cell" data-track-area="Header"> <nav> <ol class="supernav-verticals" data-track-section="Super Nav"> <li class="supernav-vertical"> <a href="http://www.lovetoknow.com/style.html">Beauty<span> &amp; Fashion</span></a> <div class="fatnav"> <ol class="fatnav-channels" data-track-section="Fat Nav - Channels" data-track-ranker="-"> <li><a href="http://childrens-clothing.lovetoknow.com/Main_Page">Children&#039;s Clothing</a></li>
+<li><a href="http://engagementrings.lovetoknow.com/wiki/Main_Page">Engagement Rings</a></li>
+<li><a href="http://fashion-history.lovetoknow.com/">Fashion History</a></li>
+<li><a href="http://hair.lovetoknow.com/Main_Page">Hair</a></li>
+<li><a href="http://handbags.lovetoknow.com/Main_Page">Handbags</a></li>
+<li><a href="http://jewelry.lovetoknow.com/Main_Page">Jewelry</a></li>
+<li><a href="http://makeup.lovetoknow.com/Main_Page">Makeup</a></li>
+<li><a href="http://mens-fashion.lovetoknow.com/Main_Page">Men&#039;s Fashion</a></li>
+<li><a href="http://plussize.lovetoknow.com/Main_Page">Plus Size</a></li>
+<li><a href="http://shoes.lovetoknow.com/Main_Page">Shoes</a></li>
+<li><a href="http://skincare.lovetoknow.com/Main_Page">Skin Care</a></li>
+<li><a href="http://tattoos.lovetoknow.com/Main_Page">Tattoos and Body Art</a></li>
+<li><a href="http://womens-fashion.lovetoknow.com/Main_Page">Women&#039;s Fashion</a></li> </ol>
+<div class="fatnav-featured" data-track-section="Fat Nav - Featured" data-track-ranker="*"> <div class="fatnav-featured-heading">Featured Slideshow</div>
+<a class="fatnav-featured-image" style="background-image:url(http://cf.ltkcdn.net/jewelry/images/std/198616-328x425-dress1_primarycrop.jpg);;background-color:#cec2be" rel="slideshow" href="http://jewelry.lovetoknow.com/Jewelry_for_a_Black_Dress"> </a> <a class="fatnav-featured-title" rel="slideshow" href="http://jewelry.lovetoknow.com/Jewelry_for_a_Black_Dress">Jewelry for a Black Dress</a> </div> </div> </li>
+<li class="supernav-vertical"> <a href="http://www.lovetoknow.com/entertainment.html">Entertainment</a> <div class="fatnav"> <ol class="fatnav-channels" data-track-section="Fat Nav - Channels" data-track-ranker="-"> <li><a href="http://best.lovetoknow.com/Main_Page">Best</a></li>
+<li><a href="http://boardgames.lovetoknow.com/Main_Page">Board Games</a></li>
+<li><a href="http://cheerleading.lovetoknow.com/Main_Page">Cheerleading</a></li>
+<li><a href="http://crafts.lovetoknow.com/wiki/Main_Page">Crafts</a></li>
+<li><a href="http://dance.lovetoknow.com/Main_Page">Dance</a></li>
+<li><a href="http://guitar.lovetoknow.com/Main_Page">Guitar</a></li>
+<li><a href="http://horoscopes.lovetoknow.com/Main_Page">Horoscopes</a></li>
+<li><a href="http://fun.lovetoknow.com/">Just for Fun</a></li>
+<li><a href="http://movies.lovetoknow.com/wiki/LoveToKnow_Movies">Movies</a></li>
+<li><a href="http://music.lovetoknow.com/Main_Page">Music</a></li>
+<li><a href="http://origami.lovetoknow.com/Main_Page">Origami</a></li>
+<li><a href="http://paranormal.lovetoknow.com/Main_Page">Paranormal</a></li>
+<li><a href="http://photography.lovetoknow.com/Main_Page">Photography</a></li>
+<li><a href="http://quiz.lovetoknow.com/Main_Page">Quiz</a></li>
+<li><a href="http://scrapbooking.lovetoknow.com/Main_Page">Scrapbooking</a></li>
+<li><a href="http://sewing.lovetoknow.com/">Sewing</a></li>
+<li><a href="http://ski.lovetoknow.com/Main_Page">Skiing</a></li>
+<li><a href="http://toys.lovetoknow.com/Main_Page">Toys</a></li> </ol>
+<div class="fatnav-featured" data-track-section="Fat Nav - Featured" data-track-ranker="*"> <div class="fatnav-featured-heading">Featured Slideshow</div>
+<a class="fatnav-featured-image" style="background-image:url(http://cf.ltkcdn.net/toys/images/std/112955-283x424-kitchen1.jpg);;background-color:#c18767" rel="slideshow" href="http://toys.lovetoknow.com/little-tikes-kitchen"> </a> <a class="fatnav-featured-title" rel="slideshow" href="http://toys.lovetoknow.com/little-tikes-kitchen">Little Tikes Kitchen</a> </div> </div> </li>
+<li class="supernav-vertical"> <a href="http://www.lovetoknow.com/health.html">Health</a> <div class="fatnav"> <ol class="fatnav-channels" data-track-section="Fat Nav - Channels" data-track-ranker="-"> <li><a href="http://autism.lovetoknow.com/Main_Page">Autism</a></li>
+<li><a href="http://diet.lovetoknow.com/wiki/Main_Page">Diet</a></li>
+<li><a href="http://exercise.lovetoknow.com/Main_Page">Exercise</a></li>
+<li><a href="http://gluten.lovetoknow.com/Main_Page">Gluten Free</a></li>
+<li><a href="http://herbs.lovetoknow.com/Main_Page">Herbs</a></li>
+<li><a href="http://pregnancy.lovetoknow.com/wiki/Main_Page">Pregnancy</a></li>
+<li><a href="http://addiction.lovetoknow.com/wiki/Main_Page">Recovery</a></li>
+<li><a href="http://safety.lovetoknow.com/Main_Page">Safety</a></li>
+<li><a href="http://sleep.lovetoknow.com/Main_Page">Sleep Disorders</a></li>
+<li><a href="http://stress.lovetoknow.com/Main_Page">Stress Management</a></li>
+<li><a href="http://vegetarian.lovetoknow.com/Main_Page">Vegetarian</a></li>
+<li><a href="http://vitamins.lovetoknow.com/Main_Page">Vitamins</a></li>
+<li><a href="http://yoga.lovetoknow.com/Main_Page">Yoga</a></li> </ol>
+<div class="fatnav-featured" data-track-section="Fat Nav - Featured" data-track-ranker="*"> <div class="fatnav-featured-heading">Featured Slideshow</div>
+<a class="fatnav-featured-image" style="background-image:url(http://cf.ltkcdn.net/sleep/images/std/127379-320x212-BooksOnDreamInterpretation.jpg);;background-color:#b99353" rel="slideshow" href="http://sleep.lovetoknow.com/books-dream-interpretation"> </a> <a class="fatnav-featured-title" rel="slideshow" href="http://sleep.lovetoknow.com/books-dream-interpretation">Books on Dream Interpretation</a> </div> </div> </li>
+<li class="supernav-vertical"> <a href="http://www.lovetoknow.com/home-garden.html">Home<span> &amp; Garden</span></a> <div class="fatnav"> <ol class="fatnav-channels" data-track-section="Fat Nav - Channels" data-track-ranker="-"> <li><a href="http://antiques.lovetoknow.com/Main_Page">Antiques</a></li>
+<li><a href="http://bedding.lovetoknow.com/Main_Page">Bedding &amp; Linens</a></li>
+<li><a href="http://cake-decorating.lovetoknow.com/Main_Page">Cake Decorating</a></li>
+<li><a href="http://candles.lovetoknow.com/Main_Page">Candles</a></li>
+<li><a href="http://christmas.lovetoknow.com/Main_Page">Christmas</a></li>
+<li><a href="http://cleaning.lovetoknow.com/Main_Page">Cleaning</a></li>
+<li><a href="http://cocktails.lovetoknow.com/Main_Page">Cocktails</a></li>
+<li><a href="http://cooking.lovetoknow.com/">Cooking</a></li>
+<li><a href="http://costumes.lovetoknow.com/Main_Page">Costumes</a></li>
+<li><a href="http://feng-shui.lovetoknow.com/Main_Page">Feng Shui</a></li>
+<li><a href="http://furniture.lovetoknow.com/Main_Page">Furniture</a></li>
+<li><a href="http://garden.lovetoknow.com/wiki/Main_Page">Garden</a></li>
+<li><a href="http://gourmet.lovetoknow.com/Main_Page">Gourmet</a></li>
+<li><a href="http://greenliving.lovetoknow.com/Main_Page">Green Living</a></li>
+<li><a href="http://homeimprovement.lovetoknow.com/Main_Page">Home Improvement</a></li>
+<li><a href="http://interiordesign.lovetoknow.com/Main_Page">Interior Design</a></li>
+<li><a href="http://organic.lovetoknow.com/Main_Page">Organic</a></li>
+<li><a href="http://party.lovetoknow.com/Main_Page">Party</a></li>
+<li><a href="http://weddings.lovetoknow.com/wiki/Main_Page">Weddings</a></li>
+<li><a href="http://wine.lovetoknow.com/wiki/Main_Page">Wine</a></li> </ol>
+<div class="fatnav-featured" data-track-section="Fat Nav - Featured" data-track-ranker="*"> <div class="fatnav-featured-heading">Featured Slideshow</div>
+<a class="fatnav-featured-image" style="background-image:url(http://cf.ltkcdn.net/cocktails/images/std/171863-425x283-Breakfast-Cocktail.jpg);;background-color:#e2ba8a" rel="slideshow" href="http://cocktails.lovetoknow.com/cocktails-slideshows/breakfast-cocktail-ideas"> </a> <a class="fatnav-featured-title" rel="slideshow" href="http://cocktails.lovetoknow.com/cocktails-slideshows/breakfast-cocktail-ideas">Breakfast Cocktail Ideas</a> </div> </div> </li>
+<li class="supernav-vertical"> <a href="http://www.lovetoknow.com/internet.html">Technology</a> <div class="fatnav"> <ol class="fatnav-channels single" data-track-section="Fat Nav - Channels" data-track-ranker="-"> <li><a href="http://calculators.lovetoknow.com/">Calculators &amp; Converters</a></li>
+<li><a href="http://cellphones.lovetoknow.com/Main_Page">Cell Phones</a></li>
+<li><a href="http://online.lovetoknow.com/wiki/Main_Page">Online</a></li>
+<li><a href="http://socialnetworking.lovetoknow.com/Main_Page">Social Networking</a></li>
+<li><a href="http://web-design.lovetoknow.com/Main_Page">Web Design</a></li> </ol>
+<div class="fatnav-featured" data-track-section="Fat Nav - Featured" data-track-ranker="*"> <div class="fatnav-featured-heading">Featured Slideshow</div>
+<a class="fatnav-featured-image" style="background-image:url(http://cf.ltkcdn.net/cellphones/images/std/38533-312x425-VintageTaxi.jpg);;background-color:#d8ccbf" rel="slideshow" href="http://cellphones.lovetoknow.com/Slideshow:Timeline_of_Mobile_Phone"> </a> <a class="fatnav-featured-title" rel="slideshow" href="http://cellphones.lovetoknow.com/Slideshow:Timeline_of_Mobile_Phone">Timeline of Mobile Phone</a> </div> </div> </li>
+<li class="supernav-vertical"> <a href="http://www.lovetoknow.com/business.html">Money</a> <div class="fatnav"> <ol class="fatnav-channels" data-track-section="Fat Nav - Channels" data-track-ranker="-"> <li><a href="http://business.lovetoknow.com/wiki/Main_Page">Business</a></li>
+<li><a href="http://creditcards.lovetoknow.com/Main_Page">Credit Cards</a></li>
+<li><a href="http://freelance-writing.lovetoknow.com/Main_Page">Freelance Writing</a></li>
+<li><a href="http://insurance.lovetoknow.com/Main_Page">Insurance</a></li>
+<li><a href="http://jobs.lovetoknow.com/Main_Page">Jobs &amp; Careers</a></li>
+<li><a href="http://mortgage.lovetoknow.com/Main_Page">Mortgage</a></li>
+<li><a href="http://save.lovetoknow.com/Main_Page">Saving Money</a></li>
+<li><a href="http://taxes.lovetoknow.com/">Taxes</a></li> </ol>
+<div class="fatnav-featured" data-track-section="Fat Nav - Featured" data-track-ranker="*"> <div class="fatnav-featured-heading">Featured Slideshow</div>
+<a class="fatnav-featured-image" style="background-image:url(http://cf.ltkcdn.net/jobs/images/std/33350-425x284-zoology.jpg);;background-color:#444438" rel="slideshow" href="http://jobs.lovetoknow.com/Careers_in_Zoology"> </a> <a class="fatnav-featured-title" rel="slideshow" href="http://jobs.lovetoknow.com/Careers_in_Zoology">Careers in Zoology</a> </div> </div> </li>
+<li class="supernav-vertical"> <a class="current" href="http://www.lovetoknow.com/family.html">Lifestyle</a> <div class="fatnav"> <ol class="fatnav-channels" data-track-section="Fat Nav - Channels" data-track-ranker="-"> <li><a href="http://baby.lovetoknow.com/wiki/Main_Page">Baby</a></li>
+<li><a href="http://cars.lovetoknow.com/Main_Page">Cars</a></li>
+<li><a href="http://cats.lovetoknow.com/Main_Page">Cats</a></li>
+<li><a href="http://charity.lovetoknow.com/Main_Page">Charity</a></li>
+<li><a href="http://childrens-books.lovetoknow.com/Main_Page">Children&#039;s Books</a></li>
+<li><a href="http://college.lovetoknow.com/Main_Page">College</a></li>
+<li><a href="http://dating.lovetoknow.com/Main_Page">Dating &amp; Relationships</a></li>
+<li><a href="http://dying.lovetoknow.com/Main_Page">Death &amp; Dying</a></li>
+<li><a href="http://divorce.lovetoknow.com/Main_Page">Divorce</a></li>
+<li><a href="http://dogs.lovetoknow.com/wiki/LoveToKnow_Dogs">Dogs</a></li>
+<li><a href="/">Family</a></li>
+<li><a href="http://genealogy.lovetoknow.com/Main_Page">Genealogy</a></li>
+<li><a href="http://home-school.lovetoknow.com/Main_Page">Home School</a></li>
+<li><a href="http://kids.lovetoknow.com/wiki/Main_Page">Kids</a></li>
+<li><a href="http://printable.lovetoknow.com/">Printables &amp; Templates</a></li>
+<li><a href="http://seniors.lovetoknow.com/Main_Page">Senior Citizens</a></li>
+<li><a href="http://small-pets.lovetoknow.com/">Small Pets</a></li>
+<li><a href="http://teens.lovetoknow.com/Main_Page">Teens</a></li> </ol>
+<div class="fatnav-featured" data-track-section="Fat Nav - Featured" data-track-ranker="*"> <div class="fatnav-featured-heading">Featured Slideshow</div>
+<a class="fatnav-featured-image" style="background-image:url(http://cf.ltkcdn.net/teens/images/std/169605-284x425-teen-red-prom-dress.jpg);;background-color:#ef2933" rel="slideshow" href="http://teens.lovetoknow.com/red-prom-dresses"> </a> <a class="fatnav-featured-title" rel="slideshow" href="http://teens.lovetoknow.com/red-prom-dresses">Red Prom Dresses</a> </div> </div> </li>
+<li class="supernav-vertical"> <a href="http://www.lovetoknow.com/travel.html">Travel<span> &amp; Vacations</span></a> <div class="fatnav"> <ol class="fatnav-channels single" data-track-section="Fat Nav - Channels" data-track-ranker="-"> <li><a href="http://camping.lovetoknow.com/Main_Page">Camping</a></li>
+<li><a href="http://cruises.lovetoknow.com/wiki/Main_Page">Cruises</a></li>
+<li><a href="http://french.lovetoknow.com/Main_Page">French</a></li>
+<li><a href="http://sanfrancisco.lovetoknow.com/wiki/Main_Page">San Francisco</a></li>
+<li><a href="http://themeparks.lovetoknow.com/Main_Page">Theme Parks</a></li>
+<li><a href="http://travel.lovetoknow.com/wiki/Main_Page">Travel</a></li> </ol>
+<div class="fatnav-featured" data-track-section="Fat Nav - Featured" data-track-ranker="*"> <div class="fatnav-featured-heading">Featured Slideshow</div>
+<a class="fatnav-featured-image" style="background-image:url(http://cf.ltkcdn.net/french/images/std/124884-349x425-eiffel_tower_1.jpg);;background-color:#4577b4" rel="slideshow" href="http://french.lovetoknow.com/Pictures_of_the_Eiffel_Tower"> </a> <a class="fatnav-featured-title" rel="slideshow" href="http://french.lovetoknow.com/Pictures_of_the_Eiffel_Tower">Pictures of the Eiffel Tower</a> </div> </div> </li> </ol> </nav> </section>
+<nav class="breadcrumbs cell" data-track-area="Header" data-track-section="Breadcrumbs"><ol><li><a href="/">Family</a></li><li><a href="/family-values">About Family Values</a></li><li><a href="/definition-family">Definition of Family</a></li></ol></nav>
+<main data-track-area="Content"> <article class="grid"> <header class="content-header"> <h1>Definition of Family</h1>
+<div class="author" data-track-section="Author" data-track-ranker="*"> <div class="byline"> By
+<a rel="author" href="http://www.lovetoknow.com/member/9~melissa-mayntz">Melissa Mayntz</a> </div> </div> </header>
+<section class="content-body text" data-track-section="Body" data-track-ranker="*"> <figure class="image image-primary" id="image-primary" data-track-section="Image - Primary" style="width:347px"><a title="Family" rel="" target="_blank" style="background-color:#c89c84" href="/image/139713~definition-family.jpg"><img src="http://cf.ltkcdn.net/family/images/std/139713-347x274-definition-family.jpg" alt="Family" /></a><figcaption>Family can be defined in many different ways.</figcaption></figure> <p> Family may seem like a simple concept, but there is no simple definition of family. In its most basic terms, a family is a group of individuals who share a legal or genetic bond, but for many people, family means much more, and even the simple idea of genetic bonds can be more complicated than it seems. </p>
+<ins
+id="ad-native-primary"
+class="adsbygoogle ad ad-native ad-content-top"
+data-ad-client="ca-pub-3619764495662405"
+data-ad-channel="209+231+253"
+data-ad-slot="7332428266"> </ins>
+<script> (function(){
+var ratio = 0.79,
+maxh = 274,
+img = document.getElementById('image-primary'),
+ad = document.getElementById('ad-native-primary');
+if(innerWidth >= 980 && img && ad && ad.offsetTop < img.offsetTop + Math.min(maxh, img.offsetWidth * ratio) - 140) {
+ad.classList.add('ad-half');
+}
+})();
+adsbygoogle.push({}); </script>
+<h2> Basic Family Definition </h2>
+<p> In the most basic definition, a group of people who share a legal bond or a blood bond is a family. </p>
+<ul> <li> <strong>Legal Bonds:</strong> Families are legally bound through marriages, adoptions, and guardianships, including the rights, duties, and obligations of those legal contracts. Legal bonds can be changed, expanded, or dissolved to change the composition of a family. </li>
+<li> <strong>Blood Bonds:</strong> Individuals who are directly related through a common ancestor are part of a family. This includes both close and distant relatives such as siblings, parents, grandparents, aunts, uncles, nieces, nephews, and cousins. Researching a family tree or genealogical records can reveal familial blood bonds. </li> </ul>
+<p> Despite the apparent simplicity of this definition of family, the idea of family goes far beyond just legal or blood relationships for many people. </p>
+<h2> Types of Families </h2>
+<p> There are many different types of families, each of which is equally viable as a supportive, caring unit. </p>
+<ul> <li> <strong>Nuclear Family:</strong> Also called a conjugal family, this is the parents and their children living in the same residence or sharing the closest bonds. </li>
+<li> <strong>Extended Family:</strong> This type of family includes all relatives in close proximity, such as grandparents, aunts, uncles, and cousins. In a family household that is extended, these relatives typically live together and all share daily household duties. This type of family is also called a joint family or multigenerational family depending on which members are included. </li>
+<li> <strong>Complex Family:</strong> This type of extended family has three or more adults plus their children. This type of family may be formed through divorce and remarriage, or it may be formed through polygamy in societies where that practice is acceptable. Some families may be complex even without formal legal bonds between the adults. </li>
+<li> <strong>Step Family:</strong> This is a family where the adults have divorced and remarried, bringing children from other unions together to form a new nuclear family. The children may come from several different parents or be on one or both sides of the new union. </li>
+<li> <strong>Traditional Family:</strong> This is a family unit defined in the classic sense as the father working outside the home to support the members financially, while the mother remains at home and tends to domestic duties and child-rearing. This strict definition of family is less and less common in modern society. </li>
+<li> <strong>Adopted Family:</strong> This type of family shares legal bonds but not genetic ones. Two parents may adopt a child to whom they share no blood relationship, or one parent may adopt the child of the other parent. Adopted families can also be defined in an emotional or spiritual sense where no formal legal bonds are present. </li>
+<li> <strong>Foster Family:</strong> A foster family includes one or more adult parent who serves as a temporary guardian for one or more children to whom they may or may not be biologically related. In time, more formal arrangements may be made and foster children can be legally adopted. </li> </ul>
+<ins
+class="adsbygoogle ad ad-native ad-content-middle"
+data-ad-client="ca-pub-3619764495662405"
+data-ad-channel="209+231+253"
+data-ad-slot="2762627867"> </ins>
+<script>adsbygoogle.push({});</script>
+<p> Many families can be classified as more than one specific type, and every family has its unique characteristics that make it special and comforting to its members. </p>
+<h2> Defining Your Family </h2>
+<p> While the direct legal and genetic relationships you share with others can help you create your definition of family, there is more to family relationships than these basic concepts. A true family provides its members with emotional and spiritual kinship through: </p>
+<ul> <li>Shared values, beliefs, and traditions </li>
+<li>Common experiences and activities </li>
+<li>Unconditional, non-judgmental support </li> </ul>
+<p> In many ways, different individuals relate to groups of people who provide them with emotional and spiritual connection as family, even if they share no legal or genetic bonds. For example, a church "family" has spiritual connections and shared values, even though its members are not formally related. Similarly, a work family has common experiences and share activities in long-term relationships without formal bonds. College fraternities and sororities often share familial bonds through experiences and consider one another brothers and sisters without formal relationships. With social networking technology, many people are even creating online or virtual families of individuals who share their beliefs, hobbies, and values even if they have never met in person. </p>
+<p> The definition of family is constantly evolving, and every person can define family in a different way to encompass the relationships she shares with people in her life. Over time one's family will change as one's life changes and the <a href="/importance-family-values" title="Importance of Family Values">importance of family values</a> and rituals deepen. Every member who is truly family will help make it richer. </p> </section>
+<footer class="content-footer"> <form id="useful"> Was this page useful?
+<input type="radio" name="useful" value="yes" id="useful-yes"> <label for="useful-yes" class="yes">Yes</label>
+<input type="radio" name="useful" value="no" id="useful-no"> <label for="useful-no" class="no">No</label>
+<div class="modal"> <div class="content"> <div>Please help us improve. Why wasn't this page useful?</div>
+<input type="radio" name="reason" value="wrong-topic" id="useful-reason-wrong-topic"> <label for="useful-reason-wrong-topic">It was not the topic I was looking for</label>
+<input type="radio" name="reason" value="not-enough" id="useful-reason-not-enough"> <label for="useful-reason-not-enough">It didn't have enough information</label>
+<input type="radio" name="reason" value="incorrect" id="useful-reason-incorrect"> <label for="useful-reason-incorrect">It had errors or incorrect information</label>
+<input type="radio" name="reason" value="lacks-trust" id="useful-reason-lacks-trust"> <label for="useful-reason-lacks-trust">It didn't seem trustworthy</label>
+<input type="radio" name="reason" value="other" id="useful-reason-other"> <label for="useful-reason-other">Something else</label>
+<label for="useful-details">Additional details:</label>
+<textarea name="details" id="useful-details"></textarea>
+<input type="submit" value="Send"> <button class="cancel">Cancel</button> </div> </div> </form>
+<section class="content-related" data-track-section="Related"> <header>Related Topics</header>
+<ul> <li><a href="/about-family-values/meaning-family">Meaning of Family</a></li>
+<li><a href="/definition-blended-family">Definition of a Blended Family</a></li>
+<li><a href="/about-family-values/definition-extended-families">Definition of Extended Families</a></li>
+<li><a href="/definition-nuclear-family">Definition of a Nuclear Family</a></li> </ul> </section>
+<section class="content-related-slideshows slideshows" data-track-section="Related Slideshows"> <div class="slideshow"> <a class="slideshow-image" style="background-image:url(http://cf.ltkcdn.net/family/images/std/144234-425x330-famnight10.jpg);;background-color:#e2e1e0" rel="slideshow" href="/family-activities/family-night-ideas"> </a> <a class="slideshow-title" rel="slideshow" href="/family-activities/family-night-ideas">Family Night Ideas</a> </div>
+<div class="slideshow"> <a class="slideshow-image" style="background-image:url(http://cf.ltkcdn.net/family/images/std/141057-425x321-funfamout1.jpg);;background-color:#4a5c74" rel="slideshow" href="/fun-family-outdoor-activities"> </a> <a class="slideshow-title" rel="slideshow" href="/fun-family-outdoor-activities">Fun Family Outdoor Activities</a> </div> </section>
+<ins
+class="adsbygoogle ad-native ad-content-bottom"
+data-ad-client="ca-pub-3619764495662405"
+data-ad-channel="209+231"
+data-ad-slot="9180352668"></ins>
+<script>adsbygoogle.push({});</script> </footer> </article>
+<section id="ad-article-bottom" class="ad ad-article-bottom "><script>ltk.ads.define("ad-article-bottom","LTK_Parenting_Lifestyle_Family_300x250",[],[[[0,0],[]],[[320,400],[[300,250],[300,100],[300,50]]],[[340,400],[[300,250],[320,100],[320,50],[300,100],[300,50]]],[[356,400],[[336,280],[300,250],[320,100],[320,50],[300,100],[300,50]]],[[370,400],[[350,250],[336,280],[300,250],[320,100],[320,50],[300,100],[300,50]]],[[488,400],[[468,60],[350,250],[336,280],[300,250],[320,100],[320,50],[300,100],[300,50]]],[[500,400],[[480,320],[468,60],[350,250],[336,280],[300,250],[320,100],[320,50],[300,100],[300,50]]],[[588,0],[]]],false);</script></section>
+<aside class="content-comments cell"> <div id="disqus_thread"></div>
+<script> disqus_config = function () {
+this.page.title = 'Definition of Family';
+this.page.url = 'http://family.lovetoknow.com/definition-family';
+this.page.identifier = this.page.url;
+this.page.category_id = 2464121;
+}; </script>
+<script async defer src="//lovetoknow.disqus.com/embed.js"></script> </aside> </main>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" onerror="ltkabg()"></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script async src="http://po.st/static/v4/post-widget.js#publisherKey=pfj4g5ao3efb6gssihjc"></script>
+<script async src="http://cf.ltkcdn.net/2017.2.155/js/hammer.js"></script>
+<script async src="http://cf.ltkcdn.net/2017.2.155/js/hammer-time.js"></script>
+<script async src="http://cf.ltkcdn.net/2017.2.155/js/ltk.js"></script>
+<script async src="https://code.jquery.com/jquery-2.2.0.min.js" onload="ltkjq()"></script>
+<aside class="sidebar grid" data-track-area="Sidebar"> <section id="ad-sidebar-top" class="ad ad-sidebar-top "><script>ltk.ads.define("ad-sidebar-top","LTK_Parenting_Lifestyle_Family_300x250",[],[[[0,0],[]],[[588,400],[[160,600],[120,600]]],[[750,600],[[300,1051],[300,600],[300,250],[160,600],[120,600]]],[[1200,600],[[336,280],[300,1051],[300,600],[300,250],[160,600],[120,600]]]],false);</script></section> <section class="sidebar-topics sidebar-popular" data-track-section="Popular"> <header>Trending in Family</header>
+<ol> <li> <a href="/about-family-values/definition-extended-families"><div class="sidebar-image"><span style="background-image:url(http://cf.ltkcdn.net/family/images/thumb/141366-110x73-extended-family.jpg);;background-color:#cbc2ad"></span></div>Definition of Extended Families</a> </li>
+<li> <a href="/chinese-family-values"><div class="sidebar-image"><span style="background-image:url(http://cf.ltkcdn.net/family/images/thumb/204193-110x85-multigenerationfamily.jpg);;background-color:#a69679"></span></div>Chinese Family Values</a> </li>
+<li> <a href="/definition-blended-family"><div class="sidebar-image"><span style="background-image:url(http://cf.ltkcdn.net/family/images/thumb/140988-110x70-adoption.jpg);;background-color:#f5f5f5"></span></div>Definition of a Blended Family</a> </li>
+<li> <a href="/parent-child-ice-breaker-games"><div class="sidebar-image"><span style="background-image:url(http://cf.ltkcdn.net/family/images/thumb/140653-110x73-parent-and-child.jpg);;background-color:#946245"></span></div>Parent Child Icebreaker Games</a> </li>
+<li> <a href="/arabic-culture-values"><div class="sidebar-image"><span style="background-image:url(http://cf.ltkcdn.net/family/images/thumb/194391-110x85-Arab-clothed-woman-and-blond.jpg);;background-color:#191619"></span></div>Arab Culture Values</a> </li> </ol> </section>
+<section class="sidebar-categories" data-track-section="Categories"> <header>Family Categories</header>
+<ol> <li><a href="/family-values">About Family Values</a></li>
+<li><a href="/co-parenting">Co-Parenting</a></li>
+<li><a href="/cultural-heritage-symbols">Cultural Heritage and Symbols</a></li>
+<li><a href="/family-activities">Family Activities</a></li>
+<li><a href="/military-families">Military Families</a></li> </ol> </section>
+<section id="ad-sidebar-bottom" class="ad ad-sidebar-bottom "><script>ltk.ads.define("ad-sidebar-bottom","LTK_Parenting_Lifestyle_Family_300x250_Sticky",[],[[[0,0],[]],[[588,400],[[160,600],[120,600]]],[[750,600],[[300,600],[300,250],[160,600],[120,600]]],[[1200,600],[[336,280],[300,600],[300,250],[160,600],[120,600]]]],false);</script></section></aside>
+<div id="page-share"></div> </div>
+<footer class="footer" data-track-area="Footer"> <section class="footer-lists grid boxed"> <div class="footer-logo"> <a class="logo" href="http://www.lovetoknow.com">L<b>o</b>ve<u>To</u>Know</a> <div class="footer-tagline">Advice you can trust.</div> </div>
+<div class="footer-list footer-list-articles" data-track-section="Articles"> <header>Featured Articles</header>
+<ol> <li><a href="http://shoes.lovetoknow.com/Athletic_Shoes">Top Athletic Shoes for Women</a></li>
+<li><a href="http://sewing.lovetoknow.com/sewing-patterns/how-make-reusable-lunch-bags">How to Make Reusable Lunch Bags</a></li>
+<li><a href="http://exercise.lovetoknow.com/weight-loss-exercises/cycling-weight-loss">Cycling for Weight Loss</a></li>
+<li><a href="http://travel.lovetoknow.com/united-states-travel/florida-travel/disney-world-honeymoon">Disney World Honeymoon</a></li>
+<li><a href="http://save.lovetoknow.com/welfare-pros-cons">Welfare Pros and Cons</a></li> </ol> </div>
+<div class="footer-list footer-list-topics" data-track-section="Topics"> <header>Top Topics</header>
+<ol> <li><a href="http://horoscopes.lovetoknow.com/Main_Page">Horoscopes</a></li>
+<li><a href="http://quiz.lovetoknow.com/Main_Page">Quiz</a></li>
+<li><a href="http://small-pets.lovetoknow.com/">Small Pets</a></li>
+<li><a href="http://dating.lovetoknow.com/Main_Page">Dating &amp; Relationships</a></li>
+<li><a href="http://teens.lovetoknow.com/Main_Page">Teens</a></li> </ol> </div>
+<div class="footer-list footer-list-slideshows" data-track-section="Slideshows"> <header>Top Slideshows</header>
+<ol> <li><a rel="slideshow" href="/family-activities/gifts-stepdad">Gifts for a Stepdad</a></li>
+<li><a rel="slideshow" href="/family-activities/family-night-ideas">Family Night Ideas</a></li>
+<li><a rel="slideshow" href="/about-family-values/photos-summer-family-fun">Photos of Summer Family Fun</a></li>
+<li><a rel="slideshow" href="/fun-family-outdoor-activities">Fun Family Outdoor Activities</a></li>
+<li><a rel="slideshow" href="/family-activities/frugal-fun-family">Frugal Fun for the Family</a></li> </ol> </div> </section>
+<section class="footer-nav grid boxed"> <div class="footer-social"> <header>We're Social</header>
+<div class="site-social"> <a href="https://www.facebook.com/LoveToKnow" data-network="Facebook"><i class="fb"></i></a>
+<a href="https://twitter.com/lovetoknow" data-network="Twitter"><i class="tw"></i></a>
+<a href="https://www.pinterest.com/lovetoknow/" data-network="Pinterest"><i class="pn"></i></a>
+<a href="https://plus.google.com/+Lovetoknow" data-network="Google"><i class="gp"></i></a> </div> </div>
+<nav class="footer-about" data-track-section="About"> <header>About Us</header><ul> <li><a href="http://www.lovetoknow.com/wiki-help.htm">Help</a></li>
+<li><a href="http://www.lovetoknow.com/about-lovetoknow.htm">About LoveToKnow</a></li>
+<li><a href="http://www.lovetoknow.com/Careers/careers.html">Careers</a></li>
+<li><a href="http://www.lovetoknow.com/lovetoknow-privacy-policy.htm">Privacy Policy</a></li>
+<li><a href="http://www.lovetoknow.com/Editorial-Policy.html">Editorial Policy</a></li>
+<li><a href="http://www.lovetoknow.com/disclaimers.htm">Terms of Service</a></li> </ul> </nav> </section> </footer>
+<div class="header floating-header" data-track-area="Header" data-track-section="Floating"> <a class="floating-header-heart" href="http://www.lovetoknow.com/"> </a> <div id="header-share"></div>
+<div class="floating-header-title"><span>Definition of Family</span></div> </div>
+<section id="ad-skin" class="ad ad-skin "><script>ltk.ads.define("ad-skin","LTK_Parenting_Lifestyle_Family_Skin",[],[[[0,0],[]],[[320,400],[1,1]]],false);</script></section> 
+<!-- CACHED Tue, 24 Jan 2017 12:49:53am PST by l2p.lovetoknow.com --></body> </html>

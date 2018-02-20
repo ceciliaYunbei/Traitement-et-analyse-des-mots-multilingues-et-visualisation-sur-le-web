@@ -1,0 +1,1739 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-hans" version="XHTML+RDFa 1.0" dir="ltr" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta http-equiv="x-dns-prefetch-control" content="on"/>
+<link rel="dns-prefetch" href="//cdnnews.sinchew.com.my"/>
+<!--[if IE 9]>
+<link rel="prefetch" href="//cdnnews.sinchew.com.my" />
+<![endif]-->
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1"/>
+<link rel="shortcut icon" href="http://cdnnews.sinchew.com.my/sites/default/files/logo_0.png" type="image/png"/>
+<meta name="description" content="（森美兰．芙蓉29日讯）一般孩子放学后忙着的是嬉闹玩耍，但对于一些弱势家庭的孩子来说，却是忙着做家务、照顾生病的家人，甚至须承担家里的负能量。 在时间的逼迫下长大，小小的身躯住着的是一个被现实打败的“大人灵魂”，对于“梦想”的期许，往往已没有“自己”，而是如何减轻家庭的负担。 为了让这些弱势孩子也能回到童年的单纯，相信“只要有梦，就能实现”，芙蓉邻恩社区关怀中心过去8年，藉着圣诞节到来，推动一项“给梦想一双翅膀”社区关爱活动。 在茫茫人海中，找出弱势家庭的孩子，为他们“圆梦”，让孩子们明白，生活中的缺失、现实的残忍，并不足以剥夺他们“梦想”的权利与勇气。 吴清贵：灌输“梦想”观念 芙蓉邻恩关怀中心牧师吴清贵指出，8年累积的经验，让他更肯定，“给梦想一双翅膀”对于弱势家庭的孩子，非常重要，特别是灌输他们相信“梦想”的观念。"/>
+<meta name="robots" content="follow, index"/>
+<meta name="news_keywords" content="新闻,吴清贵,弱势家庭, 芙蓉邻恩关怀中心, 暖势力"/>
+<meta name="rating" content="general"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="generator" content="Sin Chew CMS"/>
+<link rel="image_src" href="http://cdnnews.sinchew.com.my/sites/default/files/img/main_image/2016/Dec/29/nb02a01.jpg"/>
+<link rel="canonical" href="http://www.sinchew.com.my/node/1600650/%E3%80%90%E6%9A%96%E5%8A%BF%E5%8A%9B%E3%80%91%E2%80%9C%E5%8F%AA%E8%A6%81%E6%9C%89%E6%A2%A6%EF%BC%8C%E5%B0%B1%E8%83%BD%E5%AE%9E%E7%8E%B0%E2%80%9D%EF%BC%8E%E7%BB%99%E5%BC%B1%E5%8A%BF%E7%AB%A5%E4%B8%80%E5%8F%8C%E2%80%9C%E6%A2%A6%E2%80%9D%E7%BF%85%E8%86%80"/>
+<link rel="shortlink" href="http://www.sinchew.com.my/node/1600650"/>
+<meta property="og:site_name" content="星洲网 Sin Chew Daily"/>
+<meta property="og:url" content="http://www.sinchew.com.my/node/1600650/%E3%80%90%E6%9A%96%E5%8A%BF%E5%8A%9B%E3%80%91%E2%80%9C%E5%8F%AA%E8%A6%81%E6%9C%89%E6%A2%A6%EF%BC%8C%E5%B0%B1%E8%83%BD%E5%AE%9E%E7%8E%B0%E2%80%9D%EF%BC%8E%E7%BB%99%E5%BC%B1%E5%8A%BF%E7%AB%A5%E4%B8%80%E5%8F%8C%E2%80%9C%E6%A2%A6%E2%80%9D%E7%BF%85%E8%86%80"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="【暖势力】“只要有梦，就能实现”．给弱势童一双“梦”翅膀"/>
+<meta property="og:description" content="一般孩子放学后忙着的是嬉闹玩耍，但对于一些弱势家庭的孩子来说，却是忙着做家务、照顾生病的家人，甚至须承担家里的负能量。"/>
+<meta property="og:updated_time" content="2016-12-30T09:16:33+08:00"/>
+<meta property="og:image" content="http://cdnnews.sinchew.com.my/sites/default/files/img/main_image/2016/Dec/29/nb02a01.jpg"/>
+<meta property="og:image" content="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/sinchew-default-fb.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="article:section" content="新闻"/>
+<meta property="article:tag" content="吴清贵"/>
+<meta property="article:tag" content="弱势家庭"/>
+<meta property="article:tag" content="芙蓉邻恩关怀中心"/>
+<meta property="article:tag" content="暖势力"/>
+<meta property="article:published_time" content="2016-12-30T09:16:33+08:00"/>
+<meta property="article:modified_time" content="2016-12-30T09:16:33+08:00"/>
+<title>【暖势力】“只要有梦，就能实现”．给弱势童一双“梦”翅膀 - 新闻 | 星洲网 Sin Chew Daily</title>
+<link type="text/css" rel="stylesheet" href="http://cdnnews.sinchew.com.my/sites/default/files/cdn/css/http/css_gDWHI4odoNyQOHbo58t-gcmW41F72O3mI3lwe5rTRa4.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="http://cdnnews.sinchew.com.my/sites/default/files/cdn/css/http/css_4dQdaFnEKOfqwFzPAK0RSVsK-qjAVCfMG8mXBxKPMMk.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="http://cdnnews.sinchew.com.my/sites/default/files/cdn/css/http/css_b4G61w2_3_8lyLZXBiQkwbSra06PLWRrCdHwttK8Ntw.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="http://cdnnews.sinchew.com.my/sites/default/files/cdn/css/http/css_JSII4XMggUhe0F0EFW80QnYWGthlWyBbm6RRlQbb4C8.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="http://cdnnews.sinchew.com.my/sites/default/files/cdn/css/http/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css" media="print"/>
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://cdnnews.sinchew.com.my/sites/default/files/cdn/css/http/css_CQ6eoaDQ9JbIFnnc8xtnLAPZkaOrPoOFTgYbssbKgTg_ie.css.css" media="all" />
+<![endif]-->
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://cdnnews.sinchew.com.my/sites/default/files/cdn/css/http/css_qvY3lZIZDNHRNsIKQYZKZOxljoe9Mn-xk-hYDicQHRs_ie6.css.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/misc/drupal.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/libraries/fitvids/jquery.fitvids.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/modules/contib/admin_menu/admin_devel/admin_devel.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/modules/fitvids/fitvids.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/modules/extlink/extlink.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/sinchew.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/misc/textarea.js?v=7.36"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/modules/mollom/mollom.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/custom.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/plugin/slick-1.5.9/slick/slick.min.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/bootstrap.min.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/sticky-menu.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/article-listing-fix.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/ads-scaling.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/footer-stay-at-bottom-no-matter-what.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/move-all-notifications-message-to-under-menu.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/SCWPU-241.js?ojofuf"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"yfhM8PtwC8KRBYfhYeZM4hB_udbqJGd6oVEiCioYalQ","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contib\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"modules\/fitvids\/fitvids.css":1,"modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/contib\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/facebook_pull\/facebook_pull.css":1,"sites\/all\/themes\/bartik\/css\/layout.css":1,"sites\/all\/themes\/bartik\/css\/style.css":1,"sites\/all\/themes\/bartik\/css\/colors.css":1,"sites\/all\/themes\/bartik\/css\/custom.css":1,"sites\/all\/themes\/bartik\/css\/bootstrap.min.css":1,"sites\/all\/themes\/bartik\/css\/font-awesome.min.css":1,"sites\/all\/themes\/bartik\/plugin\/slick-1.5.9\/slick\/slick.css":1,"sites\/all\/themes\/bartik\/plugin\/slick-1.5.9\/slick\/slick-theme.css":1,"sites\/all\/themes\/bartik\/css\/sinchew.css":1,"sites\/all\/themes\/bartik\/css\/print.css":1,"sites\/all\/themes\/bartik\/css\/ie.css":1,"sites\/all\/themes\/bartik\/css\/ie6.css":1},"js":{"modules\/statistics\/statistics.js":1,"sites\/all\/modules\/contib\/addthis\/addthis.js":1,"sites\/all\/themes\/bartik\/plugin\/jquery-visible-master\/jquery.visible.min.js":1,"sites\/all\/themes\/bartik\/plugin\/jQuery.dotdotdot-master\/src\/jquery.dotdotdot.min.js":1,"sites\/all\/themes\/bartik\/js\/article-floating-sidebar.js":1,"sites\/all\/themes\/bartik\/js\/jquery.dotdotdot.js":1,"sites\/all\/themes\/bartik\/js\/article-misc-fix.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"sites\/all\/modules\/contib\/admin_menu\/admin_devel\/admin_devel.js":1,"modules\/fitvids\/fitvids.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/themes\/bartik\/js\/sinchew.js":1,"misc\/textarea.js":1,"sites\/all\/modules\/mollom\/mollom.js":1,"sites\/all\/themes\/bartik\/js\/custom.js":1,"sites\/all\/themes\/bartik\/plugin\/slick-1.5.9\/slick\/slick.min.js":1,"sites\/all\/themes\/bartik\/js\/bootstrap.min.js":1,"sites\/all\/themes\/bartik\/js\/sticky-menu.js":1,"sites\/all\/themes\/bartik\/js\/article-listing-fix.js":1,"sites\/all\/themes\/bartik\/js\/ads-scaling.js":1,"sites\/all\/themes\/bartik\/js\/footer-stay-at-bottom-no-matter-what.js":1,"sites\/all\/themes\/bartik\/js\/move-all-notifications-message-to-under-menu.js":1,"sites\/all\/themes\/bartik\/js\/SCWPU-241.js":1}},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":1},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"statistics":{"data":{"nid":"1600650"},"url":"\/modules\/statistics\/statistics.php"},"base_url":"http:\/\/www.sinchew.com.my"});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in two-sidebars page-node page-node- page-node-1600650 node-type-article footer-columns page-node/1600650/【暖势力】“只要有梦，就能实现”．给弱势童一双“梦”翅膀">
+<div id="skip-link">
+<a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+</div>
+<div id="page-wrapper">
+<div id="page">
+<div id="header" class="without-secondary-menu">
+<div class="region region-above-menu">
+<div id="block-sinchew-ads-all-ads-init-node" class="block block-sinchew-ads">
+<div class="content">
+ 
+ 
+<script type='text/javascript' charset='UTF-8' src='http://avd.innity.net/audsync.js'></script>
+<script type='text/javascript'>
+		(function()
+		{ var useSSL = 'https:' == document.location.protocol; var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js'; document.write('<scr' + 'ipt src=\'' + src + '\'></scr' + 'ipt>'); }
+		)();
+	</script>
+<script>
+		var gptAdSlots = [];
+		googletag.cmd.push(function() {
+
+			var mapping1 = googletag.sizeMapping().
+			// Mobile
+			addSize([320, 400], [320, 50]).
+			// Landscape tablet
+			addSize([750, 200], [728, 90]).
+			// Desktop
+			addSize([1050, 200], [970, 90]).
+			build();
+
+			var mapping2 = googletag.sizeMapping().
+			// Desktop
+			addSize([1050, 300], [300, 250]).
+			build();
+
+			var mapping3 = googletag.sizeMapping().
+			// Mobile
+			addSize([320, 400], [320, 30]).
+			// Landscape tablet
+			addSize([750, 200], [640, 90]).
+			// Desktop
+			addSize([1050, 300], [640, 50]).
+			build();
+
+			var mapping4 = googletag.sizeMapping().
+			// Mobile
+			addSize([320, 400], [1, 1]).
+			// Landscape tablet
+			addSize([750, 200], [1, 1]).
+			// Desktop
+			addSize([1050, 200], [1, 1]).
+			build();
+
+			gptAdSlots[0] = googletag.defineSlot('/2365395/Sci(News)_Leaderboard', [970, 90], 'div-gpt-ad-1467824736320-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+			gptAdSlots[1] = googletag.defineSlot('/2365395/Sci_Rectangular_I', [300, 250], 'div-gpt-ad-1460542026884-0').defineSizeMapping(mapping2).addService(googletag.pubads());
+			gptAdSlots[2] = googletag.defineSlot('/2365395/Sci_Rectangular_II', [300, 250], 'div-gpt-ad-1460542075285-0').defineSizeMapping(mapping2).addService(googletag.pubads());
+			gptAdSlots[3] = googletag.defineSlot('/2365395/Sci_Rectangular_III', [300, 250], 'div-gpt-ad-1467709630652-0').defineSizeMapping(mapping2).addService(googletag.pubads());
+			gptAdSlots[4] = googletag.defineSlot('/2365395/Sci_AdQuote', [640, 50], 'div-gpt-ad-1460542939516-0').defineSizeMapping(mapping3).addService(googletag.pubads());
+			gptAdSlots[5] = googletag.defineSlot('/2365395/SC_News_1x1_Inner', [1, 1], 'div-gpt-ad-1468405938173-0').defineSizeMapping(mapping4).addService(googletag.pubads());
+			gptAdSlots[6] = googletag.defineSlot('/2365395/SC_Underlay_1x1', [1, 1], 'div-gpt-ad-1467827327020-0').defineSizeMapping(mapping4).addService(googletag.pubads());
+			gptAdSlots[7] = googletag.defineSlot('/2365395/SC_BottomRec_ROS', [300, 250], 'div-gpt-ad-1483000606892-0').defineSizeMapping(mapping2).addService(googletag.pubads());
+
+
+			// Step 2 : Key values
+			innityaudsync._setTargeting('dfp-gpt', {'cl': '120', 'targetKeys': ['mcilgroup_all']} );
+			googletag.pubads().enableSyncRendering();
+			googletag.pubads().enableSingleRequest();
+			googletag.enableServices();
+
+
+		});
+	</script>
+</div>
+</div>
+<div id="block-sinchew-ads-all-ads-leaderboard" class="block block-sinchew-ads">
+<div class="content">
+<div class='ads-wrapper'>
+<div class='ads ads-1 ads-dont-scale'><span class='ads-title text-left'>广告</span>
+<div id='div-gpt-ad-1467824736320-0'>
+<script>
+					googletag.cmd.push(function() {
+						googletag.display('div-gpt-ad-1467824736320-0');
+					});
+				</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="block-sinchew-ads-menu-header" class="block block-sinchew-ads">
+<div class="content">
+<nav class='navbar navbar-default original-theme invisible'>
+<div class='container-fluid'>
+<div class='navbar-header'>
+<div class='logo'>
+<a href='http://www.sinchew.com.my' title='Home' rel='home'>
+<img src='http://cdnnews.sinchew.com.my/sites/default/files/logo.png' alt='Home' class='original'>
+<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/logo-big-white.png' alt='Home' class='white hidden'>
+</a>
+<a href='http://www.sinchew.com.my/news' class='section-logo news'>
+<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/section-logo/logo-news.png' alt='Home' class='section-logo news''>
+				</a>
+				
+						<a href='http://www.sinchew.com.my/sports' class=' hidden section-logo sports'>
+					<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/section-logo/logo-sports.png' alt='Home' class='section-logo sports''>
+				</a>
+				
+						<a href='http://www.sinchew.com.my/my-kampung' class=' hidden section-logo my-kampung'>
+					<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/section-logo/logo-my-kampung.png' alt='Home' class='section-logo my-kampung''>
+				</a>
+				
+						<a href='http://www.sinchew.com.my/entertainment' class=' hidden section-logo entertainment'>
+					<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/section-logo/logo-entertainment.png' alt='Home' class='section-logo entertainment''>
+				</a>
+				
+						<a href='http://www.sinchew.com.my/act' class=' hidden section-logo act'>
+					<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/section-logo/logo-act.png' alt='Home' class='section-logo act''>
+				</a>
+				
+						<a href='http://www.sinchew.com.my/life' class=' hidden section-logo life'>
+					<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/section-logo/logo-life.png' alt='Home' class='section-logo life''>
+				</a>
+				
+						<a href='http://www.sinchew.com.my/opinion' class=' hidden section-logo opinion'>
+					<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/section-logo/logo-opinion.png' alt='Home' class='section-logo opinion''>
+				</a>
+				
+						<a href='http://www.sinchew.com.my/business' class=' hidden section-logo business'>
+					<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/section-logo/logo-business.png' alt='Home' class='section-logo business''>
+				</a>
+				
+		</div>
+		<button type='button' class='navbar-toggle collapsed left' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar'>
+			<span class='sr-only'>Toggle navigation</span>
+			<i class='fa fa-bars toggle_icon' aria-hidden='true'></i>
+			<span class='close_icon hidden'>&#10006;</span>
+		</button>
+				<button type='button' class='navbar-toggle collapsed right' data-toggle='collapse' data-target='#navbar-subsection' aria-expanded='false' aria-controls='navbar'>
+					<span class='sr-only'>Toggle navigation</span>
+					<i class='fa fa-ellipsis-h toggle_icon' aria-hidden='true'></i>
+					<span class='close_icon hidden'>&#10006;</span>
+				</button>
+				
+	</div>
+	<div id='navbar' class='navbar-collapse collapse left'>
+		
+	<div class='featured-topic-wrapper hide-on-desktop'>
+		<div class='btn btn-default featured-topic'>
+			<div class="view view-homepage-blocks-140516 view-id-homepage_blocks_140516 view-display-id-block_14 view-dom-id-a7669b2ead84b713c1f22d887cf0ab28">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.sinchew.com.my/other/cny2017/">春节特备</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div>
+	</div>
+	 <ul class="menu clearfix"><li class="first leaf"><a href="/" class="lastest-news">即时要闻</a></li>
+<li class="leaf"><a href="/popular" class="popular-news">人气新闻</a></li>
+<li class="leaf"><a href="/my-news" class="favourite-tagging-news">我的首页</a></li>
+<li class="expanded section"><span class="section nolink">全部类别</span><ul class="menu clearfix"><li class="first leaf news"><a href="/news">新闻</a></li>
+<li class="leaf business"><a href="/business">财经</a></li>
+<li class="leaf opinion"><a href="/opinion">观点</a></li>
+<li class="leaf my-kampung"><a href="/my-kampung">地方</a></li>
+<li class="leaf entertainment"><a href="/entertainment">娱乐</a></li>
+<li class="leaf sports"><a href="/sports">体育</a></li>
+<li class="leaf life"><a href="/life">生活志</a></li>
+<li class="last leaf act"><a href="/act">活动</a></li>
+</ul></li>
+<li class="leaf hide-on-desktop"><a href="/search" class="search">搜索</a></li>
+<li class="leaf hide-on-desktop"><a href="/tags" class="tags">点选最爱</a></li>
+<li class="leaf hide-on-desktop"><a href="/user?current=node/1600650" class="user">用户</a></li>
+<li class="last leaf hide-when-logged-in hide-on-desktop"><a href="/user/login?current=node/1600650" class="login">登入</a></li>
+</ul> <ul class="menu clearfix"><li class="first expanded hide-when-not-logged-in"><a href="/user?current=node/1600650" class="user">用户</a><ul class="menu clearfix"><li class="first last leaf"><a href="/user/edit">编辑用户资料</a></li>
+</ul></li>
+<li class="leaf hide-when-logged-in"><a href="/user?current=node/1600650" class="login">登入</a></li>
+<li class="leaf"><a href="/tags" class="tags">点选最爱</a></li>
+<li class="last leaf"><a href="/search/node" class="search">搜索</a></li>
+</ul>
+	<div class='featured-topic-wrapper hide-on-mobile'>
+		<div class='btn btn-default featured-topic'>
+			<div class="view view-homepage-blocks-140516 view-id-homepage_blocks_140516 view-display-id-block_14 view-dom-id-a7669b2ead84b713c1f22d887cf0ab28">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.sinchew.com.my/other/cny2017/">春节特备</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div>
+	</div>
+	 
+		<script>
+			(function($){
+				$(document).ready(function(){
+            		//menu left
+					$('#navbar').children('ul:first').addClass('nav navbar-nav');
+					$('#navbar').children('ul:first').children('li.expanded').addClass('dropdown');
+					$('#navbar').children('ul:first').children('li.expanded').children('ul').addClass('dropdown-menu');
+					$('#navbar').children('ul:first').children('li.expanded').prepend('<a href=\'#\' class=\'dropdown-toggle\' data-toggle=\'dropdown\' role=\'button\' aria-haspopup=\'true\' aria-expanded=\'false\'>'+$('#navbar').children('ul:first').children('li.expanded').children('span').text()+' <span class=\'caret\'></span></a>');
+					$('#navbar').children('ul:first').children('li.expanded').children('span').remove();
+
+            		//menu right
+					$('#navbar').children('ul:eq(1)').addClass('nav navbar-nav navbar-right');
+					$('#navbar').children('ul:eq(1)').children('li.expanded').addClass('dropdown');
+					$('#navbar').children('ul:eq(1)').children('li.expanded').children('ul').addClass('dropdown-menu');
+					/*$('#navbar').children('ul:eq(1)').children('li.expanded').prepend('<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>'+$('#navbar').children('ul:eq(1)').children('li.expanded').children('span').text()+' <span class='caret'></span></a>');*/
+					$('#navbar').children('ul:eq(1)').children('li.expanded').children('span').remove();
+				});
+			})(jQuery);
+		</script>
+	</div><!--/.nav-collapse -->
+			<div id='navbar-subsection' class='navbar-collapse collapse right'>
+				<h3 class='section-title news'>新闻</h3><div class="view view-subsections-for-menu view-id-subsections_for_menu view-display-id-news view-dom-id-1cd019f27030cc4b5a41602c0db008e0">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%9B%BD%E5%86%85">国内</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%8D%B3%E6%97%B6%E5%9B%BD%E5%86%85">即时国内</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%9B%BD%E9%99%85">国际</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%8D%B3%E6%97%B6%E5%9B%BD%E9%99%85">即时国际</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E7%A7%91%E6%8A%80">科技</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/hot-spot">HOT spot</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E6%96%B0%E9%97%BB%E4%B8%93%E9%A2%98">新闻专题</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%A5%87%E9%97%BB">奇闻</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E6%96%B0%E9%97%BB%E4%BD%A0%E6%9D%A5%E6%8A%A5">新闻你来报</a>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+			</div><!--/.nav-collapse -->
+			<script>
+				(function($){
+					$(document).ready(function(){
+						$('#navbar-subsection .menu-subsection').addClass('subsection-in-mobile-right-menu');
+					});
+				})(jQuery);
+			</script>
+		<div class='third-level-subsections-menu hidden news'>
+			<h3 class='section-title hidden news'></h3><div class="view view-subsections-for-menu view-id-subsections_for_menu view-display-id-news view-dom-id-1cd019f27030cc4b5a41602c0db008e0">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%9B%BD%E5%86%85">国内</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%8D%B3%E6%97%B6%E5%9B%BD%E5%86%85">即时国内</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%9B%BD%E9%99%85">国际</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%8D%B3%E6%97%B6%E5%9B%BD%E9%99%85">即时国际</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E7%A7%91%E6%8A%80">科技</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/hot-spot">HOT spot</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E6%96%B0%E9%97%BB%E4%B8%93%E9%A2%98">新闻专题</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E5%A5%87%E9%97%BB">奇闻</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%96%B0%E8%81%9E/%E6%96%B0%E9%97%BB%E4%BD%A0%E6%9D%A5%E6%8A%A5">新闻你来报</a>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div><!--/.nav-collapse -->
+		<div class='third-level-subsections-menu hidden sports'>
+			<h3 class='section-title hidden sports'></h3><div class="view view-subsections-for-menu view-id-subsections_for_menu view-display-id-sports view-dom-id-ec2459a4099ea59dbaa812b01d6eaf8a">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E9%87%8C%E7%BA%A6%E5%A5%A5%E8%BF%90%E4%BC%9A">里约奥运会</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E5%8D%B3%E6%97%B6%E4%BD%93%E8%82%B2">即时体育</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E5%A4%A7%E9%A9%AC">大马</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E7%BE%BD%E7%90%83">羽球</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E8%B6%B3%E7%90%83">足球</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E8%B5%9B%E8%BD%A6">赛车</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E8%81%9A%E7%84%A6%E4%BA%BA%E7%89%A9">聚焦人物</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E7%BD%91%E7%90%83">网球</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E7%AF%AE%E7%90%83">篮球</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E5%85%B6%E4%BB%96">其他</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/2016%E6%AC%A7%E6%B4%B2%E6%9D%AF">2016欧洲杯</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E9%AB%94%E8%82%B2/%E5%9C%BA%E5%A4%96%E8%8A%B1%E7%B5%AE">场外花絮</a>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div><!--/.nav-collapse -->
+		<div class='third-level-subsections-menu hidden my-kampung'>
+			<h3 class='section-title hidden my-kampung'></h3><div class="view view-subsections-for-menu view-id-subsections_for_menu view-display-id-my_kampung view-dom-id-84e08744cda06a7bd5714583090c1622">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E5%A4%A7%E9%83%BD%E4%BC%9A">大都会</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E5%A4%A7%E5%8C%97%E9%A9%AC">大北马</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E5%A4%A7%E9%9C%B9%E9%9B%B3">大霹雳</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E5%A4%A7%E6%9F%94%E4%BD%9B">大柔佛</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E4%B8%9C%E6%B5%B7%E5%B2%B8">东海岸</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E5%8F%A4%E5%9F%8E">古城</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E8%8A%B1%E5%9F%8E">花城</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E4%B8%93%E9%A2%98">专题</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E5%9C%B0%E6%96%B9%E8%A7%80%E9%BB%9E">地方觀點</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%9C%B0%E6%96%B9/%E7%A0%82%E6%8B%89%E8%B6%8A">砂拉越</a>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div><!--/.nav-collapse -->
+		<div class='third-level-subsections-menu hidden entertainment'>
+			<h3 class='section-title hidden entertainment'></h3><div class="view view-subsections-for-menu view-id-subsections_for_menu view-display-id-entertainment view-dom-id-6f5cc8a3cdc0ea2be2183088b750d1f1">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E5%8D%B3%E6%97%B6%E5%A8%B1%E4%B9%90">即时娱乐</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E5%A4%A7%E9%A9%AC%E5%A8%B1%E4%B9%90">大马娱乐</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E5%9B%BD%E5%A4%96%E5%A8%B1%E4%B9%90">国外娱乐</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E5%90%8D%E4%BA%BA%E4%B8%93%E8%AE%BF">名人专访</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E7%94%B5%E5%BD%B1%E5%BD%B1%E8%A7%86">电影影视</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E6%98%8E%E6%98%9F%E4%BA%8C%E4%BB%A3">明星二代</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E6%98%8E%E6%98%9F%E6%A1%83%E8%89%B2">明星桃色</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E8%89%BA%E4%BA%BA%E5%85%AB%E5%8D%A6">艺人八卦</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E5%A8%B1%E4%B9%90%E5%9C%88%E5%96%9C%E4%BA%8B">娱乐圈喜事</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E5%A8%B1%E4%B9%90/%E9%9F%A9%E6%B5%81">韩流</a>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div><!--/.nav-collapse -->
+		<div class='third-level-subsections-menu hidden act'>
+			<h3 class='section-title hidden act'></h3><div class="view view-subsections-for-menu view-id-subsections_for_menu view-display-id-act view-dom-id-2818c62492e0dc9ebc1d612f148dff62">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%B4%BB%E5%8B%95/%E6%98%9F%E6%B4%B2%E5%AA%92%E4%BD%93%E6%B4%BB%E5%8A%A8">星洲媒体活动</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%B4%BB%E5%8B%95/%E5%85%B6%E4%BB%96%E6%B4%BB%E5%8A%A8">其他活动</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%B4%BB%E5%8B%95/%E8%8A%B1%E8%B8%AA%E6%9C%80%E6%96%B0%E6%B4%BB%E5%8A%A8">花踪最新活动</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E6%B4%BB%E5%8B%95/%E7%88%B1%E5%AE%B6">爱家</a>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div><!--/.nav-collapse -->
+		<div class='third-level-subsections-menu hidden life'>
+			<h3 class='section-title hidden life'></h3><div class="view view-subsections-for-menu view-id-subsections_for_menu view-display-id-life view-dom-id-316319db1252faddccb1c74eaed8f875">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E6%98%9F%E6%B4%B2%E4%B8%81%E9%85%89%E5%B9%B4%E5%88%8A">星洲丁酉年刊</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E5%8C%BB%E8%AF%86%E5%8A%9B">医识力</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E6%95%99%E8%82%B2%E7%89%B9%E8%BE%912016">教育特辑2016</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E4%B8%93%E9%A2%98">专题</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E8%89%BA%E6%96%87%E7%A9%BA%E9%97%B4">艺文空间</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E6%96%87%E8%89%BA%E6%98%A5%E7%A7%8B">文艺春秋</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E5%BD%B3%E4%BA%8D%E5%A4%A9%E4%B8%8B">彳亍天下</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E9%A3%9F%E9%AB%93%E7%9F%A5%E5%91%B3">食髓知味</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E5%81%A5%E5%BA%B7%E4%BA%BA%E7%94%9F">健康人生</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E4%BA%BA%E7%94%9F%E5%AF%BC%E8%88%AA">人生导航</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E5%B1%85%E5%AE%B6%E7%82%B9%E7%BC%80">居家点缀</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E5%BF%AB%E4%B9%90%E5%AE%B6%E5%BA%AD">快乐家庭</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E5%BF%83%E7%81%B5%E5%85%85%E6%B0%A7">心灵充氧</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E7%BA%A2%E7%94%B7%E7%BB%BF%E5%A5%B3fnm">红男绿女/FnM</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E7%94%9F%E6%B4%BB%E5%BF%97/%E5%90%8D%E8%BD%A6%E5%9D%8A">名车坊</a>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div><!--/.nav-collapse -->
+		<div class='third-level-subsections-menu hidden opinion'>
+			<h3 class='section-title hidden opinion'></h3><div class="view view-subsections-for-menu view-id-subsections_for_menu view-display-id-opinion view-dom-id-32fc5fab37cf4b73bc88cc673cc9875c">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E/%E7%BB%B5%E9%87%8C%E8%97%8F%E5%BF%83">绵里藏心</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E7%BA%AF%E7%B2%B9%E8%AF%9A%E8%A7%81">纯粹诚见</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E5%87%B1%E5%94%BE%E6%88%90%E7%8F%A0">凱唾成珠</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E6%98%9F%EF%BC%8E%E8%A7%82%E7%82%B9">星．观点</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E9%9D%9E%E5%B8%B8%E5%B8%B8%E8%AF%86">非常常识</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E9%A3%8E%E8%B5%B7%E6%B3%A2%E7%94%9F">风起波生</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E7%AC%94%E4%B8%8B%E7%9C%9F%E6%83%85">笔下真情</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E8%AE%B0%E8%80%85apps">记者apps</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E8%A7%82%E6%B5%B7%E5%90%AC%E9%A3%8E">观海听风</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E6%98%9F%E6%9C%9F%E5%A4%A9%E6%8B%BF%E9%93%81">星期天拿铁</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E6%B8%B8%E8%B5%B0%E8%BE%B9%E7%BC%98">游走边缘</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E9%A6%99%E6%B8%AF%E7%A2%8E%E5%BD%B1">香港碎影</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E7%BA%AF%E5%B1%9E%E4%B8%BB%E8%A7%82">纯属主观</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E4%BA%9A%E6%B4%B2%E7%A2%8E%E5%BD%B1">亚洲碎影</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E6%80%BB%E7%BC%96%E6%97%B6%E9%97%B4">总编时间</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E/%E9%A3%8E%E9%9B%A8%E7%9C%8B%E6%BD%AE%E7%94%9F">风雨看潮生</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E/%E9%9B%85%E5%9F%8E%E4%BA%AE%E5%89%91">雅城亮剑</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E8%A8%80%E8%B7%AF">言路</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E6%83%85%E5%9C%A8%E4%BA%BA%E9%97%B4">情在人间</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E7%99%BE%E6%A0%BC%E5%A4%A7%E5%AE%B6%E8%AE%B2">百格大家讲</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E6%B0%91%E8%81%B2%E7%9C%8B%E6%9D%BF">民聲看板</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E6%B0%91%E6%84%8F%E8%AA%BF%E6%9F%A5">民意調查</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%A7%80%E9%BB%9E-views/%E6%8A%95%E7%A8%BF%E6%96%B9%E5%BC%8F">投稿方式</a>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div><!--/.nav-collapse -->
+		<div class='third-level-subsections-menu hidden business'>
+			<h3 class='section-title hidden business'></h3><div class="view view-subsections-for-menu view-id-subsections_for_menu view-display-id-business view-dom-id-86fb024d7e9bd89c9b8cb35e232b36b2">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%B2%A1%E7%B6%93-finance/%E5%8D%B3%E6%97%B6%E8%B4%A2%E7%BB%8F">即时财经</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%B2%A1%E7%B6%93-finance/%E5%A4%A7%E9%A9%AC%E8%B4%A2%E7%BB%8F">大马财经</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%B2%A1%E7%B6%93-finance/%E5%9B%BD%E9%99%85%E8%B4%A2%E7%BB%8F">国际财经</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%B2%A1%E7%B6%93/%E6%8A%95%E8%B5%84%E8%87%B4%E5%AF%8C">投资致富</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%B2%A1%E7%B6%93-finance/%E9%A9%AC%E5%B8%81">马币</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%B2%A1%E7%B6%93-finance/%E9%A9%AC%E8%82%A1">马股</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%B2%A1%E7%B6%93-finance/%E6%B2%B9%E4%BB%B7">油价</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%B2%A1%E7%B6%93-finance/%E9%87%91%E4%BB%B7">金价</a>	</div>
+	<div class='menu-subsection col-xs-6'>
+		<a href="/%E8%B2%A1%E7%B6%93/%E8%AF%84%E8%AE%BA">评论</a>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+		</div><!--/.nav-collapse -->
+	<script>
+		(function($){
+			$(document).ready(function(){
+				$('.third-level-subsections-menu .menu-subsection').addClass('subsection-in-third-level-subsections-menu');
+				var list_of_sections = [
+				'news' ,
+				'sports' ,
+				'my-kampung' ,
+				'entertainment' ,
+				'act' ,
+				'life' ,
+				'opinion' ,
+				'business'
+				];
+				$('#navbar.left li.section.dropdown ul.dropdown-menu > li').each(function(){
+					var thisElem = $(this);
+					list_of_sections.forEach(function(currentValue){
+						if( thisElem.hasClass(currentValue) ){
+							thisElem.append( $('div.third-level-subsections-menu.'+currentValue) );
+						}
+					});
+				});
+				$('div.third-level-subsections-menu').removeClass('hidden');
+			});
+		})(jQuery);
+	</script>
+	
+</div><!--/.container-fluid -->
+</nav>
+  </div>
+</div>
+  </div>
+      <div class="section clearfix">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,target-densitydpi=device-dpi" /> -->
+                  <a href="/" title="Home" rel="home" id="logo">
+            <img src="http://cdnnews.sinchew.com.my/sites/default/files/logo.png" alt="Home" />
+          </a>
+                          <div id="name-and-slogan">
+                                       <div id="site-name" class="element-invisible">
+                <strong>
+                  <a href="/" title="Home" rel="home"><span>星洲网 Sin Chew Daily</span></a>
+                </strong>
+              </div>
+                                </div>
+    <!-- /#name-and-slogan -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> -->
+    <div class="region region-header">
+    <div id="block-block-40" class="block block-block">
+
+    
+  <div class="content">
+    <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+/* #navbar > ul:nth-child(2) > li:nth-child(2), */
+	/*#navbar > ul:nth-child(2) > li:nth-child(3),
+	/*#navbar > .navbar-right > li:nth-child(1),
+	#navbar > .navbar-right > li:nth-child(2),*/
+    /*#navbar > .navbar-right > li:nth-child(3),
+	#navbar > ul:nth-child(2) > li:nth-child(6)*/
+	/*#navbar > ul:nth-child(2) > li:nth-child(7),
+	#navbar > ul:nth-child(2) > li.last.leaf.hide-on-desktop*/ {
+		display: none !important;
+	}
+	#block-views-article-page-block-14 {
+		visibility: hidden;
+	}
+	.not-logged-in #navbar > ul:nth-child(2) > li:nth-child(7) {
+		display: none;
+	}
+
+/*--><!]]>*/
+</style>  </div>
+</div>
+<div id="block-block-84" class="block block-block">
+
+    
+  <div class="content">
+    <style type="text/css">
+	.three-columns-two-articles-with-one-ad .a-cell-in-three-columns-two-articles-with-one-ad .highlight-content .highlight-item {
+		-webkit-transform: translate(-50%,-50%) !important;
+		-moz-transform: translate(-50%,-50%) !important;
+		-ms-transform: translate(-50%,-50%) !important;
+		-o-transform: translate(-50%,-50%) !important;
+		transform: translate(-50%,-50%) !important;
+	}
+</style>  </div>
+</div>
+<div id="block-block-47" class="block block-block">
+
+    
+  <div class="content">
+    <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+#block-sinchew-ads-news-ads-billboard,
+#block-sinchew-ads-home-ads-billboard
+{z-index:1}
+
+/*--><!]]>*/
+</style>  </div>
+</div>
+  </div>
+    <!-- <div id="main-menu" class="navigation"> -->
+         <!-- </div> -->
+       <!-- /#main-menu -->
+                     <!-- <div id="secondary-menu" class="navigation"> -->
+             <!-- </div> -->
+        <!-- /#secondary-menu -->
+              </div>
+    </div>
+    <!-- /.section, /#header -->
+      <div id="main-wrapper" class="clearfix">
+   <div id="main" class="clearfix">
+          <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a></div></div>
+                    <div id="sidebar-first" class="column sidebar hide-on-mobile">
+   <div class="section">
+      <div class="region region-sidebar-first">
+    <div id="block-sinchew-ads-addtoany-share-1st-sidebar" class="block block-sinchew-ads social-buttons-wrapper">
+
+    
+  <div class="content">
+    
+	<h2 class='title'>分享:</h2>
+	<!-- AddToAny BEGIN -->
+	<div class='a2a_kit a2a_kit_size_32 a2a_default_style social-buttons'>
+		<a class='a2a_button_facebook social-button'  >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-fb.png'>
+		</a>
+		<a class='a2a_button_twitter social-button'  >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-twitter.png'>
+		</a>
+		<a class='a2a_button_email social-button' >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-email.png'>
+		</a>
+		<a class='a2a_button_google_plus social-button' >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-google.png'>
+		</a>
+		<a class='a2a_button_whatsapp social-button' >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-whatsapp.png'>
+		</a>
+		<a class='a2a_button_sina_weibo social-button' >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-weibo.png'>
+		</a>
+	</div>
+	<!-- AddToAny END -->
+	  </div>
+</div>
+<div id="block-views-article-page-block-4" class="block block-views first-sidebar-view-count first-sidebar-share-count">
+
+    
+  <div class="content">
+    <div class="view view-article-page view-id-article_page view-display-id-block_4 view-dom-id-aa73ea8d86c8c6e73f5b26d8e77d7d71">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="view-count-wrapper share-count-wrapper">
+	<div class="view-count share-count"><h2>444</h2></div>
+	<div class="text"><i class="fa fa-eye" aria-hidden="true"></i>点击率</div>
+</div></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-article-page-block-16" class="block block-views">
+
+    
+  <div class="content">
+    <div class="view view-article-page view-id-article_page view-display-id-block_16 view-dom-id-7624877fd9b12d45b4a9d7f36f5304f5">
+        
+  
+  
+      <div class="view-content">
+      
+<div class="first-sidebar-view-count first-sidebar-share-count">
+			<div class="view-count-wrapper share-count-wrapper">
+			<div class="view-count share-count"><h2>0</h2></div>
+			<div class="text"><i class="fa fa-share-alt" aria-hidden="true"></i>分享</div>
+		</div>
+	</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+  </div>
+</div>      <!-- /.section, /#sidebar-first -->
+        <div id="content" class="column">
+     <div class="section">
+              <div id="highlighted">  <div class="region region-highlighted">
+    <div id="block-sinchew-ads-article-breadcrumb" class="block block-sinchew-ads">
+
+    
+  <div class="content">
+    <div class="breadcrumb-wrapper"><div class="breakcrumb-cell first"><a href="http://www.sinchew.com.my">主页</a></div><div class="breakcrumb-cell"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="http://www.sinchew.com.my/news">新闻</a></div><div class="breakcrumb-cell"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="http://www.sinchew.com.my/taxonomy/term/4561">国内</a></div>
+	<div class='timeline-child-back-button'>
+		<a href='#' onclick='backToTimeline(); return false;'>
+			<i class='fa fa-arrow-left' aria-hidden='true'></i>课题时间轴
+		</a>
+	</div>
+	<script>
+		function backToTimeline(){
+			(function($){
+				var currentUrl = window.location.href;
+				currentUrl = currentUrl.split('/');
+				currentUrl.pop();
+				currentUrl = currentUrl.join('/');
+				window.location.href = currentUrl;
+			})(jQuery);
+		}
+	</script>
+	</div>  </div>
+</div>
+  </div>
+</div>
+            <a id="main-content"></a>
+                    <h1 class="title" id="page-title">
+         【暖势力】“只要有梦，就能实现”．给弱势童一双“梦”翅膀       </h1>
+                     <div class="tabs">
+            </div>
+            <div class="region region-content">
+    <div id="block-block-99" class="block block-block">
+
+    
+  <div class="content">
+    <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+@media screen and (min-width: 1100px){
+.banner{
+ display:block;
+}
+}
+
+@media screen and (max-width: 1100px){
+.banner{
+ display:none;
+}
+}
+
+/*--><!]]>*/
+</style><div class="banner" id="fixeddivId"><noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NVDTHN" height="0" width="0" style="display:none;visibility:hidden"></iframe><p>  </p></noscript>
+<script>
+<!--//--><![CDATA[// ><!--
+
+    (function(w,d,s,l,i,wi){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js',"videosense-acId":wi[0],"videosense-widgetId":wi[0]+"-"+wi[1]});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','ivsPlayer','GTM-NVDTHN',["441850eb","1111"]);
+  
+//--><!]]>
+</script></div>
+  </div>
+</div>
+<div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+<!-- 
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/51702183/test123', [1024, 768], 'div-gpt-ad-1460432418409-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script> -->
+
+
+<!-- 
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/51702183/test123', [1024, 768], 'div-gpt-ad-1460432418409-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script> -->
+
+
+
+
+<div id="1600650"></div>
+<div id="node-1600650" class="node node-article node-full clearfix" about="/node/1600650/%E3%80%90%E6%9A%96%E5%8A%BF%E5%8A%9B%E3%80%91%E2%80%9C%E5%8F%AA%E8%A6%81%E6%9C%89%E6%A2%A6%EF%BC%8C%E5%B0%B1%E8%83%BD%E5%AE%9E%E7%8E%B0%E2%80%9D%EF%BC%8E%E7%BB%99%E5%BC%B1%E5%8A%BF%E7%AB%A5%E4%B8%80%E5%8F%8C%E2%80%9C%E6%A2%A6%E2%80%9D%E7%BF%85%E8%86%80" typeof="sioc:Item foaf:Document">  
+    <span property="dc:title" content="【暖势力】“只要有梦，就能实现”．给弱势童一双“梦”翅膀" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+
+<div class="content clearfix">
+  <!--  -->  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+   <div>
+    <div class="date-created">2016-12-30 09:16</div>
+  </div>
+  <h1 class="title" style="margin-top: 0;">
+    【暖势力】“只要有梦，就能实现”．给弱势童一双“梦”翅膀   
+  </h1>
+  <div class="views-field views-field-field-summary" style="margin-bottom:20px;">      
+    <span class="field-content main-article-summary">一般孩子放学后忙着的是嬉闹玩耍，但对于一些弱势家庭的孩子来说，却是忙着做家务、照顾生病的家人，甚至须承担家里的负能量。</span>  
+    </div>
+  </div>
+
+  <div class="images-slider-wrapper">
+    <div class="images-slider">
+              <div class="slide">
+                                                                  <div class="image-in-slide-wrapper" style="">
+                          <img src="http://cdnnews.sinchew.com.my/sites/default/files/styles/sinchew_watermark/public/img/main_image/2016/Dec/29/nb02a01.jpg?itok=QW-YkEwQ">
+                      </div>
+                      <div class="caption-in-slide-wrapper">
+              <div class="caption-in-slide">吴清贵：“给梦想一双翅膀”对于弱势家庭的孩子，非常重要，特别是对于灌输他们“梦想”的观念。（图：星洲日报）</div>
+            </div>
+                  </div>
+          </div>  
+    <!--       <div class="arrow-for-slider-control">
+        <button class="btn btn-default previous" onclick="prevSlide()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <button class="btn btn-default next" onclick="nextSlide()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+       -->
+    </div>
+  <!-- <script>
+    /*(function($){
+      function setImageWrapperAndImageWidthAndHeight(){
+        $('.image-in-slide-wrapper').css({
+          height: $(this).width()*0.4,
+        });
+        $('.arrow-for-slider-control').css({
+          top: $('.image-in-slide-wrapper').height() - 40,
+        });
+      }
+      $(document).ready(function(){  
+        setImageWrapperAndImageWidthAndHeight();      
+        $('.images-slider').slick({
+          arrows: false,
+        });
+      });
+      $(window).resize(function(){
+        setImageWrapperAndImageWidthAndHeight();
+      });
+    })(jQuery);
+    function nextSlide(){
+      (function($){
+        $('.images-slider').slick('slickNext');
+      })(jQuery);
+    }
+    function prevSlide(){
+      (function($){
+        $('.images-slider').slick('slickPrev');
+      })(jQuery);
+    }*/
+  </script> -->
+  <div class="scart" id="scart"><p>（森美兰．芙蓉29日讯）一般孩子放学后忙着的是嬉闹玩耍，但对于一些弱势家庭的孩子来说，却是忙着做家务、照顾生病的家人，甚至须承担家里的负能量。</p>
+
+
+        <div class="ads-wrapper" style="display:inline;">
+          <div class="ads ads-4 inline-ads-in-node-body" style="display:inline;">
+            <span class="ads-title text-left">广告</span>
+            <div id="div-gpt-ad-1460542026884-0" ><script>googletag.cmd.push(function(){googletag.display("div-gpt-ad-1460542026884-0")});</script></div>
+          </div>
+        </div>
+        <p>在时间的逼迫下长大，小小的身躯住着的是一个被现实打败的&ldquo;大人灵魂&rdquo;，对于&ldquo;梦想&rdquo;的期许，往往已没有&ldquo;自己&rdquo;，而是如何减轻家庭的负担。</p>
+
+<p>为了让这些弱势孩子也能回到童年的单纯，相信&ldquo;只要有梦，就能实现&rdquo;，芙蓉邻恩社区关怀中心过去8年，藉着圣诞节到来，推动一项&ldquo;给梦想一双翅膀&rdquo;社区关爱活动。</p>
+
+<p>在茫茫人海中，找出弱势家庭的孩子，为他们&ldquo;圆梦&rdquo;，让孩子们明白，生活中的缺失、现实的残忍，并不足以剥夺他们&ldquo;梦想&rdquo;的权利与勇气。</p>
+
+<p><strong><span style="color:#A52A2A;">吴清贵：灌输&ldquo;梦想&rdquo;观念</span></strong></p>
+
+<p>芙蓉邻恩关怀中心牧师吴清贵指出，8年累积的经验，让他更肯定，&ldquo;给梦想一双翅膀&rdquo;对于弱势家庭的孩子，非常重要，特别是灌输他们相信&ldquo;梦想&rdquo;的观念。</p>
+
+<p>&ldquo;这些孩子可能因为家庭经济问题，在小小的年纪，就为生活烦恼，所以当我们说可以给他们一份想要的礼物时，他们的出发点都不是单纯的为自己，而是为了家人的担子。&rdquo;</p>
+
+
+        <div class="ads-wrapper" style="display:inline;">
+          <div class="ads ads-4 inline-ads-in-node-body" style="display:inline;">
+            <span class="ads-title text-left">广告</span>
+            <div id="div-gpt-ad-1460542075285-0" ><script>googletag.cmd.push(function(){googletag.display("div-gpt-ad-1460542075285-0")});</script></div>
+          </div>
+        </div>
+        <p>他说，这些孩子为家人设想是懂事、也值得赞许，但要他们在小小的年纪，就失去了&ldquo;梦想&rdquo;的权利与勇气，有点残忍。</p>
+
+<figure class="image image-sinchew_watermark"><img alt="" height="422" src="http://cdnnews.sinchew.com.my/sites/default/files/styles/sinchew_watermark/public/editedimage/meewei/2016/Dec/29/nvb13w06.jpg?itok=GaE6CCnn" width="800" />
+<figcaption>&ldquo;给梦想一双翅膀&rdquo;今年其中一个个案家访，杨莲凤（左）因糖尿病截肢，但仍尽心尽力照顾好孙子杨其伟（左二）；右起为邻恩关怀中心义工叶大卫及李佩玲。（图：星洲日报）</figcaption>
+</figure>
+
+<figure class="image image-sinchew_watermark"><img alt="" height="581" src="http://cdnnews.sinchew.com.my/sites/default/files/styles/sinchew_watermark/public/editedimage/meewei/2016/Dec/29/nvb13w12.jpg?itok=5Tb0-O4g" width="800" />
+<figcaption>&ldquo;给梦想一双翅膀&rdquo;今年也照亮了谭育光（右）及谭育雄（中）的梦想。他们今年4月经历了丧母之痛，父亲也已多年没与他们联系，一直由外婆叶观妹（左）照顾。谭育雄今年5月因为一场意外，烧伤了脚部，目前仍未完全康复。（图：星洲日报）</figcaption>
+</figure>
+
+<p><br />
+<strong><span style="color:#A52A2A;">让孩子说出心中想要礼物</span></strong></p>
+
+<p>因此邻恩关怀中心在&ldquo;给梦想一双翅膀&rdquo;的这项年度活动上，有一个坚守的&ldquo;规则&rdquo;，就是无论如何，都得让受惠孩子，说出心中真正想要的礼物。</p>
+
+<p>&ldquo;他们若缺校服、校鞋还是得为家里粮食等事烦恼，我们会选择给予额外协助；然后要他们撇开这些大人才烦的问题，说出他们心中的梦想礼物。&rdquo;</p>
+
+
+        <div class="ads-wrapper" style="display:inline;">
+          <div class="ads ads-4 inline-ads-in-node-body" style="display:inline;">
+            <span class="ads-title text-left">广告</span>
+            <div id="div-gpt-ad-1467709630652-0" ><script>googletag.cmd.push(function(){googletag.display("div-gpt-ad-1467709630652-0")});</script></div>
+          </div>
+        </div>
+        <p>他说，当这些&ldquo;小大人&rdquo;明白了，说出梦想礼物时，其实都让人很惊喜，因为很纯真。</p>
+
+<p>&ldquo;他们可能只是纯粹想要一对白兔，或一条鱼和一个鱼缸。&rdquo;</p>
+
+<p><strong><span style="color:#A52A2A;">李佩玲：推荐再进行家访</span></strong></p>
+
+<p>&ldquo;给梦想一双翅膀&rdquo;活动总策划李佩玲表示，参与这项计划8年，每次都是由校方或社会人士推荐后，再到这些孩子的家里做家访，除了要确认他们的家境状况符合计划要求之外，也会在家访中尽量套孩子的话，想办法让他们大胆说出想要的礼物。</p>
+
+<p>&ldquo;我们清楚，在他们填写参与这项计划的申请表格中，所要求的礼物多数都是父母、监护人或老师的提议，都是很普通的要个书包和校服等。&rdquo;</p>
+
+<p>她认为，这些&ldquo;梦想礼物&rdquo;若非孩子心中所想，那就无法达到活动目标，即&ldquo;让孩子勇敢追梦，再为他们圆梦&rdquo;，因为活动真正的目的，是要让这些孩子们感受到&ldquo;梦想成真&rdquo;的喜悦。</p>
+
+<p>&ldquo;我们要他们感受到那种实现梦想的实在感，希望能启发他们不再为现实低头，失去了梦想的勇气。&rdquo;</p>
+
+<p><strong><span style="color:#A52A2A;">心里建设很重要</span></strong></p>
+
+<p>李佩玲坦承，做家访的时候，心里建设很重要，因为踏入受访家庭的那一刻，眼前所见的，往往是叫人揪心的一幕。</p>
+
+<p>日前，她就到芙蓉新那旺探访一名因为糖尿病关系，失去了一双腿的婆婆杨莲凤，尽管已是63岁，行动也极为不便，但她得照顾4名外孙的日常生活，烧菜煮饭。</p>
+
+<p>&ldquo;杨婆婆的女婿常因吸毒进出牢房，她的女儿则为了讨生活而到新加坡工作，因此，孩子们就交由她照顾。&rdquo;</p>
+
+<p>李佩玲表示，杨婆婆的丈夫于3个月前前骤逝，导致她的情绪波动大，在这种环境下，对于孙子们的成长，有一定的影响。</p>
+
+<p>&ldquo;这种个案其实很普遍，这些孩子一般都会显得比较害羞和自卑，要和他们聊很久，才可以让他们说出心中的想法。&rdquo;</p>
+
+<p><strong><span style="color:#A52A2A;">8年为600孩子&ldquo;圆梦&rdquo;</span></strong></p>
+
+<p>李佩玲强调，&ldquo;给梦想一双翅膀&rdquo;能连办8年，主要是每年获得不错的机构、企业和团体加入成为赞助单位。</p>
+
+<p>她补充，虽然礼物的预算大约为100令吉，但也实现了不少孩子心中的小愿望。</p>
+
+<p>&ldquo;曾参与这项活动的孩子，我们都会一直关注，他们有的已大学毕业，成绩还相当优秀，我相信这是&lsquo;勇敢追梦&rsquo;带来的成果。&rdquo;</p>
+
+<p>根据记录，邻恩关怀中心在这8年中，已为约600名孩子&ldquo;圆梦&rdquo;。</p>
+
+<p><strong><u>采访手记</u><br />
+<span style="color:#A52A2A;">小力量，大梦想！</span></strong></p>
+
+<p>在弱势家庭中长大的孩子，都有一个共同点：对生活务实，还带有一丝自卑；&ldquo;愿望&rdquo;、&ldquo;梦想&rdquo;和&ldquo;幸福&rdquo;仿佛都只是心中奢侈的期许。</p>
+
+<p>因为来自单亲家庭、也曾在年纪小的时候为家庭的经济烦恼，心里住了一个&ldquo;小大人&rdquo;，所以这次的采访，让我感触很深，也深感认同邻恩关怀中心推行&ldquo;给梦想一双翅膀&rdquo;的重要性。</p>
+
+<p>让孩子们卡在一个负情绪的家庭里太久，会忘了自我救赎。</p>
+
+<p>为了更深入了解&ldquo;给梦想一双翅膀&rdquo;计划，我选择跟随邻恩关怀中心一起去做家访，才发现有些&ldquo;家庭的不幸&rdquo;原来可以很相似，而这些家庭的孩子的反应也如出一辙，相当叫人心疼。</p>
+
+<p>圣诞节，一份100令吉的礼物，对一般人来说，可能不算什么，但我相信这份礼物就像一颗能让弱势孩子相信&ldquo;有梦会成真&rdquo;的种子。</p>
+
+<p>日后会开花结果，再慢慢长成孩子们的信念，让他们更勇敢的追逐梦想，改变命运。</p>
+
+<figure class="image image-sinchew_watermark"><img alt="" height="376" src="http://cdnnews.sinchew.com.my/sites/default/files/styles/sinchew_watermark/public/editedimage/meewei/2016/Dec/29/nb24a02.jpg?itok=gfM0M2An" width="800" />
+<figcaption>芙蓉邻恩社区关怀中心每年在圣诞来临之际都会办&ldquo;给梦想一双翅膀&rdquo;，为弱势家庭孩子照亮梦想。（图：星洲日报）</figcaption>
+</figure>
+<script src='http://smarttext.com.my/j_khadscript_all_publisher.php?group_key=SP_SETIA_2017_CAMPAIGN&group_valid=39ec8bf33a0bdbb8530f80aeebd9250c'></script></div>
+<!-- <div class="ads-wrapper" style="display:inline;">
+    <div class="ads ads-4 inline-ads-in-node-body" style="display:inline;">
+      <span class="ads-title text-left">广告</span>
+          </div>
+  </div>
+  <div class="ads-wrapper" style="display:inline;">
+    <div class="ads ads-4 inline-ads-in-node-body" style="display:inline;">
+      <span class="ads-title text-left">广告</span>
+          </div>
+  </div> -->
+
+            <div class="source-links-wrapper">
+        <h5 class="text-left title">文章来源：</h5>
+        星洲日报‧报道：黄翠娴‧2016.12.29      </div>
+      </div>
+
+
+<br>
+
+</div>
+
+
+  <div id='div-gpt-ad-1468405938173-0' style='height:1px; width:1px;'>
+    <script type='text/javascript'>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1468405938173-0'); });
+    </script>
+  </div>
+  </div>
+</div>
+<div id="block-sinchew-ads-ads-node-adquote" class="block block-sinchew-ads">
+
+    
+  <div class="content">
+    <div class='ads-wrapper no-padding-bottom'>
+	<div class='ads adquote'><span class='ads-title text-left'>广告</span>
+
+		<div id='div-gpt-ad-1460542939516-0'>
+			<script>
+				googletag.cmd.push(function() {
+					googletag.display('div-gpt-ad-1460542939516-0');
+				});
+			</script>
+		</div>
+
+	</div>
+</div>
+  </div>
+</div>
+<div id="block-block-113" class="block block-block">
+
+    
+  <div class="content">
+    <!-- SCWPU-234 --><div class="ads-wrapper hide-on-desktop clearfix" style="">
+	<br /><br /><div class="ads ads-4 inline-ads-in-node-body" style="">
+		<span class="ads-title text-left">广告</span>
+<!-- /2365395/SC_BottomRec_ROS --><div id="div-gpt-ad-1483000606892-0" style="height:250px; width:300px;" class="">
+<script>
+<!--//--><![CDATA[// ><!--
+
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1483000606892-0'); });
+			
+//--><!]]>
+</script></div>
+</div>
+<p>	<br /><br /></p></div>
+  </div>
+</div>
+<div id="block-views-article-page-block-3" class="block block-views view-article-top3relatedarticle clearfix">
+
+    <h2>其他新闻</h2>
+  
+  <div class="content">
+    <div class="view view-article-page view-id-article_page view-display-id-block_3 view-dom-id-0edc6decdca173f3c00580c284ec94cc">
+        
+  
+  
+      <div class="view-content">
+        <div>
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/1609549/%E3%80%90%E6%9A%96%E5%8A%BF%E5%8A%9B%E3%80%91%E6%97%A0%E5%AE%B6%E4%BA%BA%E6%8E%A5%E5%87%BA%E9%99%A2%EF%BC%8E%E4%B9%89%E5%B7%A5%E6%84%9F%E6%85%A8%E6%94%B6%E7%95%99%EF%BC%8E%E9%BD%90%E5%90%83%E5%9B%A2%E5%9C%86%E9%A5%AD%E4%B8%8E%E5%AD%A4%E8%80%81%E8%BF%87%E5%B9%B4">【暖势力】无家人接出院．义工感慨收留．齐吃团圆饭与孤老过年</a></span>  </div>  </div>
+  <div>
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/1609496/%E3%80%90%E6%9A%96%E5%8A%BF%E5%8A%9B%E3%80%91%E9%9D%A2%E6%91%8A%E4%B8%9C%E4%B8%BB%E5%8F%97%E6%98%9F%E6%B4%B2%E6%AD%A3%E8%83%BD%E9%87%8F%E6%96%B0%E9%97%BB%E5%90%AF%E5%8F%91%EF%BC%8E%E8%AF%B7%E9%A1%BE%E5%AE%A2%E5%90%83%E9%9D%A2%E5%BC%80%E5%BF%83%E8%BF%87%E5%B9%B4">【暖势力】面摊东主受星洲正能量新闻启发．请顾客吃面开心过年</a></span>  </div>  </div>
+  <div>
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/1609548/%E4%B8%8A%E7%8F%AD8%E5%A4%A9%E6%8D%85%E6%AD%BB%E5%A5%B3%E9%9B%87%E4%B8%BB%EF%BC%8E%E5%A5%B3%E4%BD%A3%E8%BA%BA%E8%B7%AF%E6%97%81%E8%B0%8E%E7%A7%B0%E9%81%AD%E5%BC%BA%E6%9A%B4">上班8天捅死女雇主．女佣躺路旁谎称遭强暴</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-commentsblock-comment-form-block" class="block block-commentsblock">
+
+    
+  <div class="content">
+    
+
+<h2 class="title comments-title">评论</h2>
+<div id="comments" class="comment-wrapper">
+  <!--  -->
+
+  
+      <!-- <h2 class="title comment-form">添加新的评论</h2> -->
+    <form class="comment-form" action="/comment/reply/1600650" method="post" id="comment-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">您的名字 </label>
+ <input type="text" id="edit-name" name="name" value="" size="30" maxlength="60" class="form-text" />
+</div>
+<input type="hidden" name="form_build_id" value="form-DzCu44-864bOuoAETnR3pFO6By1JnLo5-KHHTITiMvU" />
+<input type="hidden" name="form_id" value="comment_node_article_form" />
+<div class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper" id="edit-comment-body"><div id="comment-body-add-more-wrapper"><div class="form-item form-type-textarea form-item-comment-body-und-0-value">
+  <label for="edit-comment-body-und-0-value">Comment <span class="form-required" title="此项必填">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="text-full form-textarea required" id="edit-comment-body-und-0-value" name="comment_body[und][0][value]" cols="60" rows="5"></textarea></div>
+</div>
+</div></div><div class="form-item form-type-textfield form-item-subject">
+  <label for="edit-subject">Subject </label>
+ <input type="text" id="edit-subject" name="subject" value="" size="60" maxlength="64" class="form-text" />
+</div>
+<input class="mollom-content-id" type="hidden" name="mollom[contentId]" value="" />
+<input class="mollom-captcha-id" type="hidden" name="mollom[captchaId]" value="" />
+<div style="display: none;"><div class="form-item form-type-textfield form-item-mollom-homepage">
+  <label for="edit-mollom-homepage">Home page </label>
+ <input autocomplete="off" type="text" id="edit-mollom-homepage" name="mollom[homepage]" value="" size="60" maxlength="128" class="form-text" />
+</div>
+</div><div class="description mollom-privacy">当您提交时，您等同于同意了<a href="https://www.mollom.com/web-service-privacy-policy" class="mollom-target" rel="nofollow">Mollom用户私隐政策</a>。</div><div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="提交" class="form-submit" /><input type="submit" id="edit-preview" name="op" value="预览" class="form-submit" /></div></div></form>  </div>
+<!--
+<div class="accordion">
+    <div class="accordion-section">
+      <a class="accordion-section-title" href="#accordion-1">Accordion Section #1</a>
+       
+        <div id="accordion-1" class="accordion-section-content">
+            <p>Mauris interdum fringilla augue vitae tincidunt. Curabitur vitae tortor id eros euismod ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent nulla mi, rutrum ut feugiat at, vestibulum ut neque? Cras tincidunt enim vel aliquet facilisis. Duis congue ullamcorper vehicula. Proin nunc lacus, semper sit amet elit sit amet, aliquet pulvinar erat. Nunc pretium quis sapien eu rhoncus. Suspendisse ornare gravida mi, et placerat tellus tempor vitae.</p>
+        </div>
+    </div>
+  </div>-->
+  </div>
+</div>
+  </div>
+</div>
+</div>
+<!-- /.section, /#content -->
+  <div id="sidebar-first" class="column sidebar hide-on-desktop">
+   <div class="section">
+      <div class="region region-sidebar-first">
+    <div id="block-sinchew-ads-addtoany-share-1st-sidebar" class="block block-sinchew-ads social-buttons-wrapper">
+
+    
+  <div class="content">
+    
+	<h2 class='title'>分享:</h2>
+	<!-- AddToAny BEGIN -->
+	<div class='a2a_kit a2a_kit_size_32 a2a_default_style social-buttons'>
+		<a class='a2a_button_facebook social-button'  >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-fb.png'>
+		</a>
+		<a class='a2a_button_twitter social-button'  >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-twitter.png'>
+		</a>
+		<a class='a2a_button_email social-button' >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-email.png'>
+		</a>
+		<a class='a2a_button_google_plus social-button' >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-google.png'>
+		</a>
+		<a class='a2a_button_whatsapp social-button' >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-whatsapp.png'>
+		</a>
+		<a class='a2a_button_sina_weibo social-button' >
+			<img src='http://cdnnews.sinchew.com.my/sites/all/themes/bartik/images/social_icon/icon-weibo.png'>
+		</a>
+	</div>
+	<!-- AddToAny END -->
+	  </div>
+</div>
+<div id="block-views-article-page-block-4" class="block block-views first-sidebar-view-count first-sidebar-share-count">
+
+    
+  <div class="content">
+    <div class="view view-article-page view-id-article_page view-display-id-block_4 view-dom-id-aa73ea8d86c8c6e73f5b26d8e77d7d71">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="view-count-wrapper share-count-wrapper">
+	<div class="view-count share-count"><h2>444</h2></div>
+	<div class="text"><i class="fa fa-eye" aria-hidden="true"></i>点击率</div>
+</div></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-article-page-block-16" class="block block-views">
+
+    
+  <div class="content">
+    <div class="view view-article-page view-id-article_page view-display-id-block_16 view-dom-id-7624877fd9b12d45b4a9d7f36f5304f5">
+        
+  
+  
+      <div class="view-content">
+      
+<div class="first-sidebar-view-count first-sidebar-share-count">
+			<div class="view-count-wrapper share-count-wrapper">
+			<div class="view-count share-count"><h2>0</h2></div>
+			<div class="text"><i class="fa fa-share-alt" aria-hidden="true"></i>分享</div>
+		</div>
+	</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+  </div>
+</div>  <!-- /.section, /#sidebar-first -->
+  <div id="sidebar-second" class="column sidebar">
+   <div class="section">
+          <div class="sidebar-second-custom-tags">
+                       <div class="sub_section">
+           <h2 class="title">新闻类别<!--Sub Section--></h2>
+           <div id=tag-wrapper-4561-0 class="tag-wrapper-4561 tag unsubscribedtag"><a href="/%E6%96%B0%E8%81%9E/%E5%9B%BD%E5%86%85"><i class="fa fa-eye"></i>&nbsp;国内</a>&nbsp;&nbsp;<a href="javascript:" class="taglink subscribetag" term="国内" tid="4561" nid="0" taglink="subscribetag"><i class="fa fa-plus"></i></a></div>        </div>
+                     <div class="character_set">
+        <h2 class="title">人物标签<!--Character Set--></h2>
+        <div id=tag-wrapper-52764-0 class="tag-wrapper-52764 tag unsubscribedtag"><a href="/character/%E5%90%B4%E6%B8%85%E8%B4%B5"><i class="fa fa-eye"></i>&nbsp;吴清贵</a>&nbsp;&nbsp;<a href="javascript:" class="taglink subscribetag" term="吴清贵" tid="52764" nid="0" taglink="subscribetag"><i class="fa fa-plus"></i></a></div>      </div>
+             <div class="hot_topics">
+      <h2 class="title">新闻标签<!--Hot Topic--></h2>
+      <div id=tag-wrapper-55705-0 class="tag-wrapper-55705 tag unsubscribedtag"><a href="/topic/%E5%BC%B1%E5%8A%BF%E5%AE%B6%E5%BA%AD"><i class="fa fa-eye"></i>&nbsp;弱势家庭</a>&nbsp;&nbsp;<a href="javascript:" class="taglink subscribetag" term="弱势家庭" tid="55705" nid="0" taglink="subscribetag"><i class="fa fa-plus"></i></a></div><div id=tag-wrapper-55706-0 class="tag-wrapper-55706 tag unsubscribedtag"><a href="/topic/%E8%8A%99%E8%93%89%E9%82%BB%E6%81%A9%E5%85%B3%E6%80%80%E4%B8%AD%E5%BF%83"><i class="fa fa-eye"></i>&nbsp;芙蓉邻恩关怀中心</a>&nbsp;&nbsp;<a href="javascript:" class="taglink subscribetag" term="芙蓉邻恩关怀中心" tid="55706" nid="0" taglink="subscribetag"><i class="fa fa-plus"></i></a></div><div id=tag-wrapper-39653-0 class="tag-wrapper-39653 tag unsubscribedtag"><a href="/topic/%E6%9A%96%E5%8A%BF%E5%8A%9B"><i class="fa fa-eye"></i>&nbsp;暖势力</a>&nbsp;&nbsp;<a href="javascript:" class="taglink subscribetag" term="暖势力" tid="39653" nid="0" taglink="subscribetag"><i class="fa fa-plus"></i></a></div>    </div>
+  </div>
+  <div class="region region-sidebar-second">
+    <div id="block-views-article-page-block-empty" class="block block-views">
+
+    
+  <div class="content">
+    <div class="view view-article-page view-id-article_page view-display-id-block_empty view-dom-id-18870a6de12834da3e5872637c9a6c4b">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/38"><div></div></a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+</div>
+</div>
+<!-- /.section, /#sidebar-second -->
+
+</div>
+</div>
+<!-- /#main, /#main-wrapper -->
+<div id="footer-wrapper">
+ <div class="section">
+      <div id="footer-columns" class="clearfix">
+     <div class="region region-footer-firstcolumn">
+    <div id="block-menu-menu-footer-2" class="block block-menu">
+
+    <h2>星洲集团</h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf"><a href="http://epaper.sinchew.my">星洲电子报</a></li>
+<li class="leaf"><a href="http://www.mediachinese.com/" target="_blank">世华网</a></li>
+<li class="leaf"><a href="http://www.sinchew.com.my/sarawak" target="_blank">砂拉越星洲日报</a></li>
+<li class="leaf"><a href="http://www.guangming.com.my/" target="_blank">光明日报</a></li>
+<li class="leaf"><a href="http://www.camsinchew.com " target="_blank">柬埔寨星洲日报</a></li>
+<li class="leaf"><a href="http://indonesia.sinchew.com.my" target="_blank">印尼星洲日报</a></li>
+<li class="leaf"><a href="http://www.mysinchew.com/">MySinchew</a></li>
+<li class="leaf"><a href="http://www.logon.my/" target="_blank">Logon Online Shopping </a></li>
+<li class="leaf"><a href="http://www.xuehaiblog.com/" target="_blank">学海</a></li>
+<li class="last leaf"><a href="http://mag.sinchew-i.com/bintang/" target="_blank">小星星</a></li>
+</ul>  </div>
+</div>
+<div id="block-sinchew-ads-footer-logo" class="block block-sinchew-ads">
+
+    
+  <div class="content">
+    
+	<p style='box-sizing: border-box; margin: 0px 0px 10px; color: rgba(255, 255, 255, 0.8);  font-size: 14px; line-height: 20px;'>世华多媒体有限公司◆版权所有◆不得转载<br/>
+		Copyright © 2017 MCIL Multimedia Sdn Bhd (515740-D). All rights reserved.
+	</p>
+	  </div>
+</div>
+  </div>
+     <div class="region region-footer-secondcolumn">
+    <div id="block-menu-menu-footer-1" class="block block-menu">
+
+    <h2>友情连接</h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf"><a href="http://www.chinapress.com.my">中国报</a></li>
+<li class="leaf"><a href="http://www.enanyang.my">e南洋商报</a></li>
+<li class="leaf"><a href="http://www.yunnan.cn">云南网 </a></li>
+<li class="leaf"><a href="http://www.newchinesenet.com">新世华网 </a></li>
+<li class="leaf"><a href="http://www.asianews.network/">ANN ASIAN NEWSNETWORK</a></li>
+<li class="leaf"><a href="http://www.rhhotels.com.my/">RH Hotel, sibu, sarawak</a></li>
+<li class="last leaf"><a href="http://news.sinchew.com.my/topic/taxonomy/term/255">爱家</a></li>
+</ul>  </div>
+</div>
+  </div>
+     <div class="region region-footer-thirdcolumn">
+    <div id="#footer-title" class="block block-menu footer-title ul li :hover">
+
+    <h2><a href="http://lifemagazines.com.my/" class="block-title-link">生活杂志</a></h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf"><a href="http://www.newtide.com.my/" target="_blank">新潮</a></li>
+<li class="leaf"><a href="http://www.myweddingmag.com.my/" target="_blank">My Wedding</a></li>
+<li class="leaf"><a href="http://feminine.com.my/" target="_blank">风采</a></li>
+<li class="last leaf"><a href="http://www.orientalcuisinemag.com.my/">美味风采</a></li>
+</ul>  </div>
+</div>
+  </div>
+     <div class="region region-footer-fourthcolumn">
+    <div id="block-menu-menu-footer-4" class="block block-menu">
+
+    <h2><a href="http://www.sinchew.com.my/intro" class="block-title-link">关于我们</a></h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf"><a href="http://www.sinchew.com.my/other/intro/index.phtml" target="_blank">公司简介</a></li>
+<li class="leaf"><a href="http://www.sinchew.com.my/feedback " target="_blank">联络我们</a></li>
+<li class="leaf"><a href="http://www.sinchew.com.my/jobmcm">求才若渴</a></li>
+<li class="leaf"><a href="http://www.sinchew.com.my/faq" target="_blank">常见问题</a></li>
+<li class="leaf"><a href="http://www.sinchew.com.my/SubscriptionPress " target="_blank">订阅服务</a></li>
+<li class="leaf"><a href="http://www.sinchew.com.my/ratecard/index.phtml" target="_blank">刊登广告</a></li>
+<li class="leaf"><a href="http://www.sinchew.com.my/Disclaimer" target="_blank">Disclaimer</a></li>
+<li class="leaf"><a href="http://www.sinchew.com.my/privacy" target="_blank">私隐政策声明</a></li>
+<li class="last leaf"><a href="http://www.sinchew.com.my/terms" target="_blank">使用者条例</a></li>
+</ul>  </div>
+</div>
+  </div>
+ </div>
+ <!-- /#footer-columns -->
+  <div id="footer" class="clearfix">
+     <div class="region region-footer">
+    <div id="block-block-46" class="block block-block">
+
+    
+  <div class="content">
+    	<link rel="stylesheet" href="http://cdnnews.sinchew.com.my/adv/epaper/jquery.smartbanner.css" type="text/css" media="screen">
+	<script src="http://cdnnews.sinchew.com.my/adv/epaper/jquery.smartbanner.js"></script>
+
+	<script>
+		(function($){
+			$(document).ready( function() {			
+				function setSmartCookie(cname, cvalue, exdays) {
+					var d = new Date();
+					d.setTime(d.getTime() + (exdays*24*60*60*1000));
+					var expires = 'expires='+ d.toUTCString();
+					document.cookie = cname + '=' + cvalue + '; ' + expires;
+				}
+
+				function getSmartCookie(cname) {
+					var name = cname + '=';
+					var ca = document.cookie.split(';');
+					for(var i = 0; i <ca.length; i++) {
+						var c = ca[i];
+						while (c.charAt(0)==' ') {
+							c = c.substring(1);
+						}
+						if (c.indexOf(name) == 0) {
+							return c.substring(name.length,c.length);
+						}
+					}
+					return '';
+				}
+
+				var SmartBannerCookie = getSmartCookie('SmartBannerCookie');
+				if (SmartBannerCookie!='') {
+					if(SmartBannerCookie < 2){
+						setSmartCookie('SmartBannerCookie', 2, 1);
+						loadSmartBanner();
+					}
+				} else {
+					setSmartCookie('SmartBannerCookie', 1, 1);
+					loadSmartBanner();							
+				}
+
+				function loadSmartBanner(){
+					$('head').append('<meta name="apple-itunes-app" content="app-id=1059707304"><meta name="google-play-app" content="app-id=com.fireworks.sinchewepaper">');
+					$.smartbanner({ daysHidden: 0, daysReminder: 0, title:'Sin Chew 星洲', author:'MCIL Multimedia', icon:'http://cdnnews.sinchew.com.my/adv/epaper/logo.png'});		
+				}
+			});
+		})(jQuery);
+	</script>
+  </div>
+</div>
+<div id="block-block-29" class="block block-block">
+
+    
+  <div class="content">
+    <!-- Google Tag Manager --><p></p><noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WC3H2D" height="0" width="0" style="display:none;visibility:hidden"></iframe><p></p></noscript>
+<script>
+<!--//--><![CDATA[// ><!--
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WC3H2D');
+//--><!]]>
+</script><!-- End Google Tag Manager --><!-- Begin comScore Tag --><script>
+<!--//--><![CDATA[// ><!--
+
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "10028553" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+
+//--><!]]>
+</script><p></p><noscript><br /><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=10028553&amp;cv=2.0&amp;cj=1" /><br /></noscript>
+<!-- End comScore Tag -->  </div>
+</div>
+<div id="block-block-69" class="block block-block">
+
+    
+  <div class="content">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.2/mobile-detect.min.js"></script><script>
+<!--//--><![CDATA[// ><!--
+
+(function($){
+	$(document).ready(function(){
+		var md = new MobileDetect(window.navigator.userAgent);
+		if( md.phone() == null ) return;
+		$('head').append("<script async src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'><\/script><script>(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: 'ca-pub-1832805187275639', enable_page_level_ads: true });<\/script>");
+	});
+})(jQuery);
+
+//--><!]]>
+</script>  </div>
+</div>
+<div id="block-block-78" class="block block-block">
+
+    
+  <div class="content">
+    <!-- /2365395/SC_Underlay_1x1 --><div id="div-gpt-ad-1467827327020-0" style="height:1px; width:1px;">
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1467827327020-0'); });
+	
+//--><!]]>
+</script></div>
+  </div>
+</div>
+<div id="block-sinchew-ads-copyright-text" class="block block-sinchew-ads">
+
+    
+  <div class="content">
+    <p style='box-sizing: border-box; margin: 0px 0px 10px; color: rgba(255, 255, 255, 0.8);  font-size: 14px; line-height: 20px;'>世华多媒体有限公司◆版权所有◆不得转载<br/>
+	Copyright © 2017 MCIL Multimedia Sdn Bhd (515740-D). All rights reserved.</p>  </div>
+</div>
+<div id="block-sinchew-ads-footer-top-h-sitemap" class="block block-sinchew-ads">
+
+    
+  <div class="content">
+    
+	<script>
+		(function($){
+			var html = '';
+			html += '<div class=\'footer-top-horizontal-sitemap\'>';
+			html += '<h1 class=\'title\'><a href =\'http://www.sinchew.com.my/news\'>新闻</a></h1>';
+			html += '<h1 class=\'title\'><a href =\'http://www.sinchew.com.my/my-kampung\'>地方</a></h1>';
+			html += '<h1 class=\'title\'><a href =\'http://www.sinchew.com.my/opinion\'>观点</a></h1>';
+			html += '<h1 class=\'title\'><a href =\'http://www.sinchew.com.my/business\'>财经</a></h1>';
+			html += '<h1 class=\'title\'><a href =\'http://www.sinchew.com.my/entertainment\'>娱乐</a></h1>';
+			html += '<h1 class=\'title\'><a href =\'http://www.sinchew.com.my/sports\'>体育</a></h1>';
+			html += '<h1 class=\'title\'><a href =\'http://www.pocketimes.my/\'>影音</a></h1>';
+			html += '<h1 class=\'title\'><a href =\'http://www.sinchew.com.my/act\'>活动</a></h1>';
+			html += '<h1 class=\'title\'><a href =\'http://classifieds.sinchew.com.my/\'>分类</a></h1>';
+			html += '<h1 class=\'title\'><a href =\'http://www.sinchew.com.my/life\'>生活志</a></h1>';
+			html += '</div>';
+			$('#footer-wrapper .section').prepend(html);
+		})(jQuery);
+	</script>
+	  </div>
+</div>
+<div id="block-block-107" class="block block-block">
+
+    
+  <div class="content">
+    <style>
+.node-type-article figure.image figcaption {
+  text-align: left;
+}
+.source-links-wrapper {
+  clear: both;
+    padding-top: 10px;
+}
+</style>  </div>
+</div>
+<div id="block-block-86" class="block block-block">
+
+    
+  <div class="content">
+    <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+@media screen and (max-width: 800px){
+		.node-type-article .view-article-top3relatedarticle .content {
+			display: block;
+		}
+	}
+
+/*--><!]]>*/
+</style>  </div>
+</div>
+<div id="block-block-37" class="block block-block">
+
+    
+  <div class="content">
+    <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+	@media screen and (max-width: 800px){
+		.ads-wrapper .ads.ads-4.inline-ads-in-node-body>div {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+/*--><!]]>*/
+</style>  </div>
+</div>
+<div id="block-sinchew-ads-addtoany-share-function-script" class="block block-sinchew-ads">
+
+    
+  <div class="content">
+    <script async src="https://static.addtoany.com/menu/page.js"></script>  </div>
+</div>
+<div id="block-sinchew-ads-hide-profile-link-in-comments" class="block block-sinchew-ads">
+
+    
+  <div class="content">
+    
+	<script>
+		(function($){
+			$(document).ready(function(){
+				$('#comments').find('a').each(function(){
+					if($(this).attr('href') != undefined ){
+						var aHref = $(this).attr('href');
+						if(aHref.indexOf('user')>-1){
+							$(this).attr('href','#');
+							$(this).attr('onclick','return false');
+							$(this).css('cursor','default');
+						}
+					}
+				});
+			});
+		})(jQuery);
+	</script>
+	  </div>
+</div>
+  </div>
+ </div>
+ <!-- /#footer -->
+</div>
+</div>
+<!-- /.section, /#footer-wrapper -->
+</div>
+</div>
+<!-- /#page, /#page-wrapper -->  <script type="text/javascript" src="http://cdnnews.sinchew.com.my/modules/statistics/statistics.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/modules/contib/addthis/addthis.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/plugin/jquery-visible-master/jquery.visible.min.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/plugin/jQuery.dotdotdot-master/src/jquery.dotdotdot.min.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/article-floating-sidebar.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/jquery.dotdotdot.js?ojofuf"></script>
+<script type="text/javascript" src="http://cdnnews.sinchew.com.my/sites/all/themes/bartik/js/article-misc-fix.js?ojofuf"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ca37af487b","applicationID":"24062285","transactionName":"ZlIHbBZYXRIAVhUNDF8YMEoNFloPBVAZShNZRw==","queueTime":0,"applicationTime":3,"atts":"ShUEGl5CThw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

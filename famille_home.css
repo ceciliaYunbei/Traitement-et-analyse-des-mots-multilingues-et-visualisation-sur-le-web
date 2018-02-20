@@ -1,0 +1,277 @@
+
+html, body {  width: 1000px; height: 100%; }
+
+.sectionWrapper { display:table; height:100%; width:100%; }
+.vAlignWrapper { display:table-cell; vertical-align:middle; }
+.contentWrapper { margin:200px auto; }
+
+body {
+    background-image: url("photos/background8.jpg");
+	background-attachment: fixed;
+	background-size:100%;
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+#header {
+    position: fixed;
+    z-index: 99;
+    font-family: Snell Roundhand, Times New Roman, arial, sans-serif;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 0;
+    border-bottom-style: double;
+    border-width: 6px;
+    background: rgba(255, 255, 255, 0.99);
+}
+#header h1 {
+    position: relative;
+    margin:0;
+	top: 20px;
+    font-size: 96px;
+}
+#nav {
+    border-top-style: double;
+    border-width: 6px;
+    line-height: 20px;
+    padding: auto;
+    text-align: center;
+}
+#nav div {
+    position: relative;
+    margin: 10px;
+    transition: all 0.5s ease-out;
+    font-size: 26px;
+    text-decoration: underline;
+    display:inline-block;
+    color: black;
+}
+#nav div:hover {
+    color:#8A0808;
+    text-shadow:0 3px 6px rgba(0,0,0,0.9);
+    transform: scale(1.1);
+}
+#wrapper {
+    position: absolute;
+    top: 210px;
+    bottom: 20px;
+    left: 20px;
+    width: 80%;
+    margin: auto;
+}
+#section {
+    font-family: Times New Roman, arial, sans-serif;
+	background: rgba(255, 255, 255, 0.9);
+    padding: 75px;
+    margin: auto;
+    text-align: justify;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+#section h2 {
+    color: black;
+    font-family: Snell Roundhand, Times New Roman, arial, sans-serif; 
+}
+.h3 {
+    color: #610B0B;
+    font-family: Cursive, Times New Roman, arial, sans-serif; 
+    font-size: 22px;
+    font-style:italic;
+    text-shadow:0 1px 2px rgba(0,0,0,0.2);
+}
+#section h1 {
+    color:#8A0808;
+    text-shadow:0 1px 2px rgba(0,0,0,0.5);
+    transform: scale(1.0);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;
+    font-family: Times New Roman, arial, sans-serif;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
+    border-top-style: double;
+    border-width: 6px;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+#col {
+    position: fixed;
+    float: right;
+    z-index: 99;
+    width: 24%;
+    top: 275px;
+    right: 0;
+    padding: 30px 0;
+    background-image: url("photos/background1.jpg");
+	background-attachment: local;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.9);
+}
+
+#col ol li {
+    margin: 10px 40px;
+    font-family: Times New Roman, arial, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+#col ol li a {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-family:  Snell Roundhand, Times New Roman, arial, sans-serif;
+    font-size: 26px;
+    font-weight: border;
+    transition: all 0.5s ease-out;
+}
+#col ol li a:hover {
+    color:white;
+    text-shadow:0 1px 2px rgba(0,0,0,0.9);   
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease-out;
+}
+a:hover {
+    color:white;
+    text-shadow:0 1px 2px rgba(0,0,0,0.9);
+}
+
+.sl {
+    font-size: 18px;
+    text-shadow:0 1px 2px rgba(0,0,0,0.3);
+}
+.sl a:hover {
+    color:white;
+    text-shadow:0 3px 6px rgba(0,0,0,0.5);
+    transform: scale(1.0);
+    text-decoration: underline;
+}
+
+
+@font-face {
+    font-family: Snell Roundhand;
+    src: url(fonts/SnellRoundhand.ttc);
+}
+@font-face {
+    font-family: Cursive;
+    src: url(Cursive.ttc);
+}
+
+
+.image {
+  display:inline-block;
+}
+
+.image img {
+  opacity:0.5;
+  width: 25%;
+  transition: all 0.5s ease-out;
+  z-index: 50;
+  position: relative;
+  margin: 20px;
+}
+.image img:hover
+{
+  opacity:1.0;
+  transform: scale(3.0);
+  z-index: 55!important;
+}
+
+.image0 img {
+  width: 100%;
+  transition: all 1s ease-out;
+  z-index: 90;
+  opacity:0.5;
+}
+.image0 img:hover
+{
+  opacity:1.0;
+}
+
+#image img{
+  width: 100%;
+  transition: all 1s ease-out;
+  z-index: 90;
+  opacity:0.75;
+}
+#image img:hover
+{
+  opacity:1.0;
+  transform: scale(2.0);
+}
+
+
+.contentWrapper p {
+    color: #1C1C1C;
+    text-shadow:0 1px 2px rgba(0,0,0,0.2);
+    margin: 20px 40px;
+    font-size: 18px;
+    font-family: Times New Roman, arial, sans-serif;
+}
+.contentWrapper ul li {
+    color: #1C1C1C;
+    text-shadow:0 1px 2px rgba(0,0,0,0.2);
+    font-size: 22px;
+    font-family: Times New Roman, arial, sans-serif;
+}
+
+
+#table_texte {
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+#table_texte tr td {
+    position: relative;
+    padding: 5px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+}
+#table_texte a:hover
+{
+    color:white;
+    text-shadow:0 2px 3px rgba(0,0,0,0.5);
+    transform: scale(1.0);
+    text-decoration: underline;
+}
+
+.table_ch {
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+
+#sh {
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+
+
+/* FRANCAIS >>>>>> Ici j'inserts 4 id : #intro, #etape, #script, #analyse  */
+#intro{
+  font-family: Cursive;
+}
+#etape {
+  font-family:Cursive;
+}
+#script{
+  font-family:Cursive;
+}
+#analyse{
+  color:black;
+  font-family:Cursive;
+}
+
+
+#section {
+	font-size: 18px;
+}
+
+
+

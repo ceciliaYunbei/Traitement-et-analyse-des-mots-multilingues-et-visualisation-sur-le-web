@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgQGU19VGwAFVVhXAAE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta name="Description" content=""  />
+<meta name="Keywords" content=""  />
+<meta name="Title" content="2 Examples how America’s Definition of Family is Changing"  />
+<meta name="syndication-source" content="http://blogs.christianpost.com/license-to-parent/2-examples-how-americas-definition-of-family-is-changing-27856/" />
+<title>2 Examples how America’s Definition of Family is Changing | License to Parent</title> 
+<link rel="canonical" type="text/html" href="http://blogs.christianpost.com/license-to-parent/2-examples-how-americas-definition-of-family-is-changing-27856/" />
+
+<link rel="shortcut icon" href="http://graphic.christianpost.com/images/favicon.ico" type="image/x-icon"/>
+
+<link href="/css/MyFontsWebfontsKit.css" rel="stylesheet" type="text/css" >
+<link href="http://graphic.christianpost.com/css/common.css" rel="stylesheet" type="text/css" />
+<link href="http://graphic.christianpost.com/css/templates.css" rel="stylesheet" type="text/css" />
+<link href="http://graphic.christianpost.com/css/contents/blogs.css" rel="stylesheet" type="text/css" />
+<link href="http://graphic.christianpost.com/css/contents/comment.css" rel="stylesheet" type="text/css" />
+<link href="http://graphic.christianpost.com/css/mediaquery.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://graphic.christianpost.com/js/jquery.js"></script>
+<script type="text/javascript" src="http://graphic.christianpost.com/js/news/default.js"></script><script type="text/javascript" src="http://graphic.christianpost.com/js/news/newcom.js"></script>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "1bf67f6a-bc1b-47d3-a9f6-eda7e48178fc"});</script>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "1bf67f6a-bc1b-47d3-a9f6-eda7e48178fc"}); </script>
+		<script type="text/javascript">
+$(document).ready(function(){
+	var top = $("#comment_cmc").offset().top;
+	var comment_done = 1;
+	$(window).scroll(function(){
+		if(comment_done==1){
+			if($(document).scrollTop()+$(window).height()>(top-400)){
+				comment_done = 0;
+				comment_start({'a_id':27856,'c_what':'blogs','page':1,'url':location.href,'appID':'201239059893766','width':630,'num_per_page':20,'lan':'en','code':'','log_ok':0});
+			}
+		}
+	});
+});
+</script><script type="text/javascript">
+$(document).ready(function(){
+	var tt;
+	$(".text .imgPhoto").each(function(p){
+		var ori = $(this).width()*$(this).height();
+		var src = $(this).attr("src").replace(/\?(.*)/i,'')
+		var img = this;
+
+		if($(this).parent()[0].nodeName != "A"){
+            $(this).parent().css('position','relative');
+			$("<img />",{"src":src}).css({"position":"absolute","visibility":"hidden","top":-10000,"left":-10000}).appendTo("body").load(function(){
+				var aft = $(this).width()*$(this).height();
+				var w = $(this).width();
+				var h = $(this).height();
+				$(this).remove();
+
+				if(aft>ori*1.3 || true){
+					$('<img />',{"src":"http://graphic.christianpost.com/images/homepage11/enlarge4.png","class":"png","name":p}).css({"position":"absolute","left":0,"top":0,"background-color":"#fff","opacity":.5,"padding":2,"border-radius":3,"width":34,"height":26,"cursor":"pointer"}).appendTo($(img).parent()).click(function(){
+						tt = $(this).attr("name");
+						var obj = $(img);
+						var left = $(img).offset().left+(obj.width()-w)/2;
+						if(left<$(document).scrollLeft()) left = $(document).scrollLeft();
+						var top = $(img).offset().top+(obj.height()-h)/2;
+						if(top<$(document).scrollTop()) top = $(document).scrollTop();
+
+						if($("#imgContainer").length) $("#imgContainer").remove();
+
+						$("<div />",{"id":"imgContainer","class":"dragme"}).css("opacity",.1)
+							.append($('<div>',{"id":"innerBoxing"})).appendTo("body");
+							$("#innerBoxing").append($('<div class="ctop"><a id="xclose" href="">close <img src="http://graphic.christianpost.com/images/article/x.gif"></a></div>'))
+							.append($('<img />',{"src":$(img).attr("src"),"id":"bimg"}))
+						//	.append($(".credit",parent).clone())
+						//	.append($(".caption",parent).clone())
+
+						$("#bimg").animate({"width":w+"px","height":h+"px"},330);
+						$("#imgContainer").css({"left":(obj.offset().left)+"px","top":obj.offset().top+"px","width":"auto"}).animate({"left":left+"px","top":top+"px","opacity":1},330,function(){
+
+							$("#bimg").attr("src",$(img).attr("src").replace(/\?(.*)/i,''));
+							$(".imgPhoto",this).css("cursor","move");
+
+							S("bimg").onmousedown = selectmouse;
+							$(document).keyup(function(e){
+							  var kC  = (window.event) ? event.keyCode : e.keyCode;
+							  var Esc = (window.event) ? 27 : e.DOM_VK_ESCAPE;
+							  if(kC==Esc){
+								obj = $($(".text .imgPhoto")[tt]);
+								$("#bimg").animate({"width":obj.width()+"px","height":obj.height()+"px"},330);
+								$("#imgContainer").animate({"left":(obj.offset().left)+"px","top":(obj.offset().top-20)+"px","opacity":0},330,function(){
+									$(this).remove();
+									$(document).unbind("keyup");
+									$("body").unbind("click");
+								});
+							  }
+							});
+							$("#xclose")/*.add($(this))*/.click(function(e){
+
+								e.preventDefault();
+								$("#bimg").animate({"width":obj.width()+"px","height":obj.height()+"px"},330);
+								$("#imgContainer").animate({"left":(obj.offset().left)+"px","top":(obj.offset().top-20)+"px","opacity":0},330,function(){
+									$(this).remove();
+									$(document).unbind("keyup");
+									$("body").unbind("click");
+								});
+							});
+							$(document.body).click(function(e){
+								if($(e.target).closest("#imgContainer").length==0 && e.target.className!="png"){
+
+									obj = $($(".text .imgPhoto")[tt]);
+									$("#bimg").animate({"width":obj.width()+"px","height":obj.height()+"px"},330);
+									$("#imgContainer").animate({"left":(obj.offset().left)+"px","top":(obj.offset().top-20)+"px","opacity":0},330,function(){
+										$(this).remove();
+										$(document).unbind("keyup");
+										$("body").unbind("click");
+									});
+								}
+							});
+						});
+
+					});
+				}
+			});
+		}
+	});
+	$("#tSize a").click(function(e){
+		e.preventDefault();
+		var s = $(this).attr("class");
+		$(".text p").add($(".text li")).add($(".text blockquote")).css("font-size",s+"px");	
+	});
+
+	$("#tools .email").add($("#tools .print")).click(function(e){
+		e.preventDefault();
+		FrameIn($(this).attr("href"),{"width":552,"height":490,"left":($(window).width()-552)/2,"top":($(window).height()-490)/2,"loadingBar":true,"background":true,"position":"fixed","maximum":1});
+	//	comeout($(this).attr("href"),552,490,($(window).width()-552)/2,($(window).height()-(490))/2,true,1000);
+	});
+
+	$("article .comment").click(function(e){
+		e.preventDefault();
+		$('html,body').animate({scrollTop:$("#comment_cmc").offset().top},400,function(){
+
+		});				
+	});
+	$("form .submit").click(function(e){
+		e.preventDefault();
+		$(this).closest("form").submit();
+	});
+	$("form .term").keyup(function(e){
+		if(e.keyCode == 13){
+			$(this).closest("form").submit();	
+		} 
+	});
+	$("header .login").click(function(e){
+		e.preventDefault();
+		FrameIn($(this).attr("href"),{"width":583,"height":358,"left":($(window).width()-583)/2,"top":($(window).height()-470)/2,"loadingBar":true,"background":true,"position":"fixed","maximum":1});
+	});
+	bcounter(27856);
+}); 
+var bcounter = function(a_id){
+	var url = "/system/counter.php";
+	var u;
+	url += "?a_id="+a_id+"&label=article&referer="+encodeURIComponent(document.referrer);
+    $.ajax({"url":url,cache: false});		
+} 
+</script>
+<script type="text/javascript" src="http://graphic.christianpost.com/js/respond.min.js"></script>
+<meta name="msvalidate.01" content="29BD7F6D752EB52F5F8F8ACEF4AC6689" />
+<!-- openx -->
+	<script type="text/javascript" src="//cmci-d.openx.net/w/1.0/jstag?nc=7241-blogs.christianpost"></script>
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+ var gads = document.createElement("script");
+ gads.async = true;
+ gads.type = "text/javascript";
+ var useSSL = "https:" == document.location.protocol;
+ gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+ var node =document.getElementsByTagName("script")[0];
+ node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<!-- adsupply -->
+  <script data-cfasync="false" type="text/javascript">(function(s,o,l,v,e,d){if(s[o]==null&&s[l+e]){s[o]="loading";s[l+e](d,l=function(){s[o]="complete";s[v+e](d,l,!1)},!1)}})(document,"readyState","add","remove","EventListener","DOMContentLoaded");(function(){var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="//cdn.engine.4dsply.com/Scripts/infinity.js.aspx?guid=6b1a2595-e6ef-4158-b3a3-89e2783cc90c";s.id="infinity";s.setAttribute("data-guid","6b1a2595-e6ef-4158-b3a3-89e2783cc90c");s.setAttribute("data-version","async");var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(s,e)})();</script>
+  <!-- nativo -->
+  <script type="text/javascript" src="http://a.postrelease.com/serve/load.js?async=true"></script>
+  <script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot("/7241/blogs.christianpost/section/articles", [[728, 90], [970, 66], [970, 90], [970, 250]], "div-gpt-ad-top").setTargeting("pos",["top"]).addService(googletag.pubads());
+googletag.defineSlot("/7241/blogs.christianpost/section/articles", [[300, 250], [300, 600]], "div-gpt-ad-right1").setTargeting("pos",["right1"]).addService(googletag.pubads());
+googletag.defineSlot("/7241/blogs.christianpost/section/articles", [[300, 250], [300, 600]], "div-gpt-ad-right2").setTargeting("pos",["right2"]).addService(googletag.pubads());
+googletag.defineSlot("/7241/blogs.christianpost/section/articles", [[728, 90], [970, 66], [970, 90], [970, 250]], "div-gpt-ad-bottom").setTargeting("pos",["bottom"]).addService(googletag.pubads());
+googletag.pubads().enableAsyncRendering();
+//googletag.pubads().enableSingleRequest(); 
+googletag.pubads().collapseEmptyDivs();
+googletag.pubads().set("page_url", "blogs.christianpost.com");
+googletag.enableServices();
+});
+</script>
+</head>
+<body>
+
+
+<!-- netseer in-image -->
+<script type="text/javascript">
+netseer_tag_id="20869";
+netseer_task="in-image";
+</script>
+<script defer type="text/javascript" src="http://ps.ns-cdn.com/dsatserving2/scripts/netseerads.js"></script>
+
+<script>
+$(document).ready(function() {
+	// more button on menu
+	$("#btn_more").click(function() {
+		$(".more").toggle();
+//		return false;
+	});
+	// sidebar top right
+	$("#newsletter .bt").click(function(){
+		$("#newsletter form").submit();	
+	});
+});
+</script>
+<!--TopBar Black Start-->
+<div id="topBarBlack">
+	<div class="wrapper">
+        <div class="left">
+          <a href="http://www.christianpost.com"><h1><img src="http://graphic.christianpost.com/images/2013/logo_black_top.gif" align="absmiddle"/></h1></a>
+          <ul class="navHome">
+          	  <li><a href="http://www.christianpost.com/church-ministries/">Church & Ministry</a></li>
+              <li><a href="http://www.christianpost.com/us/">U.S.</a></li>
+              <li><a href="http://www.christianpost.com/world/">World</a></li>
+              <li><a href="http://www.christianpost.com/politics/">Politics</a></li>
+              <li><a href="http://www.christianpost.com/entertainment/">Entertainment</a></li>
+              <li><a href="http://www.christianpost.com/tech/">Tech & Biz</a></li>
+              <li><a href="http://www.christianpost.com/opinion/">Opinion</a></li>
+              <li><a href="http://blogs.christianpost.com">Blogs</a></li>
+              <li><a href="http://www.christianpost.tv">Video</a></li>
+              <li><a href="http://www.christianpost.com/gallery/">Photo</a></li>
+              <li id="btn_more"><a href="#">More</a>
+              	<ul class="more" style="display:none;">
+                    <li><a href="http://bible.christianpost.com">Audio Bible</a></li>
+					<li><a href="http://blogs.christianpost.com">CP Blog</a></li>
+					<li><a href="http://ipost.christianpost.com">iPost</a></li>
+					<li><a href="http://www.christianpost.com/mypost/">My Post</a></li>
+					
+                </ul>
+              </li>
+          </ul>
+        </div>
+        <div class="right">
+        	<div><!--input name="" type="text" placeholder="Search" /-->
+			<form action="http://www.christianpost.com/search/" id="cse-search-box" class="topSearch" name="srch">
+									<input type="hidden" name="cx" value="012079842137319898121:kryavccayfo" />
+									<input type="hidden" name="cof" value="FORID:9" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="text" name="q" class="term" placeholder="Search" value="" />
+					<img src="http://graphic.christianpost.com/images/2013/ic_search.gif" width="23" height="17" alt="Search" onclick="document.srch.submit();" />
+				</form>
+			</div>
+        </div>
+    </div>
+  </div>
+<!--TopBar Black End-->
+<style>
+#iFrame{z-index:9999;}
+</style>
+<div class="bn728top"><div class="ad-header-sidebar">
+<!-- /7241/blogs.christianpost/section/articles-->
+<div id="div-gpt-ad-top">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display("div-gpt-ad-top"); });
+</script>
+</div></div></div>
+<header>
+<div class="wrapper970">
+	<div class="logoTopInner">
+		<ul class="right">
+			<li><a href="/faq.html">FAQ</a></li>
+			<li><a href="/blog-index.html">Archive</a></li>
+			<li class="start"><a href="/services/user/login.php" class="login" rel="nofollow">Start a Blog!</a></li><li><a href="/services/user/login.php" class="login" rel="nofollow">Log In</a></li>		</ul>
+		<h1><a  href="/" style="display:block;color:#00bdf2;">Blog</a></h1>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/top-posts/church-ministry.html">Church &amp; Ministry</a></li>
+        <li><a href="/top-posts/politics-and-u-s-current-events.html">U.S. News</a></li>
+        <li><a href="/top-posts/devotionals.html">Devotionals</a></li>
+        <li><a href="/top-posts/entertainment.html">Entertainment</a></li>
+        <li><a href="/top-posts/health-and-healthcare.html">Health</a></li>
+        <li><a href="/top-posts/relationships.html">Relationships</a></li>
+        <li><a href="/top-posts/parenting.html">Parenting</a></li>
+        <li><a href="/top-posts/inspirational.html">Inspirational</a></li>
+    </ul>
+</nav>
+		<form action="/search.html" class="search tar">
+		<input class="searchBox mr5 pl5 term" name="term" type="text" placeholder="Search CP Blog"> 
+		<a href="" class="submit">Go</a>
+		</form>
+	</div>
+</div> 
+</header>
+
+<div class="wrapper970 cb">
+	<div class="mb25 blogger_Header"><a href="/license-to-parent/" style="color:#00bdf2;">License to Parent</a></div>
+</div>
+<div class="wrapper970 border653 oh cb">
+	<section class="cont637 fl"> 
+		<article class="pl15"> 
+		<header class="tac">
+			<div class="date oh">
+				<span>7/10/16 at 08:00 PM</span>
+				<span class="count">0</span>
+				<a href="" class="comment">Comments</a>
+			</div>
+			<h1 class="p10">2 Examples how America’s Definition of Family is Changing</h1>
+			<div class="author">by <a href="http://blogs.christianpost.com/license-to-parent/author/trace-embry/">Trace Embry</a></div>
+		</header>
+<style>
+.snsTop {height:5px;}
+.snsTop .twitter {float:left;}
+.snsTop .fb-like {float:left;width:100px;}
+</style>
+		<div class="snsTop oh" id="tools">
+			<div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div>
+			<div class="fb-like"><iframe src="//www.facebook.com/plugins/like.php?href=http://blogs.christianpost.com/license-to-parent/2-examples-how-americas-definition-of-family-is-changing-27856/&amp;send=false&amp;layout=button_count&amp;width=80&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe></div>
+			<span class='st_sharethis' displayText=''></span>
+			<a href="email.html" title="Print" class="email" target="_blank"><img class="mr5" src="http://graphic.christianpost.com/images/blogs/new/ic_email.gif" align="absmiddle"></a>
+			<a href="print.html" title="Print" class="print" target="_blank"><img src="http://graphic.christianpost.com/images/blogs/new/ic_print.gif" align="absmiddle"></a>
+			<div class="textSize" id="tSize"> text size <a href="" class="12">A</a> <a href="" class="14">A</a> <a href="" class="17">A</a></div>
+		</div>
+		<div class="text" id="text">
+			<p class="Body">The definition of family seems to be changing with our rapidly changing times.</p>
+<div class="imageRight" style="width: 300px;"><img class="imgPhoto" title="poly-family" src="http://images.christianpost.com/blog/full/32059/poly-family.jpg?w=300&h=183" alt="" width="300" height="183" />
+<div class="credit">Picture Provided By <a href="https://www.flickr.com/photos/keoni101/5294471472/" target="_blank">Keoni Cabral</a></div>
+</div>
+<h3><strong>1) The Poly Family</strong></h3>
+<p class="Body">In our society, even the Christian kids are believing that two moms; two dads; or a &ldquo;poly family&rdquo; are as legitimate as the traditional family of one man and one woman.</p>
+<p class="Body">Terms like &ldquo;family&rdquo; and &ldquo;marriage&rdquo; are being grossly redefined in our post-modern world.</p>
+<p class="Body">A decade or so ago, gay marriage would have been thought of as an oxymoron&mdash;as were poly families.</p>
+<p class="Body">This is producing a slippery slope where &ldquo;anything goes.&rdquo;</p>
+<p class="Body">Please discuss with your children the importance of a proper view of family. Our future depends on it.</p>
+<h3><strong>2) Blended Families</strong></h3>
+<p class="Body">Large numbers of blended families are a result of high divorce rates. We continue to mess with and complicate God&rsquo;s ecosystem. Family problems will thus continue to be more and more complicated.<!-- pagebreak --></p>
+<p class="Body">Scripture gives us many examples of blended family complexities. But, it also shows us God&rsquo;s mercy and ability to extract beauty from ashes.</p>
+<p class="Body">A tip for a blended family&rsquo;s success is for husbands and wives to make it clear to their kids that they are united. This means that if a step-parent lays down the law, the biological parent backs them up. This breeds love, security and respect.</p>
+<p>Trace Embry is the Founder and Director of <a href="http://www.shepherdshillacademy.org/" target="_blank">Shepherds Hill Academy</a>, a Christ-centered therapeutic residential program, as well as a private accredited boarding school for troubled teenagers. He is the Host of the "<a href="http://licensetoparent.org/" target="_blank">License to Parent</a>&nbsp;with Trace Embry Radio Program." He is also a public speaker, and teaches parenting classes. Visit his parenting blog at &ldquo;<a href="http://www.shepherdshillacademy.org/blogs/traceembry/" target="_blank">Insight for Today's Culture</a>&nbsp;with Trace Embry."</p>
+			<div class="cb"></div>
+<!-- rev.content -->
+<div id="rcjsload_0390d6"></div>
+<script type="text/javascript">
+(function() {
+var rcel = document.createElement("script");
+rcel.id = 'rc_' + Math.floor(Math.random() * 1000);
+rcel.type = 'text/javascript';
+rcel.src = "http://trends.revcontent.com/serve.js.php?w=13818&t="+rcel.id+"&c="+(new Date()).getTime()+"&width="+(window.outerWidth || document.documentElement.clientWidth);
+rcel.async = true;
+var rcds = document.getElementById("rcjsload_0390d6"); rcds.appendChild(rcel);
+})();
+</script>
+
+
+
+		</div>
+
+					  <div id="comment_cmc"><img src="http://graphic.christianpost.com/images/comment/small-loading.gif" /></div>
+			</article>
+	</section>
+
+	<aside class="cont300 fr">
+<script type="text/javascript" src="//adopspush-29b4.kxcdn.com/cmc_player_new.js"></script>
+<link href="//adopspush-29b4.kxcdn.com/cmc_player.css" rel="stylesheet">
+
+
+  <div class="ad ad400">
+		
+
+<div id="400x300_video" style="display:block;width:400px;height:300px;color:#fff;"></div>
+	<script>
+		// media setting
+		/*var info ={
+				 media : "http://adopspush-29b4.kxcdn.com/videoplayer/blogs-richard-and-sheris-testimony.mp4",
+				title : 'Richard and Sheri\'s Testimony',
+				description : 'Richard and Sheri\'s Testimony',
+				thumb : "http://adopspush-29b4.kxcdn.com/thumbnail/blogs-richard-and-sheris-testimony.jpg",
+				vid:'1773', duration:'60', autoPlay:true, id:'400x300_video'
+		};*/
+		var info ={
+				 media : "//adopspush-29b4.kxcdn.com/videoplayer/1.mp4",
+				title : 'Richard and Sheri\'s Testimony',
+				description : 'Richard and Sheri\'s Testimony',
+				thumb : "//adopspush-29b4.kxcdn.com/thumbnail/blogs-richard-and-sheris-testimony.jpg",
+				vid:'1773', duration:'60', autoPlay:true, id:'400x300_video'
+		};
+		
+		// ad configuration
+		var ad_vars = [{ preroll:[{ ad:"google", ad_data:{
+				0:'http://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&impl=s&output=xml_vast2&unviewed_position_start=1'
+				+ '&iu=/7241/blogs.christianpost' // DFP AD Unit
+				+ '&sz=400x300&url='+window.location.href+'&ciu_szs=300x250&correlator=[timestamp]&description_url='+encodeURIComponent(document.location.href)
+				// DFP cust_params is optional , but you can use key value targeting and pass the information via Macros.
+				+ '&cust_params=' + encodeURIComponent("videokey=pa3&vid="+info.vid+"&media="+encodeURIComponent(info.media)+"&ref="+encodeURIComponent(document.referrer)+"&title="+info.title+"&description="+info.description+"&autoplay=1&duration="+info.duration+"&w=400&h=300&pageurl="+encodeURIComponent(encodeURIComponent(encodeURIComponent(document.location.href))))
+				} }] 
+		}];
+		
+		// player url
+		var playerURL = '//adopspush-29b4.kxcdn.com/player.swf';
+		
+		var _cmcplayer = cmc_player(playerURL, '400x300_video', '100%', '100%', 
+										{ mediafile: info.media,												// required
+											medianame : encodeURIComponent(info.title), // required if mediafile is not json playlist
+											thumb : info.thumb,												// required if mediafile is not json playlist
+											autoplay:1,															// Autoplay 1 , stop : 0, default value is 1
+											playlist:'//adopspull-29b4.kxcdn.com/api/playlist_js/ipost.christianpost.com.js',				// playlist url , this lists will be seen after video played.
+											playlist_static:0, 													// 0 : play next video automatically after finish first video,  1 : just show the playlist
+											volume:0.1,															// 0 to 1.00, default 0.1
+											//livemode:1,															// force to mute without notice
+											ad:ad_vars																// required 
+										},
+										{	// event listener
+											onAdStart : function(e){ console.log('AD Started', e); },
+											onAdClick : function(e){ console.log('AD Clicked', e); }, 
+											onAdFirstQuartile : function(e){ console.log('AD FirstQuartile', e); },
+											onAdFinish : function(e){ console.log('AD Finished', e); }
+										}
+									);
+		
+		var evt = playerList['400x300_video'].listener;	// add more listener after defined player
+		evt.onStart = function(e){ console.log('Contents Video has Started.', e); };
+		evt.onResume = function(e){ console.log('Contents Video has Resumed.', e); };
+		evt.onPause = function(e){ console.log('Contents Video has Paused.', e); };
+		evt.onFinish = function(e){ console.log('Contents Video has Finished.', e); /* ___removeVideoPlayer('400x300_video');  ___removeVideoPlayer('___close');*/};
+		evt.onVolume = function(e){ console.log('Volume has changed', e); };
+		</script>
+
+
+  </div>
+	<div class="close" onclick="document.getElementById('400x300_video').remove();this.remove();"></div>
+
+
+   
+  <div class="advertisement" style="padding-top:10px;">  
+<!-- /7241/blogs.christianpost/section/articles-->
+<div id="div-gpt-ad-right1">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display("div-gpt-ad-right1"); });
+</script>
+</div>  </div>  
+  <div class="boxBlack blueTle pt15 pb20">Most Popular</div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt"></p>
+			            <h3><a href="http://blogs.christianpost.com/breaks/how-ms-power-point-training-is-crucial-for-businesses-28574/">How MS Power Point Training is Crucial for Businesses</a></h3>
+        </div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt">Devotionals</p>
+			            <h3><a href="http://blogs.christianpost.com/ambassador-of-reconciliation/stop-whining-28573/">Stop Whining!</a></h3>
+        </div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt">Politics and U.S. Current Events</p>
+			            <h3><a href="http://blogs.christianpost.com/prophecy-news/trump-inauguration-a-historical-milestone-franklin-grahams-prayer-a-vindication-28572/">Trump Inauguration a Historical Milestone – Franklin Graham’s Prayer a Vindication</a></h3>
+        </div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt">Health and Healthcare</p>
+						<a href="http://blogs.christianpost.com/infographics-a/staying-sober-during-the-new-year-28571/"><img class="fl mr10" src="http://images.christianpost.com/blog/full/32863/staying-sober-during-the-new-year.jpg?w=70&h=56" width="70" height="56" /></a>
+			            <h3><a href="http://blogs.christianpost.com/infographics-a/staying-sober-during-the-new-year-28571/">Staying Sober During the New Year</a></h3>
+        </div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt">Church & Ministry</p>
+						<a href="http://blogs.christianpost.com/god-reports/egypt-four-christians-murdered-in-10-days-28570/"><img class="fl mr10" src="http://images.christianpost.com/blog/full/32862/coptic350.jpg?w=70&h=56" width="70" height="56" /></a>
+			            <h3><a href="http://blogs.christianpost.com/god-reports/egypt-four-christians-murdered-in-10-days-28570/">Egypt: Four Christians murdered in 10 Days</a></h3>
+        </div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt">Devotionals</p>
+						<a href="http://blogs.christianpost.com/lifeology/love-that-proves-365-days-of-daring-faith-day-45-28569/"><img class="fl mr10" src="http://images.christianpost.com/blog/full/32861/love-that-proves.png?w=70&h=56" width="70" height="56" /></a>
+			            <h3><a href="http://blogs.christianpost.com/lifeology/love-that-proves-365-days-of-daring-faith-day-45-28569/">Love that Proves (365 Days of Daring Faith – DAY 45)</a></h3>
+        </div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt">Business</p>
+			            <h3><a href="http://blogs.christianpost.com/news-section745/best-running-shoes-selection-criteria-28568/">Best Running Shoes Selection Criteria</a></h3>
+        </div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt">Testimonies</p>
+						<a href="http://blogs.christianpost.com/god-reports/in-n-out-burger-heiress-searched-for-love-in-the-wrong-places-finally-found-the-fathers-love-28567/"><img class="fl mr10" src="http://images.christianpost.com/blog/full/32860/lynsi350.jpg?w=70&h=56" width="70" height="56" /></a>
+			            <h3><a href="http://blogs.christianpost.com/god-reports/in-n-out-burger-heiress-searched-for-love-in-the-wrong-places-finally-found-the-fathers-love-28567/">In-N-Out Burger heiress searched for love in the wrong places, finally found the Father’s love</a></h3>
+        </div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt">Business</p>
+			            <h3><a href="http://blogs.christianpost.com/tech-entertainment-life-news/how-to-retain-employees-in-todays-world-28566/">How to Retain Employees in Today’s World</a></h3>
+        </div>
+		        <div class="sidebox pb10 mb15 dotline">
+			            <p class="grayTxt">Health and Healthcare</p>
+			            <h3><a href="http://blogs.christianpost.com/lifestyle/check-out-ketosis-diet-plan-for-a-perfect-body-shape-28565/">Check Out Ketosis Diet Plan for a Perfect Body Shape</a></h3>
+        </div>
+		         <div class="advertisement2">        
+<!-- /7241/blogs.christianpost/section/articles-->
+<div id="div-gpt-ad-right2">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display("div-gpt-ad-right2"); });
+</script>
+</div>        </div>  
+  </aside></div>
+<div class="footerTxt"> CP Blogs do not necessarily reflect the views of The Christian Post. Opinions expressed are solely those of the author(s).</div>
+<div class="banner728x90">
+<!-- /7241/blogs.christianpost/section/articles-->
+<div id="div-gpt-ad-bottom">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display("div-gpt-ad-bottom"); });
+</script>
+</div></div><!--Footer Start-->
+      <div id="footer">
+        <ul id="pageLink">
+              <li><a href="http://www.christianpost.com/aboutus/aboutus.html">About Us</a></li>
+              <li><a href="http://www.christianpost.com/aboutus/contactus.html" rel="nofollow">Contact Us</a></li>
+              <li><a href="http://www.christianpost.com/services/advertise/" rel="nofollow">Media Kit</a></li>
+              <li><a href="http://www.christianpost.com/archive/">Archives</a></li>
+              <li><a href="http://www.christianpost.com/fan-faves/">Fan Faves</a></li>
+              <li><a href="http://www.christianpost.com/corrections.htm" rel="nofollow">Corrections</a></li>
+              <li><a href="http://www.christianpost.com/aboutus/disclaimer.htm" rel="nofollow">Disclaimer</a></li>
+              <li><a href="http://www.christianpost.com/services/banners/" rel="nofollow">Banners</a></li>
+              <li><a href="http://www.christianpost.com/aboutus/jobs.html" rel="nofollow">Careers</a></li>
+              <li><a href="http://www.christianpost.com/qna/">Q&A</a></li>
+              
+            </ul>
+        <!--  
+        <div id="partners">
+            Media Partners
+            <a href="http://breathecast.christianpost.com"><img src="images/partners_bc.gif" alt="Breathecast" align="absmiddle" /><span>Breathecast.com</span></a>
+             <a href="http://goodnewsline.christianpost.com"><img src="images/partners_gnl.gif" alt="Goodnewsline" align="absmiddle" /><span>Gnli.com</span></a>
+             <a href="http://bibleportal.christianpost.com"><img src="images/partners_bp.gif" alt="Bibleportal" align="absmiddle" /><span>Bibleportal.com</span></a>
+            
+    </div>
+    	-->
+        <ul id="sections">
+          <li><a href="http://www.christianpost.com/church-ministries/">Church & Ministries</a></li>
+          <li><a href="http://www.christianpost.com/us/">U.S.</a></li>
+          <li><a href="http://www.christianpost.com/world/">World</a></li>
+          <li><a href="http://www.christianpost.com/politics/">Politics</a></li>
+          <li><a href="http://www.christianpost.com/entertainment/">Entertainment</a></li>
+          <li><a href="http://www.christianpost.com/tech/">Tech & Biz</a></li>
+          <li><a href="http://www.christianpost.com/opinion/">Opinion</a></li>
+          <li><a href="http://blogs.christianpost.com/">Blogs</a></li>
+          <li><a href="http://www.christianpost.tv/">Video</a></li>
+          <li><a href="http://www.christianpost.com/gallery/">Photo</a></li>
+          <li><a href="http://bible.christianpost.com/">Audio Bible</a></li>
+          <li><a href="http://ipost.christianpost.com/">iPost</a></li>
+         
+        </ul>
+        <div id="footerBottom">
+          <a href="http://www.christianpost.com/"><img src="http://graphic.christianpost.com/images/2013/logo_footer.gif" alt="The Christian Post | Home" align="absmiddle" /></a> <span>Copyright © 2017 The Christian Post , INC. All Rights Reserved.  <a href="http://www.christianpost.com/aboutus/copyright.html">Terms</a> under which this service is provided to you. <a href="http://www.christianpost.com/aboutus/copyright.html">Privacy Policy</a>. Ad choices. <a href="#"><img src="http://graphic.christianpost.com/images/2013/adchoice.gif" alt="Ad choices" align="absmiddle" /></a></span>
+        </div>
+    </div>
+	<script type="text/javascript">$(document).ready(function() {if($('a[href*="postrelease.com/"]').toArray().length>0)$.ajax({url:'http://www.christianpost.com/client/postrelease/counter.php',cache: false});});</script>
+	  <!--Footer End--><!-- Begin comScore Tag --><script>var _comscore = _comscore || [];_comscore.push({ c1: "2", c2: "7918809" });(function() {var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s, el);})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=7918809&cv=2.0&cj=1" /></noscript><!-- End comScore Tag -->    
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+_qevents.push({
+qacct:"p-f3_tFTzTnk8n2"
+});
+</script>
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-f3_tFTzTnk8n2.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!--google-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8906135-10']);
+  _gaq.push(['_setDomainName', '.christianpost.com']);
+  _gaq.push(['_setCustomVar',1,'Section','www.christianpost.com:',3]);
+   
+  _gaq.push(['_setCustomVar',3,'Edition','www.christianpost.com',3]);
+  
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--google-->
+
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-305490h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-305490h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+	    <!-- stcode start--> 
+    <script type="text/javascript">sc_project=2124700; sc_invisible=1; sc_partition=19; sc_security="e1c37b2d"; </script> 
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js" async="true"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c20.statcounter.com/2124700/0/e1c37b2d/1/" alt="web hit counter" /></a></div></noscript> 
+    <!-- stcode end-->
+        <!-- bizo start-->
+	<script type="text/javascript">_bizo_data_partner_id = "2930";</script>
+	<script type="text/javascript">(function(){var b,a,u;a=document.createElement("script");a.type="text/javascript";a.async=true;u=(window.location.protocol==="https:"?"https://sjs.":"http://js.")+"bizographics.com/insight.min.js";a.src=u;b=document.getElementsByTagName("script")[0];return b.parentNode.insertBefore(a,b)})();</script>
+	<noscript><img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=2930&fmt=gif" /></noscript>
+	<!-- bizo end-->
+	    
+<!-- Compete CrossPoint Tag for christianpost.com -->
+<script type="text/javascript">
+__compete_code = '38b2a4c235cab155c1b33cb5b22f278c';
+/* Set control variables below this line. */ 
+</script>
+<script type="text/javascript" src="//c.compete.com/bootstrap/s/38b2a4c235cab155c1b33cb5b22f278c/christianpost-com/bootstrap.js"></script>
+<noscript>
+    <img width="1" height="1" src="https://ssl-christianpost-com-38b2a4.c-col.com"/>
+</noscript>
+
+<script type="text/javascript">
+  var clicky_custom = clicky_custom || {};
+  clicky_custom.video_disable = 1;
+</script><script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100587769); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100587769ns.gif" /></p></noscript>
+<script>
+  $(document).ready(function() {
+    $.ajax({
+      method:'get',
+      dataType:'jsonp',
+      url:'http://www.christianpost.com/count.php',
+      data:"aid=27856&rid=&edition=blog&referer=",
+    });
+  });
+  </script>
+    <script>
+  var _aid		= '27856';
+  var _rid		= '';
+  var _acnt_id	= "blog";
+  var _referer	= (document.referrer==undefined) ? null : document.referrer;		// (string) referer
+  var _uip		= "93.27.149.180";					// (string) user ip
+  var _user_agent	= navigator.userAgent;					// (string) user agent
+ 
+	var pixelCallEvent = function(url) {
+		var doc = window.document;
+		if (url.toLowerCase().indexOf('http://') === 0 || url.toLowerCase().indexOf('https://') === 0) {
+			var rand = Math.round(Math.random() * 99999999);
+			var imgPix = document.createElement('img');
+			imgPix.style.visibility = 'hidden';
+			imgPix.style.position = 'absolute';
+			imgPix.style.width = '1px';
+			imgPix.style.height = '1px';
+			imgPix.src = url + ((url.indexOf('?') > 0) ? '&' : '?') + 'rd' + '=' + rand;
+			window.document.getElementsByTagName('body')[0].appendChild(imgPix);
+		}
+	}
+
+    function add_pixel(a_id, r_id, domain_code, px) {
+        var _a_id = a_id;
+        var _r_id = r_id;
+        var ref = document.referrer;
+        var _ref = encodeURIComponent(encodeURIComponent(ref));
+
+        var _c = domain_code;
+		if(px == 'ipost' || px == 'm.ipost'){
+			_c = 'ip';
+		}else if(px == 'blog' || px == 'm.blog'){
+            _c = 'cpb';
+        }else if(px == 'spanish'){
+            _c = 'cpsp';
+        }else if(px == 'portuguese'){
+            _c = 'cppr';
+        }
+
+        var _px = px;
+        var doc = window.document;
+        var url = "http:" + "//track" + "ing" + ".cmcigroup.com/pxi/v1/";
+        url += "a=" + _a_id + ";";
+        url += "r=" + _r_id + ";";
+        url += "rf=" + _ref + ";";
+        url += "c=" + _c + ";";
+        url += "px=" + _px + "/";
+        pixelCallEvent(url);
+    }
+
+	function page_count(c_what,a_id,r_id,c_id){
+		var url = "http:" + "//stats" +".christianpost.com/tracking/";
+		url+= "?c_what="+c_what+"&a_id="+a_id+"&r_id="+r_id+"&c_id="+c_id;
+		pixelCallEvent(url);
+	}
+
+	if(_aid>0)add_pixel(_aid,_rid,'cp',_acnt_id);
+	page_count('cp',_aid,0,15);
+
+  </script>
+
+<!-- google true view check -->
+<script type="text/javascript">
+(function() {
+   var gvn = document.createElement('script');
+   gvn.src = document.location.protocol + '//s0.2mdn.net/instream/video/client.js';
+   gvn.async = true;
+   gvn.type = 'text/javascript';
+   var s = document.getElementsByTagName('script')[0];
+   s.parentNode.insertBefore(gvn, s);
+})();
+</script>
+
+<div id="fb-root"></div><script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8c3b2373fb","applicationID":"3519570","transactionName":"NFJbZEsHVhAAU0JdCg0YbEJQSVYGFkMYRA0T","queueTime":0,"applicationTime":29,"atts":"GBVYEgMdRR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

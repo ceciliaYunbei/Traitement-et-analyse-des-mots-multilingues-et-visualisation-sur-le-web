@@ -1,0 +1,188 @@
+   #Notes sur 'Village BIM' (Atom) Notes sur 'Village BIM' (RSS 1.0) Notes
+   sur 'Village BIM' (RSS 2.0) Commentaires sur 'Notion de Familles
+   Imbriquées' (Atom) Commentaires sur 'Notion de Familles Imbriquées'
+   (RSS 2.0) Home Nouvelle Carte sismique, transition des PS92 vers
+   l'Eurocode 8. Les Eurocodes dans Autodesk Robot Structural Analysis
+   2011
+
+Village BIM
+
+Village BIM est le blog technique des solutions BIM Autodesk. Pour les
+architectes, les ingénieurs et les constructeurs désirant évoluer vers le
+BIM. Retrouvez-y tous les trucs et astuces, et nouveautés des solutions
+Autodesk.
+
+   (BUTTON) Accueil
+     * Autodesk France
+     * Architecture
+     * Structure
+     * MEP
+     * Plant
+     * Construction
+     * Education
+
+   « Nouvelle Carte sismique, transition des PS92 vers l'Eurocode 8. |
+   Accueil | Les Eurocodes dans Autodesk Robot Structural Analysis 2011 »
+
+22/11/2010
+
+Notion de Familles Imbriquées
+
+   Dans Revit Structure il est possible de créer ses propres objets
+   paramétriques permettant de répondre précisément à vos besoins
+   spécifiques. Vous pouvez ainsi créer des objets dynamiques annotés
+   automatiquement dès leur création avec une représentation graphique
+   prédéfinie.
+
+   Cet article montre comment créer une famille de trémies ajustable
+   graphiquement dans laquelle ont été ajouté un pochage et une annotation
+   paramétrable. Cette famille de trémies contient donc 2 familles
+   imbriquées (1 pour le pochage et 1 pour l'annotation). En utilisant
+   cette famille dans un projet on obtient alors automatiquement une
+   représentation graphique de la trémie  sous cette forme :
+
+     Families - 1
+
+   Téléchargez le tutoriel décrivant la création de cette famille
+   (1900.4K)
+   Téléchargez les fichiers contenant les familles (491.5K)
+
+   Rédigé par Julien Drouet à 21:45 dans Autodesk Revit Structure | Lien
+   permanent
+
+   Twitter | Facebook
+
+Commentaires
+
+   Flux Vous pouvez suivre cette conversation en vous abonnant au flux des
+   commentaires de cette note.
+
+   L'utilisation des commentaires est désactivée pour cette note.
+
+A propos des Auteurs
+
+     *
+
+   [stephane_balmain_88x88.jpg]
+   Stephane Balmain [olivier_bayle_88x88.jpg]
+   Olivier Bayle
+
+   [jujuleretour.jpg]
+   Julien Drouet [alexandre_mihalache_88x88.jpg]
+   Alexandre Mihalache
+
+Abonnement
+
+     * [feed.png]  Abonnement RSS
+     * Abonnement e-mail
+       ____________________
+       Valider e-mail
+
+Rechercher
+
+   ____________________
+   (Rechercher) Submit
+
+Les notes récentes
+
+     * Plant 3D: Project Calgary, la version 2 Beta de la collaboration
+       cloud pour Plant
+     * Exportez intelligemment vers Navisworks
+     * Test Matériel : Le Surface Book Microsoft
+     * Accédez à Vault à partir d'un appareil mobile iOS
+     * Résultats de l'enquête: Impacts du BIM dans la communication et les
+       échanges collaboratif
+     * Autodesk Stingray : une expérience virtuelle immersive en temps
+       réel
+     * Localiser le point interne sous Revit 2017 pour un export
+       Navisworks / InfraWorks 360
+     * Réservez votre soirée du 2 février pour le PRUG, Paris Revit User
+       Group
+     * Tester les Assemblages Acier de Revit 2018 Beta
+     * Jeudi 19 Janvier - Faro et Autodesk vous invitent à Grenoble
+
+Catégories
+
+     * Applications Partenaires
+     * Architecture
+     * Autodesk BIM 360
+     * Autodesk FormIt360
+     * Autodesk Navisworks
+     * Autodesk Revit
+     * Autodesk Revit Architecture
+     * Autodesk Revit MEP
+     * Autodesk Revit Structure
+     * Autodesk Robot Structural Analysis
+     * Autodesk Vault AEC
+     * Avant-première
+     * Bibliothèques
+     * BIM
+     * Capture de la réalité
+     * Collaboration
+     * Construction
+     * CVC
+     * Documentation
+     * Education
+     * Electricité
+     * Familles
+     * Gestion de données
+     * IFC
+     * Ingénierie
+     * Interopérabilité
+     * Labs
+     * Maquette numérique
+     * MEP
+     * Modélisation
+     * Nouveautés
+     * Performances énergétiques
+     * Plant
+     * Plomberie
+     * Rendu
+     * Service Pack
+     * Souscription
+     * Structure
+     * Trucs et astuces
+
+   See More
+
+Archives
+
+     * janvier 2017
+     * décembre 2016
+     * novembre 2016
+     * octobre 2016
+     * septembre 2016
+     * août 2016
+     * juillet 2016
+     * juin 2016
+     * mai 2016
+     * avril 2016
+
+   Plus...
+
+Sites et Blogs
+
+     * Architecture, BIM, and Conceptual Design
+     * Beyond Design
+     * Buildz
+     * Civil - Made in France
+     * dal BIM in poi
+     * Forum francophone Revit et BIM
+     * Geospatial made in France
+     * Inside the Factory
+     * It is Alive in the Lab
+     * Revit Beyond BIM
+     * Revit Utopic City
+     * The Building Coder - APIs
+     * The Revit Clinic
+
+Blogs Partenaires
+
+     * Syncronia - Bibliothèques Revit et textures
+     * PDO Team - Plant 3D
+     * Communauté Autodesk Francophone
+
+     * Village BIM
+     * Powered by Typepad
+
+   Quantcast

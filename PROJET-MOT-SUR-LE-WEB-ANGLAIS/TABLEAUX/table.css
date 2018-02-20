@@ -1,0 +1,42 @@
+
+
+.table0 table {
+    border-right:2px solid transparent;
+    border-bottom:2px solid transparent;
+    color: #848484
+    font-family: Times New Roman, arial, sans-serif;
+} 
+
+.table0 table td {
+    border-left:2px solid transparent;
+    border-top:2px solid transparent;
+} 
+
+.table0 table tr,td {
+    color: #424242;
+    font-family: Times New Roman, arial, sans-serif;
+    text-decoration: none;
+} 
+
+a {
+    color: #424242;
+    text-decoration: none;
+    text-shadow:0 2px 3px rgba(0,0,0,0.2);
+    transition: all 0.5s ease-out;
+}
+a:hover {
+    color:#8A0808;
+    text-shadow:0 3px 6px rgba(0,0,0,0.9);
+}
+
+.table0 table tr:nth-child(odd) {
+  background: rgba(249, 249, 249, 0.3);
+}
+
+.table0 table tr:hover{
+  background: rgba(227, 227, 227, 0.9);
+}
+.table0 table thead tr:hover{
+  background: transparent;
+}
+
